@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>دروس المدود واختبارها</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: معلّم هادئ ومنظّم، شرح بالعامية المصرية والمصطلحات بالفصحى
+   IDEA: صفحة مصحف التجويد — الأحمر للمد اللازم والأزرق للحركات
+   PICTURE: "مسطرة الحركات" — كل مد وعدد حركاته كخط مرسوم بنقاط
+   COLOUR and TYPE: أبيض ورقي، حبر داكن، أخضر مزرق هادي #22706a، بني دافي #a35f2c، خلفية #f3f6f4؛ Scheherazade New للآيات وCairo للشرح
+   LAYOUT: تبويبين (الدروس/الاختبار)، عمود واحد مريح للموبايل */
+:root{color-scheme:light dark;--bg:light-dark(#f5f5f3,#151515);--card:light-dark(#fff,#1f1f1f);--ink:light-dark(#26282e,#ececec);--mute:light-dark(#6b6e76,#a3a3a8);--line:light-dark(#e1e1de,#333);--soft:light-dark(#efefec,#262626);--onpri:light-dark(#fff,#151515);--pri:var(--ink);--ok:light-dark(#1f9d55,#4fd18b);--bad:light-dark(#d63a3a,#ff7272);--fa:light-dark(#b07400,#f2b84b);--fh:light-dark(#7446c9,#b393f2);--fs:light-dark(#0a7ea8,#5cc6ea);--fm:light-dark(#c2337a,#f487bd);--fc:var(--mute)}
+.fa{--fc:var(--fa)}.fh{--fc:var(--fh)}.fs{--fc:var(--fs)}.fm{--fc:var(--fm)}.fn{--fc:var(--mute)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.75 Cairo,system-ui,sans-serif;overflow-x:clip}
+.wrap{max-width:860px;margin:0 auto;padding:0 max(4vw,14px) 60px}
+header{padding:26px 0 8px}
+h1{font-weight:800;font-size:clamp(28px,6vw,42px);line-height:1.15;margin:0 0 6px;text-wrap:balance}
+.sub{color:var(--mute);margin:0}
+.tabs{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;gap:8px;padding:12px 0;border-bottom:1px solid var(--line)}
+.tabs button{flex:1;min-height:46px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:700;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--pri);color:var(--onpri);border-color:var(--pri)}
+button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.q{font-family:"Scheherazade New",Amiri,serif;font-size:1.4em;line-height:1.5;color:var(--fc);font-weight:700}
+.ruler{background:var(--card);box-shadow:0 1px 2px rgba(0,0,0,.04);border:1px solid var(--line);border-radius:16px;padding:18px;margin:18px 0}
+.ruler h2{font-size:19px;margin:0 0 4px}
+.row{display:grid;grid-template-columns:9.5em minmax(0,1fr);gap:10px;align-items:center;padding:7px 0;border-bottom:1px dashed var(--line)}
+.row:last-child{border:0}
+.row b{font-size:14.5px}
+.dots{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.dots i{width:clamp(14px,4.2vw,26px);height:14px;border-radius:7px;background:var(--fc)}
+.dots i.o{background:transparent;border:2px dashed var(--fc)}
+
+.dots span{font-size:13px;color:var(--mute);margin-inline-start:6px;white-space:nowrap}
+.legend{font-size:13px;color:var(--mute);margin-top:8px}
+details.l{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;overflow:hidden}
+details.l summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;gap:12px;align-items:center;font-weight:700;font-size:17px;min-height:52px}
+details.l summary::-webkit-details-marker{display:none}
+.n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:14px}
+.n{border:2px solid var(--fc);color:var(--fc);background:color-mix(in srgb,var(--fc) 10%,var(--card))!important;font-weight:800}details[open] .n{background:var(--fc)!important;color:var(--onpri)}details.l{border-inline-start:5px solid var(--fc)}
+.tag{margin-inline-start:auto;font-size:12.5px;font-weight:600;color:var(--mute);white-space:nowrap}
+.body{padding:0 16px 16px}
+.body p{margin:8px 0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:10px 0}
+.facts div{background:var(--soft);border-radius:10px;padding:8px 10px;font-size:14.5px}
+.facts small{display:block;color:var(--mute);font-size:12.5px}
+.ex{border-inline-start:4px solid var(--fc);background:color-mix(in srgb,var(--fc) 7%,var(--card));padding:8px 12px;border-radius:8px;margin:8px 0}
+.tip{border-inline-start:4px dotted var(--ink);padding:6px 12px;margin:8px 0}
+.body ul{padding-inline-start:20px;margin:6px 0}
+.hide{display:none}
+.qbox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:18px}
+.bar{height:8px;background:var(--soft);border-radius:4px;overflow:hidden;margin:6px 0 14px}.bar i{display:block;height:100%;background:var(--ink);transition:width .3s}
+@media(prefers-reduced-motion:reduce){.bar i{transition:none}}
+.meta{display:flex;justify-content:space-between;color:var(--mute);font-size:14px}
+.qt{font-size:19px;font-weight:700;margin:4px 0 14px;line-height:1.6}
+.opts{display:grid;gap:9px}
+.opts button{text-align:start;min-height:50px;padding:10px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;cursor:pointer}
+.opts button:hover:not(:disabled){border-color:var(--ink)}
+.opts button.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,transparent)}
+.opts button.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,transparent)}
+.why{margin-top:12px;padding:10px 14px;border-radius:10px;background:var(--soft)}
+.why b{display:block}
+.qex{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--card);border-inline-start:4px solid var(--fc)}.qex small{display:block;color:var(--mute);font-size:12.5px}.qex .q{display:block;margin:2px 0}.qex p{margin:4px 0 0;font-size:14.5px}
+.act{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btn{min-height:46px;padding:0 20px;border-radius:12px;border:0;background:var(--pri);color:var(--onpri);font:inherit;font-weight:700;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.score{font-size:clamp(44px,12vw,72px);font-weight:700;color:var(--ink);line-height:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chips button{min-height:40px;padding:0 14px;border-radius:20px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+.chips button[aria-pressed=true]{border-color:var(--ink);background:var(--ink);color:var(--onpri);font-weight:700}
+.tree{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:10px;margin:10px 0}
+.tb{border:1.5px solid var(--blue);border-radius:12px;padding:10px 12px;font-size:14.5px}
+.tb.r{border-color:var(--red)}
+.tb>b{font-size:17px;color:var(--blue)}.tb.r>b{color:var(--red)}
+.tb small{display:block;color:var(--mute);font-size:12.5px}
+.tb ul{margin:6px 0 0;padding-inline-start:18px}.tb li{margin:3px 0}
+@media(max-width:600px){.tree{grid-template-columns:minmax(0,1fr)}}
+
+.mapbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+.mapbar button{min-height:40px;min-width:44px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:700;cursor:pointer}
+.mapscroll{overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);padding:14px 8px;max-height:75vh;-webkit-overflow-scrolling:touch}
+.org{direction:ltr;width:max-content;margin:0 auto}
+.org ul{display:flex;justify-content:center;padding:18px 0 0;margin:0;position:relative}
+.org li{list-style:none;position:relative;padding:18px 4px 0;text-align:center;display:flex;flex-direction:column;align-items:center}
+.org li::before,.org li::after{content:'';position:absolute;top:0;right:50%;width:50%;height:18px;border-top:2px solid var(--mute)}
+.org li::after{right:auto;left:50%;border-left:2px solid var(--mute)}
+.org li:only-child::before,.org li:only-child::after{display:none}
+.org li:only-child{padding-top:0}
+.org li:first-child::before,.org li:last-child::after{border:0}
+.org li:last-child::before{border-right:2px solid var(--mute)}
+.org ul ul::before{content:'';position:absolute;top:0;left:50%;height:18px;border-left:2px solid var(--mute)}
+.org>ul{padding-top:0}
+.org ul.v{flex-direction:column;gap:6px;align-items:stretch}
+.org ul.v>li{padding:0}.org ul.v>li::before,.org ul.v>li::after{display:none}
+.bx{direction:rtl;border:1.5px solid var(--mute);background:var(--card);border-radius:6px;padding:6px 8px;min-width:70px;max-width:150px;font-size:13.5px;font-weight:700;line-height:1.45}
+.bx.root{font-size:18px;padding:10px 22px;max-width:none;background:var(--pri);color:var(--onpri);border-color:var(--pri);border-radius:10px}
+.bx.k1{font-size:16px;border-width:2px;border-color:var(--ink)}
+.bx.fa,.bx.fh,.bx.fs,.bx.fm{border-color:var(--fc);background:color-mix(in srgb,var(--fc) 9%,var(--card))}
+.bx.flash{animation:fl .9s}@keyframes fl{0%{box-shadow:0 0 0 4px var(--ok)}100%{box-shadow:0 0 0 0 transparent}}
+.bx small{display:block;font-weight:400;color:var(--mute);font-size:12px}
+.bx .ar{font-family:"Scheherazade New",serif;font-size:18px;color:var(--fc);font-weight:700;display:block}
+.slot{display:inline-block;min-width:64px;min-height:26px;border:2px dashed var(--mute);border-radius:6px;cursor:pointer;background:transparent;color:var(--mute);font:inherit;font-size:12px;padding:0 6px}
+.slot.sel{border-color:var(--ink);border-style:solid;background:color-mix(in srgb,var(--ink) 10%,transparent);color:var(--ink)}
+.slot.ok{border:0;color:var(--ok);font-weight:700;font-size:inherit;cursor:default}
+.slot.bad{border-color:var(--bad);animation:sh .3s}
+@keyframes sh{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@media(prefers-reduced-motion:reduce){.slot.bad{animation:none}}
+.bank{position:sticky;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:10px 0 12px;margin-top:10px;z-index:4}
+.bank .chips{margin:6px 0 0;max-height:150px;overflow:auto}
+.bank .chips button{position:relative}
+.bank .chips button sup{font-size:11px;color:var(--mute);margin-inline-start:4px}
+.bank .chips button.ar{font-family:"Scheherazade New",serif;font-size:19px}
+.mstat{display:flex;justify-content:space-between;gap:10px;font-size:14px;color:var(--mute)}
+.sw{margin-top:14px}
+
+.hint{margin:4px 0 10px}
+.hbtn{min-height:44px;padding:0 14px;border-radius:10px;border:1.5px dashed var(--mute);background:var(--card);color:var(--ink);font:inherit;font-weight:700;cursor:pointer}
+.hbtn[aria-expanded=true]{border-style:solid}
+.pages{display:grid;gap:10px;margin-top:10px}
+.pages small{color:var(--mute);font-size:13px}
+.pimg{padding:0;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:zoom-in;overflow:hidden;display:block}
+.pimg img{display:block;width:100%;height:auto;min-height:120px}
+@media(min-width:900px){details.l[open] .body{display:grid;grid-template-columns:minmax(0,1fr);}}
+#lb{position:fixed;inset:0;z-index:50;background:rgba(10,10,8,.92);display:flex;flex-direction:column}
+#lb[hidden]{display:none}
+.lbbar{display:flex;justify-content:space-between;gap:8px;padding:10px max(3vw,10px)}
+.lbbar button{min-height:44px;padding:0 16px;border-radius:10px;border:1px solid #555;background:#222;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.lbsc{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;display:flex;align-items:flex-start;justify-content:center;padding:0 8px 20px}
+.lbsc img{width:100%;max-width:1500px;height:auto;background:#fff;border-radius:6px;cursor:zoom-in}
+#lb.zoom .lbsc{justify-content:flex-start}
+#lb.zoom .lbsc img{width:260%;max-width:none;cursor:zoom-out}
+.key{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin:8px 0}
+.key div{display:flex;gap:8px;align-items:center;padding:8px 10px;border-radius:10px;background:color-mix(in srgb,var(--fc) 9%,var(--card));border:1.5px solid var(--fc);font-size:14px;font-weight:700}
+.key small{display:block;font-weight:400;color:var(--mute);font-size:12px}
+.ic{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--fc);color:var(--onpri);font-weight:800;font-size:15px;line-height:1}
+.fb{display:flex;gap:14px;flex-wrap:wrap;font-size:13.5px;color:var(--mute);margin-top:6px}.fb b{color:var(--ok)}.fb b.x{color:var(--bad)}
+.qtag{display:inline-flex;gap:6px;align-items:center;font-size:13px;font-weight:700;color:var(--fc)}.qtag .ic{width:22px;height:22px;font-size:12px}
+
+.units{display:grid;gap:10px;margin-top:12px}
+.unit{display:flex;gap:12px;align-items:center;text-align:start;min-height:64px;padding:10px 14px;border-radius:14px;border:2px solid var(--fc);border-bottom-width:5px;background:color-mix(in srgb,var(--fc) 8%,var(--card));color:var(--ink);font:inherit;cursor:pointer}
+.unit.fn{--fc:var(--ink)}
+.unit .ic{width:40px;height:40px;font-size:20px}.unit small{display:block;color:var(--mute);font-size:13px}
+.unit:active{transform:translateY(2px)}
+.xbtn{min-width:40px;min-height:40px;border:0;background:transparent;color:var(--mute);font-size:20px;cursor:pointer}
+.meta{align-items:center}
+.tn{font-size:24px;margin:6px 0;color:var(--fc)}
+.big{text-align:center;padding:14px;margin:6px 0 14px;border-radius:14px;background:color-mix(in srgb,var(--fc) 8%,var(--card));border:1.5px solid var(--fc)}
+.big .q{font-size:2em}
+.tfb{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tfb button{min-height:56px;border-radius:12px;border:2px solid var(--line);border-bottom-width:4px;background:var(--card);color:var(--ink);font:inherit;font-size:18px;font-weight:800;cursor:pointer}
+.tfb button.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,transparent)}.tfb button.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,transparent)}
+.fillq{font-size:18px;line-height:2}
+.blank{display:inline-block;min-width:80px;border-bottom:3px dashed var(--fc);text-align:center;font-weight:800;margin:0 4px;padding:0 6px}
+.blank.gk{color:var(--ok);border-color:var(--ok)}.blank.bk{color:var(--bad);border-color:var(--bad)}
+.chips button.right{border-color:var(--ok);color:var(--ok)}.chips button.wrong{border-color:var(--bad);color:var(--bad)}
+.mt{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mt>div{display:grid;gap:8px;align-content:start}
+.mt button{min-height:52px;border-radius:12px;border:2px solid var(--line);border-bottom-width:4px;background:var(--card);color:var(--ink);font:inherit;font-weight:700;cursor:pointer;padding:6px}
+.mt button[data-ml]{border-color:color-mix(in srgb,var(--fc) 60%,var(--line))}
+.mt button.ar{font-family:"Scheherazade New",serif;font-size:19px}
+.mt button.on{border-color:var(--ink);background:color-mix(in srgb,var(--ink) 10%,var(--card))}
+.mt button.gone,.chips button.gone{opacity:.25;border-color:var(--ok)}
+.shk{animation:sh .3s;border-color:var(--bad)!important}
+.ord{margin:6px 0 12px;padding-inline-start:24px;min-height:20px}.ord li{font-weight:700;padding:3px 0;color:var(--ok)}
+.why.gk{background:color-mix(in srgb,var(--ok) 12%,var(--card));border:1.5px solid var(--ok)}.why.gk>b{color:var(--ok)}
+.why.bk{background:color-mix(in srgb,var(--bad) 9%,var(--card));border:1.5px solid var(--bad)}.why.bk>b{color:var(--bad)}
+.why small{display:block;color:var(--mute);margin-top:6px}
+
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:8px;align-items:center;margin-bottom:6px}
+.stats>div{background:var(--soft);border-radius:12px;padding:8px 10px;text-align:center}
+.stats .big1{display:block;font-size:20px;font-weight:800}.stats small{display:block;color:var(--mute);font-size:12px}
+.stats .goal{display:flex;gap:6px;align-items:center;justify-content:center;text-align:start}.goal b{font-size:15px}
+.snd{min-width:44px;min-height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);font-size:18px;cursor:pointer}
+.path{display:grid;gap:18px;justify-items:center;padding:18px 0 6px;background:radial-gradient(circle,var(--line) 1.5px,transparent 1.6px) center/100% 22px repeat-y}
+.stop{display:grid;justify-items:center;gap:2px;transform:translateX(var(--off));text-align:center}
+.stop b{font-size:14.5px;background:var(--card);padding:0 6px;border-radius:6px}.stop small{color:var(--mute);font-size:12.5px;background:var(--card);padding:0 6px;border-radius:6px}
+.node{width:76px;height:70px;border-radius:50%;border:0;background:var(--fc);color:var(--onpri);font-size:28px;font-weight:800;cursor:pointer;box-shadow:0 7px 0 color-mix(in srgb,var(--fc) 60%,#000);transition:transform .1s}
+.node.fn{--fc:var(--ink)}
+.node:active{transform:translateY(5px);box-shadow:0 2px 0 color-mix(in srgb,var(--fc) 60%,#000)}
+.node.lock{background:var(--line);color:var(--mute);box-shadow:0 7px 0 color-mix(in srgb,var(--line) 70%,#000)}
+.node.cur{outline:4px solid color-mix(in srgb,var(--fc) 35%,transparent);outline-offset:5px;animation:pl 1.6s infinite}
+@keyframes pl{50%{outline-offset:9px}}
+.node.done::after{content:'✔';position:absolute;font-size:14px;margin:-34px 0 0 46px;background:var(--ok);color:#fff;border-radius:50%;width:22px;height:22px;display:grid;place-items:center}
+.node{position:relative}
+.tlink{display:block;margin:14px auto 0;background:none;border:0;color:var(--mute);font:inherit;font-size:13px;text-decoration:underline;cursor:pointer;min-height:40px}
+.hearts{font-weight:800;white-space:nowrap}
+.combo{display:inline-block;font-size:13px;font-weight:800;color:var(--fa);margin-inline-end:10px}
+.ayah{font-family:"Scheherazade New",serif;font-size:24px;line-height:2.2;text-align:center;padding:10px;border-radius:14px;background:var(--soft)}
+.ayah button{font:inherit;font-size:inherit;background:transparent;border:0;border-bottom:3px solid transparent;border-radius:6px;padding:0 4px;color:var(--ink);cursor:pointer;min-height:44px}
+.ayah button:hover:not(:disabled){background:color-mix(in srgb,var(--ink) 7%,transparent)}
+.ayah button.hit{background:color-mix(in srgb,var(--fc) 20%,transparent);border-bottom-color:var(--fc);color:var(--fc);font-weight:700}
+.ayah button:disabled{cursor:default}
+.stars{font-size:40px;color:var(--fa);letter-spacing:4px}.stars span{color:var(--line)}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:60}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--onpri);padding:12px 18px;border-radius:12px;font-weight:700;z-index:61;max-width:90vw;text-align:center}
+@media(prefers-reduced-motion:reduce){.node.cur{animation:none}}
+@media(max-width:600px){.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.snd{grid-column:1/-1;justify-self:end;min-height:36px}.stats .goal svg{width:32px;height:32px}}
+.w{display:inline-block;margin-inline-start:6px;font-size:11.5px;font-weight:600;padding:0 7px;border-radius:9px;background:var(--soft);color:var(--mute);vertical-align:middle}
+.w.s{background:var(--ink);color:var(--onpri)}.w.t{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th{text-align:start;font-size:13px;color:var(--mute);padding:6px 8px;border-bottom:2px solid var(--line)}
+
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td.h{font-weight:700}
+@media(max-width:600px){table{font-size:13.5px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--line)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:6.5em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:6em;margin-inline-start:-6.5em;color:var(--mute);font-weight:600}.stack td.h{padding-inline-start:0}.stack td.h::before{display:none}.row{grid-template-columns:8.5em minmax(0,1fr)}}
+@media(max-width:600px){.row{grid-template-columns:7.2em minmax(0,1fr)}.row b{font-size:13px}.dots span{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>المدود من الألف للياء</h1>
+<p class="sub">شرح الجزءين: المد الأصلي والمد الفرعي، درس درس بالأمثلة، وبعدها اختبر نفسك.</p>
+</header>
+<nav class="tabs" role="tablist">
+<button id="tL" role="tab" aria-selected="true">📖 الدروس</button>
+<button id="tQ" role="tab" aria-selected="false">✍️ الاختبار</button>
+</nav>
+
+<section id="pL">
+<div class="ruler">
+<h2>دليل الألوان: كل لون = عيلة من المدود</h2>
+<div class="key"><div class="fa"><span class="ic">ا</span><span>المد الأصلي<small>من غير سبب · حركتين</small></span></div><div class="fh"><span class="ic">ء</span><span>بسبب الهمز<small>منفصل · صلة كبرى · بدل · متصل</small></span></div><div class="fs"><span class="ic">ـْ</span><span>بسبب السكون<small>لازم · عارض · لين</small></span></div><div class="fm"><span class="ic">♡</span><span>بسبب معنوي<small>تعظيم · تبرئة</small></span></div></div>
+<div class="fb"><span><b>الأخضر</b> = إجابتك صح بس</span><span><b class="x">الأحمر</b> = إجابتك غلط بس</span><span>الرمادي = عام / خلاصة</span></div>
+</div>
+<div class="ruler">
+<h2>مسطرة الحركات: كل مد بيتمد قد إيه؟</h2>
+<div id="rul"></div>
+<p class="legend">● ممتلئ = أقل مقدار في الطريق ده &nbsp; ○ متقطّع = أوجه جائزة زيادة. اللون = عيلة المد.</p>
+</div>
+<div class="ruler">
+<h2>الشاطبية ولا الطيبة؟ الفرق في جدول</h2>
+<p class="legend" style="margin:0 0 8px">الشاطبية طريق واحد عن حفص، والطيبة (طيبة النشر لابن الجزري) بتجمع طرق حفص الاتنين وخمسين، عشان كده فيها أوجه أكتر. <b>الطريق اللي بتختاره بيحدد مقاديرك، وما ينفعش تخلط بين الطريقين في نفس القراءة.</b></p>
+<div class="scroll" id="cmp"></div>
+<div class="ex" style="margin-top:12px"><b>اختصار تحفظه:</b><br>الشاطبية: المنفصل والمتصل <b>٤ أو ٥</b>، والشاطبي نفسه ما أقرأش إلا بالـ<b>٤</b> فيهم.<br>الطيبة: زوّدت <b>قصر المنفصل (٢)</b> و<b>طول المتصل (٦)</b>، ومعاها <b>مد التعظيم</b> لمن يقصر المنفصل.</div>
+</div>
+<div id="lessons"></div>
+</section>
+
+<div id="lb" hidden><div class="lbbar"><button id="lbz">تكبير / تصغير</button><button id="lbx" aria-label="إغلاق">✕ إغلاق</button></div><div class="lbsc"><img alt="صفحة من الكتاب"></div></div>
+<section id="pQ" class="hide">
+<div class="chips sw"><button id="mL" aria-pressed="true">🎯 تعلّم بالتمارين</button><button id="mQ" aria-pressed="false">بنك الأسئلة</button><button id="mM" aria-pressed="false">احفظ الخريطة</button></div>
+<div class="qbox" id="learn"></div>
+<div class="qbox hide" id="quiz"></div>
+<div id="mapx" class="hide"></div>
+</section>
+</div>
+
+<script>
+{
+const $=s=>document.querySelector(s);
+const R=[
+ ['اللازم بنوعيه',6,0,'s','زي بعض'],['المتصل',4,1,'h','ش'],['المتصل',4,2,'h','ط'],['العارض للسكون',2,4,'s','زي بعض'],['المنفصل / الصلة الكبرى',4,1,'h','ش'],['المنفصل / الصلة الكبرى',2,3,'h','ط'],['التعظيم',4,0,'m','ط'],['البدل',2,0,'h','زي بعض'],['الطبيعي / التمكين / العوض / الصلة الصغرى',2,0,'a','زي بعض']
+];
+const W={'ش':'<span class="w s">الشاطبية</span>','ط':'<span class="w t">الطيبة</span>','زي بعض':'<span class="w">الطريقين</span>'};
+$('#rul').innerHTML=R.map(([t,f,o,r,w])=>`<div class="row f${r}"><b>${t}${W[w]}</b><div class="dots">${'<i></i>'.repeat(f)}${'<i class="o"></i>'.repeat(o)}<span>${o?f+' : '+(f+o):f} حركات</span></div></div>`).join('');
+const T=[
+['المنفصل','٤ أو ٥','٢، ٣، ٤، ٥ (والعمل على ٢ و٤)','القصر حركتين من الطيبة بس'],
+['الصلة الكبرى','زي المنفصل: ٤ أو ٥','زي المنفصل: ٢، ٣، ٤، ٥','تساويها دايمًا بالمنفصل'],
+['المتصل','٤ أو ٥','٤، ٥، ٦','الـ٦ في المتصل من الطيبة بس، والقصر ممنوع في الاتنين'],
+['مد التعظيم','مفيش','٤ لأصحاب قصر المنفصل','لو بتقرأ بالشاطبية ما تمدش لا إله زيادة'],
+['مد التبرئة','مفيش','٤ لحمزة بس','مش لحفص أصلًا'],
+['عين مريم والشورى','٤ أو ٦ (الـ٦ مقدم)','٢ أو ٤ أو ٦ (٦ ثم ٤ ثم ٢)','الحركتين في العين من الطيبة بس'],
+['يس والقرآن / ن والقلم','إظهار ← لازم حرفي مخفف','إدغام ← لازم حرفي مثقل','نفس الـ٦ حركات بس النوع بيختلف'],
+['اللازم، البدل، العارض، الطبيعي، اللين','زي بعض','زي بعض','مفيش فرق']
+];
+$('#cmp').innerHTML=`<table class="stack"><thead><tr><th>المد</th><th>الشاطبية</th><th>الطيبة</th><th>خلي بالك</th></tr></thead><tbody>${T.map(r=>`<tr>${r.map((c,k)=>`<td${k?` data-l="${['','الشاطبية','الطيبة','خلي بالك'][k]}"`:' class="h"'}>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+
+const Q=s=>`<span class="q">${s}</span>`;
+const L=[
+{t:'خريطة أحكام المد والقصر',g:'الصورة الكبيرة',h:`<p>دي الخريطة زي ما هي في الكتاب. اسحبها يمين وشمال، وكبّر أو صغّر من الأزرار.</p>
+<div class="mapwrap" data-mode="read"></div>
+<div class="act"><button class="btn" id="toMap">احفظ الخريطة: اختبر نفسك فيها</button></div>
+<p class="tip">التبرئة مش لحفص (لحمزة من الطيبة)، بس بتتذكر عشان تكمل صورة أقسام المد كلها.</p>`},
+{t:'المد الأصلي وصوره الخمس',g:'مد أصلي',h:`<p><b>تعريفه:</b> المد الطبيعي لحروف المد على حقيقتها من غير زيادة ولا نقصان، ومن غير سبب لفظي (همز أو سكون قبلها أو بعدها) ولا معنوي يقصده القارئ.</p>
+<div class="facts"><div><small>حكمه</small>ما يصحّش النطق إلا بيه على حقيقته</div><div><small>مقداره</small>حركتين في كل صوره</div></div>
+<p>صوره خمسة (اتعرفت بالاستقراء):</p>
+<div class="ex">١) الطبيعي: ${Q('قَالَ')} ← حركتين وصلًا ووقفًا<br>٢) الطبيعي الحرفي في أوائل السور: الراء من ${Q('الٓر')} ← حركتين وصلًا ووقفًا<br>٣) التمكين: ${Q('ءَامَنُوا وَعَمِلُوا')} ← حركتين وصلًا ووقفًا<br>٤) الصلة الصغرى: ${Q('إِنَّهُۥ — بِعِبَادِهِۦ')} ← حركتين <b>وصلًا فقط</b><br>٥) العوض: ${Q('عَلِيمًا')} ← حركتين <b>وقفًا فقط</b></div>
+<p class="tip">احفظها كده: الطبيعي والحرفي والتمكين ← وصلًا ووقفًا. الصلة الصغرى ← وصلًا بس. العوض ← وقفًا بس.</p>`},
+{t:'المد الطبيعي',g:'مد أصلي',h:`<p>حروف المد التلاتة بشروطها، ومفيش بعدها سبب للمد (لا همز ولا سكون ولا معنوي).</p>
+<div class="facts"><div><small>الألف</small>ساكنة وقبلها فتح: ${Q('قَالَ')} (ودايمًا كده)</div><div><small>الواو</small>ساكنة وقبلها ضم: ${Q('يَقُولُ')}</div><div><small>الياء</small>ساكنة وقبلها كسر: ${Q('قِيلَ')}</div></div>
+<div class="ex">${Q('إِنَّهَا لَإِحْدَى')} — ${Q('ءَامَنُوا وَعَمِلُوا')} — ${Q('فِيهَا')}<br>والتلاتة اجتمعوا في ${Q('نُوحِيهَآ')} (هود) و${Q('وَأُوتِينَا')} (النمل)</div>
+<div class="facts"><div><small>الحكم</small>واجب</div><div><small>المقدار</small>حركتين وصلًا ووقفًا</div></div>
+<p><b>إلا لو فيه مانع:</b> لو بعده ساكن في الكلمة اللي بعدها، حرف المد <b>يتحذف وصلًا</b> للتخلص من التقاء الساكنين ويرجع وقفًا:</p>
+<div class="ex">${Q('وَقَالَا الْحَمْدُ لِلَّهِ')} — ${Q('وَقَالُوا اتَّخَذَ')} — ${Q('فِي الْأَرْضِ')}</div>
+<p><b>حرف المد وحرف اللين:</b> الواو والياء لو ساكنين وقبلهم فتح (${Q('خَوْف — بَيْت')}) بقوا حرف لين بس، واجتمعوا في ${Q('يَوْمَيْنِ')}. حرف المد يتسمى "حرف مد ولين"، لكن حرف اللين ما يتسماش حرف مد.</p>
+<p class="tip">اللي قال إن حرف اللين ما يتمدش خالص (البتر) قوله ملوش دليل من كلام المتقدمين.</p>`},
+{t:'المد الطبيعي الحرفي',g:'مد أصلي',h:`<p>الحروف المقطعة اللي هجاؤها بيتنطق ويتكتب على <b>حرفين تانيهم حرف مد</b>، وهي خمسة مجموعين في ${Q('حَيٌّ طَهُرَ')}.</p>
+<div class="ex">الحاء من ${Q('حمٓ')} ← حا<br>الياء من ${Q('يسٓ')} ← يا<br>الطاء والهاء من ${Q('طه')} ← طا ها<br>الراء من ${Q('الٓر')} ← را</div>
+<div class="facts"><div><small>الحكم</small>واجب</div><div><small>المقدار</small>حركتين وصلًا ووقفًا</div></div>
+<p>الحروف دي فيها لغتين:</p><ul><li><b>لغة المد:</b> تتكتب ٣ أحرف آخرها همز: حاء، ياء، طاء، هاء، راء.</li><li><b>لغة القصر:</b> تتكتب حرفين آخرها حرف مد: حا، يا، طا، ها، را ← <b>ودي لغة القرآن.</b></li></ul>
+<p class="tip">غلطة مشهورة عند المبتدئين: يقرأ "حاءْ ميم" بهمزة في الآخر زي لغة المد. الصح "حا" حركتين من غير همز.</p>
+<p><b>اسم الحرف ومسمّاه:</b> القرآن كله بيتقرا بمسمّى الحروف (الكاف في ${Q('كَتَبَ')} حرف واحد مفتوح)، ما عدا الحروف المقطعة بتتقرا بأسمائها (كاف ← ٣ أحرف).</p>
+<p>عدد الحروف المقطعة ١٤ حرف في أوائل ٢٩ سورة، مجموعين في: ${Q('صِلْهُ سُحَيْرًا مَنْ قَطَعَكَ')}.</p>`},
+{t:'مد التمكين',g:'مد أصلي',h:`<p>اسمه "تمكين" لأنك بتمكّن حرف المد وتوضّحه عشان ما يندمجش في الحرف اللي بعده. هو في الحقيقة مد طبيعي عادي بس في موقف حساس.</p>
+<div class="facts"><div><small>الحكم والمقدار</small>حركتين وصلًا ووقفًا</div><div><small>فين بيظهر؟</small>حرف مد جنبه حرف من جنسه</div></div>
+<p>صوره بالأمثلة:</p>
+<div class="ex">واو ساكنة مضموم ما قبلها وبعدها واو متحركة: ${Q('ءَامَنُوا وَعَمِلُوا')}<br>ياء ساكنة مكسور ما قبلها وبعدها ياء متحركة: ${Q('فِي يَوْمَيْنِ')}<br>ياء ساكنة قبلها ياء مشددة مكسورة: ${Q('النَّبِيِّينَ — عِلِّيِّينَ')}<br>واو ساكنة قبلها واو مضمومة: ${Q('يَلْوُونَ')}<br>ياء ساكنة قبلها ياء مكسورة: ${Q('يُحْيِي')}</div>
+<p class="tip">خلي بالك: كلمة "التمكين" ممكن تتقال في كتب تانية بمعنى القصر أو التوسط أو الإشباع حسب السياق.</p>`},
+{t:'مد العوض',g:'مد أصلي',h:`<p>لما تقف على كلمة آخرها <b>تنوين فتح</b>، التنوين بيتشال وبتعوّض عنه بألف تمدها حركتين.</p>
+<div class="facts"><div><small>الحكم</small>واجب</div><div><small>المقدار</small>حركتين <b>وقفًا فقط</b></div></div>
+<div class="ex">${Q('سَبِيلًا')} ← تقف: سبيلا (ألف مكتوبة ومنطوقة)<br>${Q('مَاءً / نِسَاءً')} ← تقف: ماءا (الألف منطوقة بس مش مكتوبة، اتحذفت عشان ما يتجمعش ٣ ألفات)<br>${Q('رَحْمَةً')} ← تقف: رحمه (هاء ساكنة، <b>مفيش عوض</b>)<br>${Q('هُدًى')} ← المد هنا طبيعي مش عوض على الراجح</div>
+<p>لغات العرب في الوقف على المنوّن:</p><ul><li><b>الفصحى (لغة القرآن):</b> نعوّض الفتحتين بألف بس، والضمتين والكسرتين نقف بالسكون: حكيما / حكيمْ.</li><li><b>لغة الأزد:</b> فتح←ألف، ضم←واو، كسر←ياء: حكيما، حكيمو، حكيمي.</li><li><b>لغة ربيعة:</b> مفيش تعويض خالص: حكيمْ في الكل.</li></ul>`},
+{t:'مد الصلة الصغرى',g:'مد أصلي',h:`<p>بيكون في <b>هاء الكناية</b> (هاء الضمير): الهاء الزيادة اللي بتدل على المفرد المذكر الغائب، زي ${Q('إِنَّهُ — بِهِ')}. أصلها الضم، وتتكسر لو قبلها ياء أو كسرة.</p>
+<p>ليها ٤ حالات، والمهم منها: <b>الصلة بتحصل بس لما الهاء تكون بين متحركين.</b></p>
+<div class="ex">١) بعد متحرك وبعدها ساكن: ${Q('لَهُ الْمُلْكُ')} ← مفيش صلة<br>٢) بعد ساكن وبعدها متحرك: ${Q('فِيهِ يَخْتَلِفُونَ')} ← مفيش صلة<br>٣) بين ساكنين: ${Q('إِلَيْهِ الْمَصِيرُ')} ← مفيش صلة<br>٤) بين متحركين: ${Q('لَهُۥ قَانِتُونَ')} ← <b>صلة حركتين</b></div>
+<div class="facts"><div><small>المقدار</small>حركتين وصلًا فقط</div><div><small>عند الوقف</small>يتحذف المد وتسكن الهاء</div></div>
+<p>استثناءات حفص (احفظها):</p><ul>
+<li>${Q('فِيهِۦ مُهَانًا')} (الفرقان) ← صلة رغم إن قبلها ساكن، لتشنيع حال العاصي.</li>
+<li>${Q('يَرْضَهُ لَكُمْ')} (الزمر) ← ضم بدون صلة، اعتبارًا بالأصل "يرضاه".</li>
+<li>${Q('أَرْجِهْ')} (الأعراف والشعراء) و${Q('فَأَلْقِهْ')} (النمل) ← هاء ساكنة.</li>
+<li>${Q('وَيَتَّقْهِ')} (النور) ← كسر الهاء بدون صلة.</li>
+<li>${Q('أَنسَانِيهُ')} (الكهف) و${Q('عَلَيْهُ اللَّهَ')} (الفتح) ← بضم الهاء.</li></ul>
+<p class="tip">${Q('هَٰذِهِۦ')} مش صلة! دي اسم إشارة للمؤنث، وده ملحق بالباب بس.</p>`},
+{t:'المد الفرعي: الخريطة',g:'مقدمة',h:`<p>المد الفرعي = مد زيادة عن الطبيعي <b>بسبب</b>. والأسباب ٣:</p>
+<ul><li><b>الهمز</b> (لفظي): قبل حرف المد ← البدل. بعده ← المتصل والمنفصل والصلة الكبرى.</li>
+<li><b>السكون</b> (لفظي): أصلي ← اللازم (كلمي وحرفي، مثقل ومخفف). عارض ← العارض للسكون واللين.</li>
+<li><b>معنوي</b> (نية القارئ): التعظيم والتبرئة.</li></ul>
+<div class="facts"><div><small>أحكامه</small>جواز – وجوب – لزوم</div><div><small>مقداره</small>من أقل من حركتين (اللين) لست حركات (المتصل واللازم)</div></div>`},
+{t:'المد الجائز المنفصل',g:'سببه الهمز',h:`<p>حرف المد <b>آخر كلمة</b>، والهمز <b>أول الكلمة اللي بعدها</b>. اتسمى منفصل لأن المد انفصل عن سببه.</p>
+<p>ليه بنمده؟ لأن حرف المد ضعيف وخفي والهمز قوي وشديد، فبنزوّد المد عشان حرف المد يبان.</p>
+<div class="ex"><b>حقيقي</b> (حرف المد مكتوب): ${Q('قُوا أَنفُسَكُمْ — بِمَا أُنزِلَ — فِي أُمِّهَا')}<br><b>حُكمي</b> (حرف المد اتحذف واتعوّض بألف صغيرة والكلمتين اتلزقوا رسمًا): ${Q('يَٰأَيُّهَا — هَٰأَنتُمْ — هَٰؤُلَاءِ')}</div>
+<div class="facts"><div><small>الحكم</small>جائز (يجوز قصره ومده)</div><div><small>الشاطبية</small>٤ أو ٥</div><div><small>الطيبة</small>٢، ٣، ٤، ٥</div><div><small>العمل حاليًا</small>٢ و ٤ بس</div></div>
+<p class="tip">ابن الجزري قرأ بـ٣ و٥ لكن ما أقرأش بيهم لصعوبة ضبطهم، وأجاز ردّ الـ٣ لـ٢ والـ٥ لـ٤ تيسيرًا.</p>`},
+{t:'مد الصلة الكبرى',g:'سببه الهمز',h:`<p>هاء الكناية استوفت شروط الصلة (بين متحركين) <b>وبعدها همز</b> في أول الكلمة اللي بعدها.</p>
+<div class="ex">${Q('مَالَهُۥٓ أَخْلَدَهُ')} — ${Q('عِندَهُۥٓ إِلَّا بِإِذْنِهِ')}</div>
+<div class="facts"><div><small>الحكم</small>جائز</div><div><small>المقدار</small>زي المنفصل بالظبط</div></div>
+<p class="tip">لازم <b>تسوّي</b> بينه وبين المنفصل: لو قصرت المنفصل حركتين تقصره حركتين، ولو مديته ٤ تمده ٤. وهو منفصل <b>حقيقي</b> مش حكمي.</p>`},
+{t:'المد الجائز البدل',g:'سببه الهمز',h:`<p>الهمز <b>قبل</b> حرف المد في نفس الكلمة.</p>
+<div class="ex"><b>البدل الأصلي:</b> ${Q('ءَامَنُوا — أُوتُوا — إِيمَانًا')}<br>أصل حرف المد همزة ساكنة اتقلبت: أأْمنوا←ءامنوا، أُؤْتوا←أوتوا، إِئْمانا←إيمانا (من جنس حركة الهمزة اللي قبلها).<br><br><b>الشبيه بالبدل:</b> ${Q('أُوفِ — يَشَآءُونَ — رَءُوفٌ — أُورِثْتُمُوهَا')}<br>حرف المد هنا أصلي مش مبدل من همزة.</div>
+<div class="facts"><div><small>الحكم</small>جائز</div><div><small>المقدار لحفص</small>حركتين وصلًا ووقفًا</div><div><small>ورش</small>زاد التوسط والطول</div></div>
+<p><b>إزاي تفرّق؟</b> رجّع الفعل لماضيه الثلاثي: لو أوله همزة ← بدل (ءاتى من أتى). لو أوله مش همزة ← شبيه بالبدل (أوفِ من وفَى).</p>
+<p class="tip">لو وقفت على ${Q('يَشَآءُونْ')} يبقى "بدل عارض للسكون" ويجوز ٢ أو ٤ أو ٦.</p>`},
+{t:'المد الواجب المتصل',g:'سببه الهمز',h:`<p>حرف المد وبعده الهمز <b>في كلمة واحدة</b>.</p>
+<div class="ex">${Q('جَآءَ — السَّمَآءِ — سُوٓءَ — سِيٓءَتْ')}</div>
+<div class="facts"><div><small>الحكم</small>واجب (ممنوع قصره)</div><div><small>الشاطبية</small>٤ أو ٥</div><div><small>الطيبة</small>٤، ٥، ٦</div></div>
+<ul><li>${Q('هَآؤُمُ')} (الحاقة) ← متصل! لأن الهاء أصلية (اسم فعل أمر بمعنى خذوا). أي كلمة تانية تبدأ بـ"ها" تنبيه بعدها همز ← منفصل.</li>
+<li>${Q('هَٰٓؤُلَآءِ')} فيها مدّين: الأول منفصل (حكمي) والتاني متصل.</li>
+<li>ابن الجزري أجاز ردّ الـ٥ والـ٦ لـ٤.</li></ul>`},
+{t:'المد اللازم الكلمي (مثقل ومخفف)',g:'سببه السكون الأصلي',h:`<p><b>لازم</b> = ٦ حركات عند كل القراء ومفيش غيرها. <b>كلمي</b> = في كلمة. <b>مثقل</b> = بعده حرف مشدد. <b>مخفف</b> = بعده ساكن مش مشدد.</p>
+<div class="ex"><b>كلمي مثقل:</b> مع الألف ${Q('الضَّآلِّينَ')}، مع الواو ${Q('تَأْمُرُوٓنِّي')}، مع الياء: مفيش مثال في القرآن.<br>واجتمع في الألف والواو في ${Q('أَتُحَٰٓجُّوٓنِّي')} (الأنعام).<br><br><b>كلمي مخفف:</b> كلمة واحدة بس في موضعين بيونس (٥١، ٩١): ${Q('ءَآلْـَٰٔنَ')}</div>
+<p><b>همزة الاستفهام + همزة وصل:</b> في ${Q('ءَآلذَّكَرَيْنِ')} (الأنعام ١٤٣، ١٤٤) و${Q('ءَآللَّهُ')} (يونس ٥٩، النمل ٥٩) و${Q('ءَآلْـَٰٔنَ')}: فيها وجهين:</p>
+<ul><li><b>الإبدال</b>: نقلب همزة الوصل ألف ونمد ٦ ← هو <b>المقدّم</b>.</li><li><b>التسهيل مع القصر</b>: ننطق بين الهمزة والألف بدون مد.</li></ul>
+<p class="tip">ده بيتسمى "مد الفرق" لأنه بيفرق بين الاستفهام والخبر (ءالآن الاستفهامية تتمد، لكن "الآن جئت بالحق" الخبرية لا).</p>`},
+{t:'الحروف المقطعة: ٤ أحوال',g:'فواتح السور',h:`<p>١٤ حرف في أوائل ٢٩ سورة، بيجمعها "صِلْهُ سُحَيْرًا مَنْ قَطَعْكَ". حالاتها:</p>
+<div class="facts"><div><small>على حرفين — ${Q('حي طهر')}</small>مد طبيعي: حركتين</div><div><small>٣ أحرف وسطها حرف مد — ${Q('كم عسل نقص')}</small>لازم حرفي: ٦ حركات</div><div><small>وسطها حرف لين — العين</small>لازم مع خلاف: ٢ أو ٤ أو ٦</div><div><small>وسطها مش حرف مد — الألف</small>مفيش مد خالص</div></div>
+<p class="tip">إزاي تحلّها؟ اكتب الحرف زي ما بيتنطق (ط س م ← طا سين ميم)، شكّله، طبّق أحكام النون والميم الساكنة، واقرأ.</p>`},
+{t:'التسهيل',g:'تغيير الهمز',h:`<p><b>لغة:</b> أي تغيير في الهمز (نقل، إبدال، حذف، تسهيل). <b>اصطلاحًا:</b> تنطق الهمزة المفتوحة بين الهمزة والألف. وحفص ما عندوش تسهيل إلا في المفتوحة.</p>
+<p>ليه؟ لأن الهمزة بعيدة المخرج (أقصى الحلق) ومجهورة وشديدة، فالعرب خففوها.</p>
+<div class="ex"><b>واجب</b> في موضع واحد: ${Q('ءَا۬عْجَمِيٌّ')} (فصلت)<br><b>جائز</b> في ٦ مواضع: ${Q('ءَآلذَّكَرَيْنِ')} ×٢، ${Q('ءَآللَّهُ')} ×٢، ${Q('ءَآلْـَٰٔنَ')} ×٢</div>
+<p class="tip">الصحيح اللي عليه العمل إن الهمزة المسهلة بين بين، مش هاء خالصة. وما بتنضبطش إلا بالتلقي.</p>`},
+{t:'اللازم الحرفي (مثقل ومخفف)',g:'سببه السكون الأصلي',h:`<p>في الحروف المقطعة اللي هجاؤها ٣ أحرف وسطها حرف مد. <b>٦ حركات</b> عند كل القراء.</p>
+<div class="ex"><b>مثقل</b> (آخره مدغم فيما بعده): السين في ${Q('طسٓمٓ')} (سين‿ميم)، اللام في ${Q('الٓمٓ')} (لام‿ميم)<br><b>مخفف</b> (آخره مش مدغم): الميم في ${Q('الٓمٓ')}، كاف وعين وصاد في ${Q('كٓهيعٓصٓ')}، لام ${Q('الٓر')}، قاف ${Q('قٓ')}، سين ${Q('يسٓ')}</div>
+<ul><li>المثقل محصور في: السين واللام والنون.</li><li>المخفف باتفاق في: ن، م، ع، ق، ص.</li><li>${Q('يسٓ والقرآن')} و${Q('نٓ والقلم')}: مخفف من الشاطبية (إظهار)، مثقل من الطيبة (إدغام).</li></ul>
+<p class="tip">${Q('الٓمٓ ۝ اللَّهُ')} في آل عمران لو وصلت: الميم تتفتح للتخلص من الساكنين، ويجوز فيها ٢ (اعتداد بالعارض) أو ٦. واختاروا الفتح لخفته وللحفاظ على تفخيم لام الجلالة.</p>`},
+{t:'المد العارض للسكون',g:'سببه السكون العارض',h:`<p>حرف مد أو لين وبعده حرف <b>سكّنته عشان وقفت</b>.</p>
+<div class="ex">حروف المد: ${Q('الْعَٰلَمِينْ — نَسْتَعِينْ — يَعْلَمُونْ')}<br>حرفي اللين: ${Q('خَوْفْ — الْبَيْتْ')}</div>
+<div class="facts"><div><small>الحكم</small>جائز</div><div><small>المقدار</small>٢ أو ٤ أو ٦</div></div>
+<p>صوره سبعة: مطلق، لين عارض، بدل عارض (يشاءون)، وبعده تاء تأنيث، وآخره هاء ضمير، متصل عارض (السماء)، وملحقاته (أي كلمة تقف عليها بالسكون).</p>
+<p class="tip">استثناء: المتصل العارض ما ينفعش يتقصر (٤ أو ٥ أو ٦). ولو وقفت <b>بالروم</b> ← مفيش مد لأن الروم زي الوصل.</p>`},
+{t:'مد اللين',g:'',h:`<p>واو أو ياء <b>ساكنة قبلها فتح</b>: ${Q('سَوْءَ — مَيْتَة — يَوْمَيْن — عَيْن')}</p>
+<div class="facts"><div><small>وصلًا</small>أقل من حركتين "مدٌّ ما" (حركة أو حركة ونص)</div><div><small>وقفًا</small>٢ أو ٤ أو ٦ (عارض)</div></div>
+<p class="tip">"عدم المد" هنا معناه أقل من حركتين، مش البتر خالص. والعين في ${Q('كٓهيعٓصٓ')} و${Q('حمٓ عٓسٓقٓ')}: ٤ أو ٦ من الشاطبية (٦ مقدم)، و٢/٤/٦ من الطيبة.</p>`},
+{t:'مد التعظيم',g:'سبب معنوي',h:`<p>مد ألف "لا" النافية للجنس في ${Q('لَآ إِلَٰهَ')} بس، تعظيمًا لله ومبالغة في نفي الألوهية عن غيره.</p>
+<div class="facts"><div><small>الحكم</small>جائز</div><div><small>المقدار</small>٤ حركات</div><div><small>لمين؟</small>أصحاب قصر المنفصل من طيبة النشر (وحفص منهم)</div><div><small>عدده</small>٣٧ موضع، أولها البقرة ١٦٣، آخرها المزمل ٩</div></div>
+<p>صوره الخمسة: لا إله إلا هو (٣٠)، لا إله إلا أنا (٣)، لا إله إلا الله (٢)، لا إله إلا الذي (١)، لا إله إلا أنت (١).</p>
+<p class="tip">ليه لأصحاب القصر بس؟ عشان يبان: بتقصر المنفصل ٢ وفجأة تمد "لا إله" ٤ فالسامع يحس بيه. والمنفصل التاني في نفس الجملة (إلا أنا) ما يتمدش.</p>`},
+{t:'مد التبرئة',g:'سبب معنوي',h:`<p>مد ألف "لا" النافية للجنس في مواضع معروفة للتأكيد على نفي ما بعدها: ${Q('لَا رَيْبَ — لَا جُنَاحَ — لَا خَوْفٌ')}</p>
+<div class="facts"><div><small>المقدار</small>٤ حركات</div><div><small>لمين؟</small><b>حمزة الزيات بس</b> من الطيبة</div><div><small>عدده</small>٤٣ مثال في ٦٨ موضع: أولها "لا ريب" وآخرها "لا وزر"</div></div>
+<p class="tip">كل تعظيم تبرئة (لغةً)، وليس العكس.</p>`},
+{t:'مراتب المدود: مين يغلب مين؟',g:'الخلاصة',h:`<p>الترتيب من الأقوى: <b>لازم ← متصل ← عارض ← منفصل ← بدل ← لين ← معنوي</b></p>
+<div class="ex">«أقوى المدود لازمٌ فما اتصل * فعارضٌ فذو انفصالٍ فبدل»</div>
+<p><b>القاعدة ١:</b> لو اجتمع سببين على حرف مد واحد ← القوي يلغي الضعيف ("القويّ ينسخ الضعيف").</p>
+<div class="ex">${Q('ءَآمِّينَ')} ← بدل + لازم ← <b>لازم</b> ٦<br>${Q('رِئَآءَ النَّاسِ')} ← بدل + متصل ← <b>متصل</b><br>${Q('وَجَآءُوٓ أَبَاهُمْ')} ← بدل + منفصل ← <b>منفصل</b></div>
+<p><b>القاعدة ٢:</b> ممنوع تمد الضعيف وتقصر القوي. أقصى حاجة الضعيف يساوي القوي. مثلًا: منفصل ٥ ومتصل ٤ ← غلط.</p>
+<p class="tip">اللازم الأقوى لأصالة السكون ولزومه ٦. والمعنوي آخر حاجة لأن سببه داخلي مش ملفوظ.</p>`}
+];
+const LF='naaaaaanhhhhsshsssmmn';const FN={a:['ا','أصلي'],h:['ء','همز'],s:['ـْ','سكون'],m:['♡','معنوي'],n:['','']};
+$('#lessons').innerHTML=L.map((l,i)=>`<details class="l f${LF[i]}"${i?'':' open'}><summary><span class="n">${i+1}</span>${l.t}<span class="tag">${l.g}</span></summary><div class="body">${l.h}</div></details>`).join('');
+
+
+const PG=[['a-1'],['a-2'],['a-3'],['a-4'],['b-01'],['b-02','b-03'],['b-03','b-04'],['b-04'],['b-05','b-06'],['b-06'],['b-07','b-08'],['b-08','b-09'],['b-09','b-10','b-11'],['b-11'],['b-12','b-13'],['b-13','b-14','b-15'],['b-15','b-16'],['b-16','b-17'],['b-17','b-18','b-19'],['b-20','b-21'],['b-21','b-22']];
+document.querySelectorAll('details.l .body').forEach((b,i)=>{const p=PG[i];if(!p)return;
+ b.insertAdjacentHTML('afterbegin',`<div class="hint"><button class="hbtn" aria-expanded="false">📄 شوف الصفحة من الكتاب${p.length>1?` (${p.length} صفحات)`:''}</button><div class="pages" hidden>${p.map(f=>`<button class="pimg" data-src="img/${f}.jpg" aria-label="كبّر الصفحة"><img alt="صفحة من الكتاب" data-src="img/${f}.jpg"></button>`).join('')}<small>دوس على الصفحة عشان تكبّرها.</small></div></div>`)});
+document.addEventListener('click',e=>{
+ const h=e.target.closest('.hbtn');
+ if(h){const pg=h.nextElementSibling,open=pg.hidden;pg.hidden=!open;h.setAttribute('aria-expanded',open);if(open)pg.querySelectorAll('img[data-src]').forEach(im=>{im.src=im.dataset.src;im.removeAttribute('data-src')});return}
+ const p=e.target.closest('.pimg');
+ if(p){const lb=$('#lb');lb.querySelector('img').src=p.dataset.src;lb.classList.remove('zoom');lb.hidden=false;document.body.style.overflow='hidden';return}
+ if(e.target.closest('#lbx')){$('#lb').hidden=true;document.body.style.overflow='';return}
+ if(e.target.closest('#lbz')){$('#lb').classList.toggle('zoom');return}
+ if(e.target.matches('#lb img')){$('#lb').classList.toggle('zoom')}
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#lb').hidden){$('#lb').hidden=true;document.body.style.overflow=''}});
+/* ===== QUIZ ===== */
+const D=[
+['المد كله بينقسم لإيه؟',['أصلي وفرعي','جائز وواجب','متصل ومنفصل','لازم وعارض'],0,'المد نوعين: أصلي (من غير سبب) وفرعي (بسبب همز أو سكون أو معنوي).','أصلي',['ذَٰلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ','«الكتاب» مد أصلي حركتين، و«لا ريب» لو اتمدت ٤ تبقى فرعي بسبب معنوي (تبرئة لحمزة)']],
+['كام صورة للمد الأصلي؟',['٣','٥','٧','٤'],1,'٥ صور: الطبيعي، الطبيعي الحرفي، التمكين، الصلة الصغرى، العوض.','أصلي',['إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًا بَصِيرًا','فيها ٤ صور: الطبيعي «كان»، والصلة الصغرى «إنّهُۥ» و«بعبادهِۦ»، والعوض عند الوقف على «بصيرا»']],
+['أي صورة من المد الأصلي بتتمد وصلًا بس؟',['العوض','الصلة الصغرى','التمكين','الطبيعي الحرفي'],1,'الصلة الصغرى حركتين وصلًا فقط، ووقفًا تسكن الهاء.','أصلي',['إِنَّهُۥ كَانَ تَوَّابًا','الهاء في «إنّهُۥ» بين متحركين ← تتمد حركتين وصلًا، ولو وقفت عليها تسكن: إنّهْ']],
+['أي صورة من المد الأصلي بتتمد وقفًا بس؟',['العوض','الصلة الصغرى','الطبيعي','التمكين'],0,'العوض حركتين وقفًا فقط عن تنوين الفتح.','أصلي',['وَكَانَ اللَّهُ عَلِيمًا حَكِيمًا','لما تقف على «حكيما» تمد الألف حركتين عوضًا عن تنوين الفتح، ووصلًا مفيش مد']],
+['شرط الواو عشان تبقى حرف مد؟',['ساكنة وقبلها فتح','ساكنة وقبلها ضم','متحركة وقبلها ضم','مشددة'],1,'الواو الساكنة المضموم ما قبلها حرف مد، أما لو قبلها فتح تبقى حرف لين.','أصلي',['قَالُوا ءَامَنَّا','الواو في «قالُوا» ساكنة وقبلها ضم ← حرف مد طبيعي']],
+['في «وَقَالُوا اتَّخَذَ» الواو بتتنطق وصلًا؟',['أيوه حركتين','لا، تتحذف وصلًا للتخلص من الساكنين وتثبت وقفًا','أيوه ٤ حركات','تتقلب ياء'],1,'المد الطبيعي بيتحذف وصلًا لو بعده ساكن، ويرجع لو وقفت على الكلمة.','أصلي',['وَقَالُوا اتَّخَذَ الرَّحْمَٰنُ وَلَدًا','وصلًا: «وقالُتَّخَذ» من غير واو، ولو وقفت على «وقالوا» الواو ترجع وتتمد حركتين']],
+['الكلمة اللي اجتمعت فيها حروف المد التلاتة بشروطها؟',['نوحيها','يومين','قالوا','فيها'],0,'«نُوحِيهَآ» في هود و«وَأُوتِينَا» في النمل.','أصلي',['قَالَ رَبِّ إِنِّي أَعُوذُ بِكَ أَنْ أَسْأَلَكَ ... إِنَّا نُوحِيهَآ إِلَيْكَ','«نُوحِيهَا»: واو بعد ضم، وياء بعد كسر، وألف بعد فتح (هود ٤٩)']],
+['«يَوْمَيْنِ» اجتمع فيها إيه؟',['حرفي المد','حرفي اللين (الواو والياء)','ألف وواو','مد ومتصل'],1,'الواو والياء ساكنتين قبلهم فتح ← حرفين لين.','أصلي',['فَقَضَىٰهُنَّ سَبْعَ سَمَٰوَاتٍ فِي يَوْمَيْنِ','«يَوْمَيْنِ»: الواو والياء ساكنتين قبلهم فتح ← حرفين لين']],
+['حروف المد الطبيعي الحرفي مجموعة في؟',['كم عسل نقص','حي طهر','صله سحيرا','نقص عسلكم'],1,'«حَيٌّ طَهُرَ»: الحاء والياء والطاء والهاء والراء، حركتين.','أصلي',['طه ۝ مَآ أَنزَلْنَا عَلَيْكَ الْقُرْءَانَ لِتَشْقَىٰٓ','«طه» تتقرا: طا ها، كل حرف حركتين']],
+['إزاي تقرأ الحاء في «حمٓ»؟',['حاءْ بهمزة','حا بحركتين من غير همز','حاااا ٦ حركات','حَ'],1,'لغة القرآن لغة القصر: حا. القراءة بالهمز غلطة مشهورة عند المبتدئين.','أصلي',['حمٓ ۝ تَنزِيلُ الْكِتَابِ مِنَ اللَّهِ','الحاء: «حا» حركتين، والميم: «ميم» ٦ حركات لازم']],
+['الكاف في «كَتَبَ» إزاي بتتقرا؟',['باسمها: كاف','بمسماها: حرف واحد مفتوح','كا بحركتين','كاف ٦ حركات'],1,'القرآن بيتقرا بمسمّى الحروف، ما عدا الحروف المقطعة بتتقرا بأسمائها.','أصلي',['كَتَبَ رَبُّكُمْ عَلَىٰ نَفْسِهِ الرَّحْمَةَ','الكاف هنا حرف واحد مفتوح «كَ»، لكن في «كٓهيعٓصٓ» بتتقرا باسمها «كاف»']],
+['عدد الحروف المقطعة؟',['١٤ حرف في ٢٩ سورة','٢٩ حرف في ١٤ سورة','٨ حروف','٥ حروف'],0,'١٤ حرف مجموعة في «صِلْهُ سُحَيْرًا مَنْ قَطَعَكَ» في أوائل ٢٩ سورة.','أصلي',['الٓر ۚ كِتَابٌ أُحْكِمَتْ ءَايَاتُهُۥ','«الر» من الحروف المقطعة الـ١٤، وبتتقرا: ألِف لام را']],
+['ما مقدار مد التمكين في «فِي يَوْمَيْنِ»؟',['حركتين وصلًا ووقفًا','٤ حركات','٦ حركات','أقل من حركتين'],0,'مد التمكين مد طبيعي بحركتين وصلًا ووقفًا، بنمكّن فيه الياء عشان ما تندمجش في الياء اللي بعدها.','أصلي',['وَعَمِلُوا الصَّالِحَاتِ ... فِي يَوْمَيْنِ','الياء الساكنة في «في» بعدها ياء متحركة ← مد تمكين حركتين عشان ما تندمجش']],
+['مد العوض بيكون إمتى؟',['وصلًا ووقفًا','وقفًا فقط على تنوين الفتح','وقفًا على أي تنوين','وصلًا فقط'],1,'العوض واجب حركتين وقفًا فقط عوضًا عن تنوين الفتح، زي سبيلًا ← سبيلا.','أصلي',['وَلَا تَجْعَلْ يَدَكَ مَغْلُولَةً إِلَىٰ عُنُقِكَ ... فَتَقْعُدَ مَلُومًا مَّحْسُورًا','وقفًا: «محسورا» بألف حركتين، ووصلًا: «محسورًا» بالتنوين']],
+['إزاي تقف على «رَحْمَةً»؟',['رحمتا بمد عوض','رحمهْ بهاء ساكنة','رحمتْ بتاء ساكنة','رحمةً بالتنوين'],1,'تاء التأنيث المربوطة تتقلب هاء ساكنة في الوقف، ومفيش مد عوض فيها.','أصلي',['وَرَحْمَتِي وَسِعَتْ كُلَّ شَيْءٍ ... يَرْجُونَ رَحْمَتَهُۥ','الوقف على «رحمةً» في أي مكان يكون بالهاء الساكنة: «رحمهْ»']],
+['أي لغة تقف على «حكيمٌ» بالواو: حكيمو؟',['لغة القرآن','لغة ربيعة','لغة الأزد','لغة قريش'],2,'الأزد بيعوّضوا الفتح بألف والضم بواو والكسر بياء.','أصلي',['وَكَانَ اللَّهُ عَزِيزًا حَكِيمًا','لغة القرآن: الوقف على «حكيما» بالألف، أما «حكيمٌ» فتقف بالسكون: حكيمْ']],
+['في «لَهُۥ قَانِتُونَ» الهاء حالها إيه؟',['بعد ساكن وبعدها متحرك','بين متحركين ← صلة صغرى','بين ساكنين','بعد متحرك وبعدها ساكن'],1,'اللام متحركة والقاف متحركة، فالهاء بين متحركين ← صلة صغرى حركتين وصلًا.','أصلي',['كُلٌّ لَّهُۥ قَانِتُونَ','اللام قبل الهاء متحركة والقاف بعدها متحركة ← صلة صغرى حركتين']],
+['«فِيهِۦ مُهَانًا» ليه فيها صلة رغم إن قبل الهاء ياء ساكنة؟',['خطأ مطبعي','استثناء لحفص لتشنيع حال العاصي','لأن بعدها همز','لأنها هاء تأنيث'],1,'دي من استثناءات حفص في الفرقان، والغرض إسماع الخلق بما وُعد به العاصي.','أصلي',['يُضَاعَفْ لَهُ الْعَذَابُ يَوْمَ الْقِيَامَةِ وَيَخْلُدْ فِيهِۦ مُهَانًا','الفرقان ٦٩: الهاء قبلها ياء ساكنة ومع ذلك موصولة لحفص']],
+['«يَرْضَهُ لَكُمْ» إزاي يقرأها حفص؟',['بإسكان الهاء','بضم الهاء مع الصلة','بضم الهاء بدون صلة','بكسر الهاء'],2,'ضم بدون صلة اعتبارًا بالأصل "يرضاه" (الهاء مسبوقة بساكن في الأصل).','أصلي',['وَإِن تَشْكُرُوا يَرْضَهُ لَكُمْ','الزمر ٧: ضم الهاء من غير صلة لحفص']],
+['هل المد في «هَٰذِهِۦ» صلة صغرى؟',['أيوه','لا، لأنها اسم إشارة للمؤنث وده ملحق بالباب','أيوه بس وقفًا','لا، لأنه مد بدل'],1,'هاء الكناية بتدل على المفرد المذكر الغائب، لكن "هذه" اسم إشارة للمؤنث، فالمد ملحق بالباب.','أصلي',['قَالَ هَٰذِهِۦ نَاقَةٌ','«هذهِۦ» اسم إشارة للمؤنث، المد فيه ملحق بباب الصلة ومش هاء كناية']],
+['أسباب المد الفرعي إيه؟',['الهمز والسكون والسبب المعنوي','الهمز بس','التنوين والسكون','الإدغام والإخفاء'],0,'لفظي (همز أو سكون) أو معنوي يقصده القارئ (التعظيم والتبرئة).','فرعي',['السَّمَآءِ ... الضَّآلِّينَ ... لَآ إِلَٰهَ إِلَّا اللَّهُ','همز بعد المد في «السماء»، وسكون بعد المد في «الضالّين»، وسبب معنوي في «لا إله»']],
+['«يَٰأَيُّهَا» نوع المد فيها؟',['منفصل حقيقي','منفصل حكمي','متصل','بدل'],1,'حرف المد اتحذف من "يا" واتعوّض بألف صغيرة والكلمتين اتضموا رسمًا ← منفصل حكمي.','همز',['يَٰٓأَيُّهَا الَّذِينَ ءَامَنُوا','حرف المد في «يا» اتحذف رسمًا واتعوّض بألف صغيرة ← منفصل حكمي']],
+['مقادير المنفصل اللي عليها العمل حاليًا؟',['٢ و ٤','٣ و ٥','٤ و ٦','٦ بس'],0,'ابن الجزري أجاز رد ٣ لـ٢ و٥ لـ٤ تيسيرًا، فالعمل على ٢ و٤.','همز',['إِنَّآ أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ','«إنّا أنزلناه»: منفصل، تمده ٢ أو ٤ على حسب الطريق اللي بتقرأ بيه']],
+['لو قرأت المنفصل حركتين، تقرأ «مَالَهُۥٓ أَخْلَدَهُ» كام؟',['٤ حركات','حركتين','٦ حركات','حرية'],1,'الصلة الكبرى لازم تساويها بالمنفصل في المقدار.','همز',['يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ','صلة كبرى، تمدها نفس مقدار مدك للمنفصل في قراءتك']],
+['«ءَامَنُوا» نوع المد في الألف؟',['شبيه بالبدل','بدل أصلي','متصل','منفصل'],1,'الأصل "أأْمنوا" همزة ساكنة اتقلبت ألف ← بدل أصلي.','همز',['إِنَّ الَّذِينَ ءَامَنُوا وَعَمِلُوا الصَّالِحَاتِ','«ءامنوا» أصلها «أأْمنوا»، الهمزة الساكنة اتقلبت ألف ← بدل حركتين']],
+['«أُوفِ» نوعها إيه؟',['بدل أصلي','شبيه بالبدل','متصل','لازم'],1,'ماضيه الثلاثي "وَفَى" مش أوله همزة، فحرف المد أصلي ← شبيه بالبدل.','همز',['وَأَوْفُوا بِعَهْدِيٓ أُوفِ بِعَهْدِكُمْ','«أُوفِ» من «وفى»، أوله مش همزة، فحرف المد أصلي ← شبيه بالبدل']],
+['لو وقفت على «يَشَآءُونْ» يجوز كام في الواو؟',['حركتين بس','٢ أو ٤ أو ٦','٦ بس','أقل من حركتين'],1,'بقى بدل عارض للسكون، يجوز فيه القصر والتوسط والطول.','همز',['وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ اللَّهُ','لو وقفت على «تشاءون» يبقى بدل عارض للسكون: ٢ أو ٤ أو ٦']],
+['حكم المد المتصل؟',['جائز','واجب','لازم','ممنوع'],1,'واجب: ممنوع قصره. ٤ أو ٥ من الشاطبية، و٤/٥/٦ من الطيبة.','همز',['إِذَا جَآءَ نَصْرُ اللَّهِ وَالْفَتْحُ','«جاء» حرف مد وبعده همز في نفس الكلمة ← متصل واجب، ما ينفعش تقصره']],
+['«هَآؤُمُ» في الحاقة نوع مدها؟',['منفصل','متصل','بدل','لازم'],1,'الهاء أصلية في بنية الكلمة (اسم فعل أمر بمعنى خذوا) فالمد متصل.','همز',['فَيَقُولُ هَآؤُمُ اقْرَءُوا كِتَابِيَهْ','الحاقة ١٩: الهاء أصلية في الكلمة ← المد متصل']],
+['«هَٰٓؤُلَآءِ» فيها إيه؟',['مدين متصلين','منفصل ثم متصل','بدل ثم متصل','لازم ثم متصل'],1,'المد الأول منفصل (حكمي) والتاني متصل.','همز',['هَٰٓأَنتُمْ هَٰٓؤُلَآءِ جَادَلْتُمْ عَنْهُمْ','«هؤلاء»: المد الأول منفصل حكمي، والتاني متصل']],
+['«الضَّآلِّينَ» نوع المد؟',['لازم كلمي مخفف','لازم كلمي مثقل','عارض للسكون','متصل'],1,'حرف مد بعده حرف مشدد في كلمة واحدة ← لازم كلمي مثقل، ٦ حركات.','سكون',['غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ','الألف بعدها لام مشددة في نفس الكلمة ← لازم كلمي مثقل ٦ حركات']],
+['المد اللازم الكلمي المخفف موجود في كلمة إيه؟',['ءالذكرين','ءالآن في يونس','الضالين','تأمروني'],1,'كلمة واحدة في موضعين بسورة يونس (٥١ و٩١): ءالآن الاستفهامية.','سكون',['ءَآلْـَٰٔنَ وَقَدْ عَصَيْتَ قَبْلُ','يونس ٩١: بعد الألف لام ساكنة مش مشددة ← لازم كلمي مخفف ٦']],
+['في «ءَآللَّهُ» الوجه المقدّم؟',['التسهيل مع القصر','الإبدال مع المد ٦','التحقيق','الحذف'],1,'الإبدال (نقلب همزة الوصل ألف ونمد ٦) هو المقدم، يليه التسهيل مع القصر.','سكون',['قُلْ ءَآللَّهُ أَذِنَ لَكُمْ','يونس ٥٩: إبدال همزة الوصل ألف ومدها ٦ (المقدّم)، أو تسهيلها من غير مد']],
+['حروف «حي طهر» في الفواتح بتتمد كام؟',['٦ حركات','حركتين (طبيعي)','٤ حركات','مفيش مد'],1,'هجاؤها على حرفين، فالمد طبيعي بحركتين.','حروف',['يسٓ ۝ وَالْقُرْءَانِ الْحَكِيمِ','الياء «يا» حركتين طبيعي حرفي، والسين «سين» ٦ لازم']],
+['الألف في «الٓمٓ» حكمها؟',['٦ حركات','حركتين','مفيش مد','٤ حركات'],2,'"ألِف" ٣ أحرف وسطها لام مش حرف مد، فمفيش مد.','حروف',['الٓمٓ ۝ ذَٰلِكَ الْكِتَابُ','«ألِف» مفيش فيها مد، «لام» ٦، «ميم» ٦']],
+['اللام في «الٓمٓ» نوع مدها؟',['لازم حرفي مخفف','لازم حرفي مثقل','طبيعي','لين'],1,'"لام" آخرها ميم مدغمة في ميم "ميم" ← لازم حرفي مثقل.','حروف',['الٓمٓ ۝ ذَٰلِكَ الْكِتَابُ','«لام» آخرها ميم مدغمة في «ميم» اللي بعدها ← مثقل']],
+['الميم الأخيرة في «الٓمٓ» نوعها؟',['لازم حرفي مثقل','لازم حرفي مخفف','طبيعي','عارض'],1,'"ميم" آخرها ساكن مش مدغم ← لازم حرفي مخفف ٦.','حروف',['الٓمٓ ۝ ذَٰلِكَ الْكِتَابُ','«ميم» آخرها ميم ساكنة مظهرة ← مخفف']],
+['التسهيل الواجب لحفص في كلمة إيه؟',['ءالآن','ءأعجمي في فصلت','ءالله','ءالذكرين'],1,'موضع واحد واجب: ءأعجمي بسورة فصلت. والـ٦ التانيين جائز.','حروف',['ءَا۬عْجَمِيٌّ وَعَرَبِيٌّ','فصلت ٤٤: الهمزة التانية بتتنطق بين الهمزة والألف وجوبًا']],
+['لو وصلت «الٓمٓ ۝ اللَّهُ» الميم الأخيرة تتمد كام؟',['٦ بس','٢ أو ٦','٤ بس','مفيش مد'],1,'تتفتح للتخلص من الساكنين: ٢ اعتدادًا بالعارض، أو ٦ بعدم الاعتداد.','حروف',['الٓمٓ ۝ اللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ','آل عمران: الميم تتفتح وصلًا «ميمَ الله» وتتمد ٢ أو ٦']],
+['الوقف على «نَسْتَعِينُ» بالروم، تمد كام؟',['٦','٤','حركتين طبيعي بدون زيادة','٢ أو ٤ أو ٦'],2,'الروم كالوصل تمامًا، فمفيش مد عارض.','سكون',['إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ','بالسكون: ٢ أو ٤ أو ٦، بالروم: «نستعينُ» بصوت خفي من غير زيادة مد']],
+['«خَوْفٌ» وصلًا اللين فيها؟',['حركتين','مدٌّ ما (أقل من حركتين)','٤','٦'],1,'وصلًا حرف اللين بيتنطق على حالته (حركة أو حركة ونص)، ووقفًا يبقى عارض ٢/٤/٦.','سكون',['وَءَامَنَهُم مِّنْ خَوْفٍ','«خوفٍ» وصلًا: الواو بتتنطق على حالتها من غير مد، ووقفًا «خوفْ» ٢ أو ٤ أو ٦']],
+['مد التعظيم بيكون في إيه؟',['أي لا نافية','لا إله فقط','لا ريب','إلا'],1,'محصور في "لا إله"، ٤ حركات لأصحاب قصر المنفصل من الطيبة.','معنوي',['فَاعْلَمْ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا اللَّهُ','محمد ١٩: مد «لا» ٤ حركات تعظيمًا لمن يقصر المنفصل من الطيبة']],
+['مد التبرئة ورد عن مين؟',['حفص','حمزة الزيات بس من الطيبة','كل القراء','ورش'],1,'ما وردش إلا عن حمزة من طريق طيبة النشر، ٤ حركات.','معنوي',['ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ','حمزة بيمد «لا» ٤ حركات تبرئة، وحفص بيقرأها حركتين']],
+['رتّب: أي واحد أقوى؟',['المنفصل أقوى من المتصل','العارض أقوى من المنفصل','البدل أقوى من العارض','اللين أقوى من البدل'],1,'الترتيب: لازم ← متصل ← عارض ← منفصل ← بدل ← لين ← معنوي.','مراتب',['وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ ... الْحَمْدُ لِلَّهِ رَبِّ الْعَٰلَمِينَ','العارض في «العالمين» (وقفًا) المرتبة التالتة، والمنفصل في «بما أُنزل» الرابعة، فالعارض أقوى']],
+['«ءَآمِّينَ» اجتمع فيها بدل ولازم، نعمل بإيه؟',['البدل','اللازم ٦ حركات','الاتنين','حركتين'],1,'القوي ينسخ الضعيف، واللازم أقوى المدود.','مراتب',['وَلَآ ءَآمِّينَ الْبَيْتَ الْحَرَامَ','المائدة ٢: همز قبل الألف (بدل) وشدة بعدها (لازم) ← تتمد ٦']],
+['«وَجَآءُوٓ أَبَاهُمْ» الواو فيها بدل ومنفصل، الحكم؟',['بدل حركتين','منفصل','متصل','لازم'],1,'المنفصل أقوى من البدل، فيُلغى البدل ويُعمل بالمنفصل.','مراتب',['وَجَآءُوٓ أَبَاهُمْ عِشَآءً يَبْكُونَ','يوسف ١٦: الواو بعد همز (بدل) وقبل همز في كلمة تانية (منفصل) ← تتمد زي المنفصل']],
+['قراءة المنفصل ٥ والمتصل ٤ — صح ولا غلط؟',['صح','غلط: الضعيف ما يزيدش عن القوي','صح بس من الطيبة','صح وقفًا'],1,'أقصى حاجة الضعيف يساوي القوي، ممنوع يزيد عنه.','مراتب',['هَٰٓؤُلَآءِ','لو مديت المنفصل «ها» ٥ يبقى المتصل «لاء» لازم ٥ على الأقل']],
+['مقدار المنفصل من طريق الشاطبية؟',['٢ أو ٤','٤ أو ٥','٢، ٣، ٤، ٥','٦ بس'],1,'الشاطبية: ٤ أو ٥. القصر حركتين ما بيجيش إلا من الطيبة.','الطرق',['قُوٓا أَنفُسَكُمْ وَأَهْلِيكُمْ نَارًا','«قوا أنفسكم»: من الشاطبية ٤ أو ٥']],
+['مقدار المنفصل من طريق الطيبة؟',['٤ أو ٥','٢، ٣، ٤، ٥','٤، ٥، ٦','حركتين بس'],1,'الطيبة: ٢، ٣، ٤، ٥، والعمل حاليًا على ٢ و٤.','الطرق',['بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ','من الطيبة يجوز تقصر «بما أنزل» حركتين، أو تمدها ٣ أو ٤ أو ٥']],
+['مقدار المتصل من طريق الشاطبية؟',['٤ أو ٥','٤، ٥، ٦','٢ أو ٤','٦ بس'],0,'الشاطبية: ٤ أو ٥، والطول ٦ من الطيبة بس.','الطرق',['وَالسَّمَآءِ ذَاتِ الْبُرُوجِ','«السماء» من الشاطبية ٤ أو ٥']],
+['مقدار المتصل من طريق الطيبة؟',['٤ أو ٥','٤، ٥، ٦','٢، ٤، ٦','٢، ٣، ٤، ٥'],1,'الطيبة: ٤، ٥، ٦. وابن الجزري أجاز رد الـ٥ والـ٦ لـ٤.','الطرق',['وَالسَّمَآءِ ذَاتِ الْبُرُوجِ','«السماء» من الطيبة ٤ أو ٥ أو ٦']],
+['قصر المنفصل حركتين لحفص جاي من أي طريق؟',['الشاطبية','الطيبة','الاتنين','ولا واحد'],1,'القصر في المنفصل من طريق الطيبة بس، وعشان كده اتسمى "جائز".','الطرق',['إِنَّآ أَعْطَيْنَاكَ الْكَوْثَرَ','قصر «إنّا أعطيناك» حركتين من الطيبة بس']],
+['الإمام الشاطبي أقرأ بكام في المنفصل والمتصل لحفص؟',['حركتين','٤ حركات (التوسط) بس','٥ حركات','٦ حركات'],1,'زي ما نقل تلميذه السخاوي: ما أقرأش إلا بالتوسط ٤ حركات فيهم.','الطرق',['إِنَّآ أَعْطَيْنَاكَ ... السَّمَآءِ','الشاطبي أقرأ «إنّا أعطيناك» و«السماء» بـ٤ حركات']],
+['قارئ بيقرأ من الشاطبية، يمد «لا إله» مد تعظيم؟',['أيوه ٤ حركات','لا، التعظيم من الطيبة لأصحاب قصر المنفصل','أيوه ٦','أيوه حركتين'],1,'مد التعظيم من طريق طيبة النشر لأصحاب قصر المنفصل بس.','الطرق',['لَآ إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ','البقرة ١٦٣ (أول موضع): من الشاطبية تمدها زي المنفصل بتاعك من غير مد تعظيم']],
+['العين في «كٓهيعٓصٓ» من الشاطبية؟',['٢ أو ٤ أو ٦','٤ أو ٦ والـ٦ مقدم','٦ بس','حركتين بس'],1,'الشاطبية: ٤ أو ٦ (الـ٦ مقدم). الطيبة زوّدت الحركتين: ٦ ثم ٤ ثم ٢.','الطرق',['كٓهيعٓصٓ ۝ ذِكْرُ رَحْمَتِ رَبِّكَ','العين «عَيْن» وسطها ياء لين: من الشاطبية ٤ أو ٦ والـ٦ مقدم']],
+['«يسٓ ۝ وَالْقُرْءَانِ» السين من الشاطبية نوع مدها؟',['لازم حرفي مثقل','لازم حرفي مخفف (إظهار)','طبيعي','عارض'],1,'الشاطبية بالإظهار ← مخفف. الطيبة بالإدغام ← مثقل. والمقدار ٦ في الحالتين.','الطرق',['يسٓ ۝ وَالْقُرْءَانِ الْحَكِيمِ','الشاطبية: «ياسينْ والقرآن» بإظهار النون ← مخفف ٦']],
+['مين فيهم ما يختلفش بين الشاطبية والطيبة؟',['المتصل','المنفصل','المد اللازم','العين في مريم'],2,'اللازم ٦ عند كل القراء ومن كل الطرق.','الطرق',['وَلَا الضَّآلِّينَ','«الضالّين» ٦ حركات في كل الطرق وعند كل القراء']]
+];
+const QF={'أصلي':'a','همز':'h','سكون':'s','حروف':'s','معنوي':'m'};
+const cats=['الكل',...new Set(D.map(d=>d[4]))];
+let cat='الكل',list=[],i=0,score=0,wrong=[],done=false;
+const shuf=a=>a.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+let best=0;try{best=+localStorage.getItem('maddBest')||0}catch(e){}
+function start(src){
+ list=shuf(src||D.filter(d=>cat==='الكل'||d[4]===cat)).map(d=>{const o=shuf(d[1].map((t,k)=>({t,k})));return{q:d[0],o,a:d[2],w:d[3],x:d[5],f:QF[d[4]]||'n',c:d[4]}});
+ i=0;score=0;wrong=[];intro(!!src)
+}
+function intro(retry){
+ $('#quiz').className='qbox';
+ if(retry)return show();
+ $('#quiz').innerHTML=`<p class="qt">اختار الجزء اللي عايز تتسأل فيه</p>
+ <div class="chips">${cats.map(c=>`<button data-c="${c}" aria-pressed="${c===cat}" class="f${QF[c]||'n'}">${QF[c]?`<span style="color:var(--fc)">●</span> `:''}${c}</button>`).join('')}</div>
+ <p class="sub">${list.length} سؤال${best?` · أحسن نتيجة ليك: ${best}%`:''}</p>
+ <div class="act"><button class="btn" id="go">ابدأ الاختبار</button></div>`;
+}
+function show(){
+ const c=list[i];done=false;
+ $('#quiz').className='qbox f'+c.f;
+ $('#quiz').innerHTML=`<div class="meta"><span>سؤال ${i+1} من ${list.length}</span><span>✔ ${score}</span></div>
+ <div class="bar"><i style="width:${i/list.length*100}%"></i></div>
+ ${c.f!=='n'?`<span class="qtag"><span class="ic">${FN[c.f][0]}</span>${FN[c.f][1]}</span>`:`<span class="qtag">${c.c}</span>`}<p class="qt">${c.q}</p>
+ <div class="opts">${c.o.map((o,k)=>`<button data-k="${k}">${o.t}</button>`).join('')}</div><div id="fb"></div>`;
+}
+function pick(k){
+ if(done)return;done=true;
+ const c=list[i],ok=c.o[k].k===c.a,bs=[...document.querySelectorAll('.opts button')];
+ bs.forEach((b,j)=>{b.disabled=true;if(c.o[j].k===c.a)b.classList.add('right')});
+ if(ok)score++;else{bs[k].classList.add('wrong');wrong.push(D.find(d=>d[0]===c.q))}
+ $('#fb').innerHTML=`<div class="why"><b>${ok?'✔ برافو، صح':'✘ لأ، الإجابة الصح: '+c.o.find(o=>o.k===c.a).t}</b>${c.w}${c.x?`<div class="qex"><small>مثال من القرآن</small><span class="q">﴿${c.x[0]}﴾</span><p>${c.x[1]}</p></div>`:''}</div>
+ <div class="act"><button class="btn" id="nx">${i+1<list.length?'السؤال اللي بعده':'شوف النتيجة'}</button></div>`;
+ $('#nx').focus();
+}
+function end(){
+ $('#quiz').className='qbox';
+ const p=Math.round(score/list.length*100);
+ if(p>best){best=p;try{localStorage.setItem('maddBest',p)}catch(e){}}
+ const msg=p>=90?'ممتاز! إنت فاهم المدود كويس جدًا.':p>=70?'كويس جدًا، راجع الأسئلة اللي غلطت فيها.':p>=50?'نص الطريق، ارجع للدروس وجرّب تاني.':'محتاج تراجع الدروس تاني بهدوء.';
+ $('#quiz').innerHTML=`<p class="sub">نتيجتك</p><div class="score">${p}%</div><p class="qt">${score} من ${list.length} — ${msg}</p>
+ ${wrong.length?`<p class="sub">غلطت في:</p><ul>${wrong.map(w=>`<li>${w[0]}<br><small style="color:var(--ok)">✔ ${w[1][w[2]]}</small></li>`).join('')}</ul>`:''}
+ <div class="act">${wrong.length?'<button class="btn" id="rw">أعد الأسئلة اللي غلطت فيها</button>':''}<button class="btn alt" id="rs">اختبار جديد</button></div>`;
+}
+$('#quiz').addEventListener('click',e=>{
+ const b=e.target.closest('button');if(!b)return;
+ if(b.dataset.c){cat=b.dataset.c;start()}
+ else if(b.id==='go')show();
+ else if(b.dataset.k!=null)pick(+b.dataset.k);
+ else if(b.id==='nx'){i++;i<list.length?show():end()}
+ else if(b.id==='rw')start(wrong.slice());
+ else if(b.id==='rs'){cat='الكل';start()}
+});
+function tab(q){$('#pL').classList.toggle('hide',q);$('#pQ').classList.toggle('hide',!q);$('#tL').setAttribute('aria-selected',!q);$('#tQ').setAttribute('aria-selected',q);scrollTo(0,0)}
+
+/* ===== MAP ===== */
+const M={t:'أحكام المد والقصر',root:1,c:[
+ {t:'مد أصلي',k1:1,c:[{t:'وله خمس صور',v:1,c:[
+  {t:'المد الطبيعي',e:'مَا كُنتُمْ',n:'حركتين وصلًا ووقفًا'},
+  {t:'المد الطبيعي الحرفي',e:'طه',n:'حركتين وصلًا ووقفًا'},
+  {t:'مد التمكين',e:'ءَامَنُوا وَعَمِلُوا',n:'حركتين وصلًا ووقفًا'},
+  {t:'مد العوض',e:'عَلِيمًا',n:'حركتين وقفًا فقط'},
+  {t:'مد الصلة الصغرى',e:'إِنَّهُۥ',n:'حركتين وصلًا فقط'}]}]},
+ {t:'مد فرعي',k1:1,c:[
+  {t:'بسبب لفظي',c:[
+   {t:'بسبب الهمز',c:[
+    {t:'المد الجائز',c:[
+     {t:'المنفصل',c:[{t:'حقيقي',e:'بِمَا أُنزِلَ'},{t:'حكمي',e:'هَٰٓأَنتُمْ'}]},
+     {t:'الصلة الكبرى',e:'مِنْ عِلْمِهِۦٓ إِلَّا'},
+     {t:'البدل',c:[{t:'بدل',e:'ءَامَنُوا'},{t:'شبيه بالبدل',e:'رَءُوفٌ'}]}]},
+    {t:'المد الواجب',c:[{t:'المتصل',e:'السَّمَآءِ'}]}]},
+   {t:'بسبب السكون',c:[
+    {t:'السكون الأصلي',c:[
+     {t:'كلمي',c:[{t:'مخفف',e:'ءَآلْـَٰٔنَ'},{t:'مثقل',e:'الْحَآقَّةُ'}]},
+     {t:'حرفي',c:[{t:'مخفف',e:'الميم من الٓمٓصٓ'},{t:'مثقل',e:'اللام من الٓمٓ'}]}]},
+    {t:'السكون العارض',c:[{t:'العارض للسكون',e:'الْعَٰلَمِينَ'},{t:'اللين',e:'الصَّيْفِ'}]}]}]},
+  {t:'بسبب معنوي',c:[{t:'التعظيم',e:'لَآ إِلَٰهَ إِلَّا اللَّهُ',n:'٤ حركات لأصحاب قصر المنفصل (طيبة)'},{t:'التبرئة',e:'لَا رَيْبَ',n:'٤ حركات لحمزة (طيبة) وليس لحفص'}]}]}
+]};
+const MF={'مد أصلي':'a','بسبب الهمز':'h','بسبب السكون':'s','بسبب معنوي':'m'};
+let uid=0;(function walk(n,d,f){n.id='n'+uid++;n.d=d;n.leaf=!n.c;f=MF[n.t]||f;n.f=f;(n.c||[]).forEach(c=>walk(c,d+1,f))})(M,0,'');
+const all=[];(function f(n){all.push(n);(n.c||[]).forEach(f)})(M);
+const LV=[
+ {k:'s',t:'الهيكل (الأقسام الكبيرة)',f:n=>!n.root&&!n.leaf&&!n.v&&!n.e},
+ {k:'v',t:'أسماء المدود',f:n=>n.leaf||n.e||(n.c&&n.c.every(x=>x.leaf)&&n.d>3)},
+ {k:'a',t:'الخريطة كاملة',f:n=>!n.root},
+ {k:'e',t:'الأمثلة',f:n=>!!n.e,ex:1}
+];
+let lv=LV[0],sel=null,miss=0,blanks=new Set(),zoom=1;
+function box(n,mode){
+ const hideName=mode==='x'&&!lv.ex&&blanks.has(n.id), hideEx=mode==='x'&&lv.ex&&blanks.has(n.id);
+ const name=hideName?`<button class="slot" data-s="${n.id}">؟</button>`:n.t;
+ const ex=n.e?(hideEx?`<button class="slot" data-s="${n.id}">نحو: ؟</button>`:`<span class="ar">${n.e}</span>`):'';
+ const note=n.n&&mode==='read'?`<small>${n.n}</small>`:'';
+ return `<div data-id="${n.id}" class="bx${n.root?' root':''}${n.k1?' k1':''}${n.f?' f'+n.f:''}">${name}${ex}${note}</div>`;
+}
+function tree(n,mode){
+ const kids=n.c?`<ul${n.v?' class="v"':''}>${(n.v?n.c:[...n.c].reverse()).map(c=>`<li>${tree(c,mode)}</li>`).join('')}</ul>`:'';
+ return box(n,mode)+kids;
+}
+function mapHTML(mode){return `<div class="mapbar"><button data-z="-">−</button><button data-z="+">+</button><button data-z="f">على قد الشاشة</button></div>
+<div class="mapscroll"><div class="org" style="zoom:${zoom}"><ul><li>${tree(M,mode)}</li></ul></div></div>`}
+function readMap(){document.querySelectorAll('.mapwrap').forEach(w=>w.innerHTML=mapHTML('read'))}
+function fit(w){const sc=w.querySelector('.mapscroll'),o=w.querySelector('.org');o.style.zoom=1;zoom=Math.min(1,Math.max(.35,(sc.clientWidth-20)/o.scrollWidth));o.style.zoom=zoom;sc.scrollLeft=sc.scrollWidth}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-z]');if(!b)return;const w=b.closest('.mapwrap,#mapx');
+ if(b.dataset.z==='f')return fit(w);zoom=Math.min(1.4,Math.max(.35,zoom+(b.dataset.z==='+'?.1:-.1)));w.querySelector('.org').style.zoom=zoom});
+function mstart(){
+ blanks=new Set(all.filter(lv.f).map(n=>n.id));miss=0;sel=null;renderX();
+}
+function bankItems(){const m={};all.filter(n=>blanks.has(n.id)).forEach(n=>{const k=lv.ex?n.e:n.t;m[k]=(m[k]||0)+1});return shuf(Object.entries(m))}
+let bankOrder=[];
+function renderX(keep){
+ if(!keep)bankOrder=bankItems().map(x=>x[0]);
+ const cnt={};all.filter(n=>blanks.has(n.id)).forEach(n=>{const k=lv.ex?n.e:n.t;cnt[k]=(cnt[k]||0)+1});
+ const total=all.filter(lv.f).length,left=blanks.size;
+ const x=$('#mapx'),sc=x.querySelector('.mapscroll'),sl=sc?sc.scrollLeft:null,st=sc?sc.scrollTop:null;
+ x.innerHTML=`<div class="qbox"><p class="qt" style="margin:0 0 6px">رجّع كل كلمة لمكانها في الخريطة</p>
+ <div class="chips">${LV.map(l=>`<button data-lv="${l.k}" aria-pressed="${l===lv}">${l.t}</button>`).join('')}</div>
+ <div class="mstat"><span>فاضل ${left} من ${total}</span><span>غلطات: ${miss}</span></div><div class="bar"><i style="width:${(total-left)/total*100}%"></i></div>
+ ${left?`<p class="sub" style="font-size:14px">دوس على خانة فاضية (؟)، وبعدين اختار الكلمة الصح من تحت.</p>`:`<p class="qt" style="color:var(--ok)">✔ خلّصت الخريطة ${miss?`بـ${miss} غلطة`:'من غير ولا غلطة! ممتاز'}</p>`}
+ </div>${mapHTML('x')}
+ <div class="bank">${left?`<div class="chips">${bankOrder.filter(k=>cnt[k]).map(k=>`<button class="${lv.ex?'ar':''}" data-w="${k.replace(/"/g,'&quot;')}">${k}${cnt[k]>1?`<sup>×${cnt[k]}</sup>`:''}</button>`).join('')}</div>`:''}
+ <div class="act" style="margin-top:8px"><button class="btn alt" id="mR">ابدأ من الأول</button><button class="btn alt" id="mS">اعرض الحل</button></div></div>`;
+ const nsc=x.querySelector('.mapscroll');
+ if(sl!==null){nsc.scrollLeft=sl;nsc.scrollTop=st}else requestAnimationFrame(()=>fit(x));
+ if(sel){const s=x.querySelector(`[data-s="${sel}"]`);s?s.classList.add('sel'):sel=null}
+}
+$('#mapx').addEventListener('click',e=>{
+ const b=e.target.closest('button');if(!b||b.dataset.z)return;
+ if(b.dataset.lv){lv=LV.find(l=>l.k===b.dataset.lv);zoom=1;$('#mapx').innerHTML='';return mstart()}
+ if(b.dataset.s){sel=b.dataset.s;document.querySelectorAll('#mapx .slot.sel').forEach(s=>s.classList.remove('sel'));b.classList.add('sel');return}
+ if(b.dataset.w!=null){
+  if(!sel){const f=document.querySelector('#mapx .slot');if(!f)return;sel=f.dataset.s;f.classList.add('sel');f.scrollIntoView({block:'nearest',inline:'center'});return}
+  const n=all.find(n=>n.id===sel),ans=lv.ex?n.e:n.t;
+  if(ans===b.dataset.w){const id=sel;blanks.delete(sel);sel=null;renderX(true);const bx=document.querySelector(`#mapx .bx[data-id="${id}"]`);bx&&bx.classList.add('flash')}
+  else{miss++;const s=document.querySelector(`#mapx [data-s="${sel}"]`);s.classList.remove('bad');void s.offsetWidth;s.classList.add('bad');document.querySelector('#mapx .mstat span:last-child').textContent='غلطات: '+miss}
+  return}
+ if(b.id==='mR'){$('#mapx').innerHTML='';mstart()}
+ if(b.id==='mS'){blanks.clear();sel=null;renderX(true)}
+});
+let curMode='L';
+function mode(m){curMode=m;['L','Q','M'].forEach(k=>$('#m'+k).setAttribute('aria-pressed',k===m));$('#learn').classList.toggle('hide',m!=='L');$('#quiz').classList.toggle('hide',m!=='Q');$('#mapx').classList.toggle('hide',m!=='M');if(m==='M'&&!$('#mapx').innerHTML)mstart();if(m==='L'&&!$('#learn').innerHTML)lhome();if(m==='Q'&&!list.length)start()}
+$('#mL').onclick=()=>mode('L');$('#mQ').onclick=()=>mode('Q');$('#mM').onclick=()=>mode('M');
+/* ===== LEARN (Duolingo-style) ===== */
+const C=[
+{id:'tab',u:1,f:'a',n:'المد الطبيعي',r:'حرف مد بشروطه (ا بعد فتح، و بعد ضم، ي بعد كسر) ومفيش بعده سبب.',m:'حركتين وصلًا ووقفًا',h:'واجب',ex:[['قَالَ','الألف بعد فتح ومفيش بعدها همز ولا سكون'],['يَقُولُ','الواو بعد ضم'],['قِيلَ','الياء بعد كسر']],d:['حرف مد بشروطه ومفيش بعده ','سبب',' للمد']},
+{id:'harf',u:1,f:'a',n:'المد الطبيعي الحرفي',r:'حروف فواتح السور اللي بتتنطق حرفين تانيهم مد: «حي طهر».',m:'حركتين وصلًا ووقفًا',h:'واجب',ex:[['طه','«طا ها» كل حرف حركتين'],['الحاء في «حمٓ»','الحاء «حا» حركتين (والميم لازم)'],['الراء في «الٓر»','الراء «را» حركتين']],d:['حروفه مجموعة في ','حي طهر','']},
+{id:'tamk',u:1,f:'a',n:'مد التمكين',r:'حرف مد جنبه حرف من جنسه، بنمكّنه عشان ما يندمجش.',m:'حركتين وصلًا ووقفًا',ex:[['النَّبِيِّينَ','ياء مشددة مكسورة بعدها ياء ساكنة'],['عِلِّيِّينَ','ياء مشددة مكسورة بعدها ياء ساكنة'],['يَلْوُونَ','واو مضمومة بعدها واو ساكنة']],d:['حرف مد بعده حرف من ','جنسه','']},
+{id:'iwad',u:1,f:'a',n:'مد العوض',r:'لما تقف على تنوين الفتح، تعوّض عنه بألف.',m:'حركتين وقفًا فقط',h:'واجب',ex:[['عَلِيمًا (وقفًا)','تقف: عليما'],['سَبِيلًا (وقفًا)','تقف: سبيلا']],d:['عوض عن تنوين ','الفتح',' عند الوقف']},
+{id:'sila1',u:1,f:'a',n:'مد الصلة الصغرى',r:'هاء الضمير للمفرد المذكر لما تكون بين متحركين.',m:'حركتين وصلًا فقط',ex:[['إِنَّهُۥ كَانَ','الهاء بين النون والكاف المتحركين'],['لَهُۥ قَانِتُونَ','الهاء بين اللام والقاف']],d:['هاء الكناية لما تقع بين ','متحركين','']},
+{id:'munf',u:2,f:'h',n:'المد المنفصل',r:'حرف المد آخر كلمة، والهمز أول الكلمة اللي بعدها.',m:'٤ أو ٥ (شاطبية) · ٢ لـ٥ (طيبة)',h:'جائز',ex:[['بِمَآ أُنزِلَ','الألف آخر «بما» والهمز أول «أُنزل»'],['قُوٓا أَنفُسَكُمْ','الواو آخر «قوا» والهمز أول «أنفسكم»'],['يَٰٓأَيُّهَا','منفصل حكمي: الألف اتحذفت رسمًا']],d:['حرف المد آخر الكلمة والهمز ','أول',' الكلمة اللي بعدها']},
+{id:'sila2',u:2,f:'h',n:'مد الصلة الكبرى',r:'صلة صغرى بعدها همز، وتتمد زي المنفصل بالظبط.',m:'زي المنفصل',h:'جائز',ex:[['مَالَهُۥٓ أَخْلَدَهُۥ','الهاء بين متحركين وبعدها همز «أخلده»'],['عِندَهُۥٓ إِلَّا','بعد الهاء همز «إلا»']],d:['صلة صغرى وبعدها ','همز','']},
+{id:'badal',u:2,f:'h',n:'مد البدل',r:'الهمز قبل حرف المد في كلمة واحدة.',m:'حركتين',h:'جائز',ex:[['ءَامَنُوا','أصلها أأْمنوا'],['أُوتُوا','أصلها أُؤْتوا'],['إِيمَانًا','أصلها إِئْمانا']],d:['الهمز ','قبل',' حرف المد في كلمة واحدة']},
+{id:'mutt',u:2,f:'h',n:'المد المتصل',r:'حرف المد وبعده الهمز في نفس الكلمة. ممنوع يتقصر.',m:'٤ أو ٥ (شاطبية) · ٤ لـ٦ (طيبة)',h:'واجب',ex:[['جَآءَ','الألف بعدها همز في نفس الكلمة'],['السَّمَآءِ','الألف بعدها همز'],['سُوٓءَ','الواو بعدها همز']],d:['حرف المد وبعده الهمز في ','كلمة واحدة','']},
+{id:'lkm',u:3,f:'s',n:'اللازم الكلمي المثقل',r:'حرف مد بعده حرف مشدد في نفس الكلمة.',m:'٦ حركات',h:'لازم',ex:[['الضَّآلِّينَ','الألف بعدها لام مشددة'],['الْحَآقَّةُ','الألف بعدها قاف مشددة'],['دَآبَّةٍ','الألف بعدها باء مشددة']],d:['حرف مد بعده حرف ','مشدد',' في نفس الكلمة']},
+{id:'lkk',u:3,f:'s',n:'اللازم الكلمي المخفف',r:'حرف مد بعده ساكن مش مشدد في كلمة. مثاله الوحيد: ءالآن في يونس.',m:'٦ حركات',h:'لازم',ex:[['ءَآلْـَٰٔنَ','الألف بعدها لام ساكنة (يونس ٥١، ٩١)']],d:['حرف مد بعده ساكن ','غير مشدد',' في كلمة']},
+{id:'lhm',u:3,f:'s',n:'اللازم الحرفي المثقل',r:'حرف مقطع هجاؤه ٣ أحرف وسطها مد، وآخره مدغم في اللي بعده.',m:'٦ حركات',h:'لازم',ex:[['اللام في «الٓمٓ»','«لام‿ميم» الميم مدغمة'],['السين في «طسٓمٓ»','«سين‿ميم» النون مدغمة']],d:['حرف مقطع وسطه مد وآخره ','مدغم',' في اللي بعده']},
+{id:'lhk',u:3,f:'s',n:'اللازم الحرفي المخفف',r:'حرف مقطع هجاؤه ٣ أحرف وسطها مد، وآخره مش مدغم.',m:'٦ حركات',h:'لازم',ex:[['الميم الأخيرة في «الٓمٓ»','«ميم» آخرها مظهر'],['قٓ','«قاف» ٦ حركات'],['صٓ','«صاد» ٦ حركات']],d:['حرف مقطع وسطه مد وآخره ','غير مدغم','']},
+{id:'arid',u:3,f:'s',n:'المد العارض للسكون',r:'حرف مد بعده حرف سكّنته عشان وقفت.',m:'٢ أو ٤ أو ٦',h:'جائز',ex:[['الْعَٰلَمِينَ (وقفًا)','تقف: العالمينْ'],['نَسْتَعِينُ (وقفًا)','تقف: نستعينْ']],d:['سكون ','عارض',' للوقف بعد حرف المد']},
+{id:'leen',u:3,f:'s',n:'مد اللين',r:'واو أو ياء ساكنة قبلها فتح.',m:'وصلًا أقل من حركتين · وقفًا ٢ أو ٤ أو ٦',h:'جائز',ex:[['خَوْفٍ (وصلًا)','الواو ساكنة قبلها فتح'],['الْبَيْتِ','الياء ساكنة قبلها فتح'],['الصَّيْفِ','الياء ساكنة قبلها فتح']],d:['واو أو ياء ساكنة قبلها ','فتح','']},
+{id:'tazim',u:4,f:'m',n:'مد التعظيم',r:'مد «لا» في «لا إله» بس، لأصحاب قصر المنفصل من الطيبة.',m:'٤ حركات',h:'جائز',ex:[['لَآ إِلَٰهَ إِلَّا اللَّهُ','الألف في «لا»'],['لَآ إِلَٰهَ إِلَّا هُوَ','٣٠ موضع بالصورة دي']],d:['مد «لا» في ','لا إله',' فقط']},
+{id:'tabr',u:4,f:'m',n:'مد التبرئة',r:'مد «لا» النافية للجنس للتأكيد. لحمزة بس من الطيبة، مش لحفص.',m:'٤ حركات',h:'جائز',ex:[['لَا رَيْبَ','أول موضع (البقرة)'],['لَا جُنَاحَ','الألف في «لا»']],d:['مد «لا» ','النافية',' للجنس']}
+];
+const U=[{t:'المد الأصلي',f:'a',cats:['أصلي']},{t:'بسبب الهمز',f:'h',cats:['همز']},{t:'بسبب السكون',f:'s',cats:['سكون','حروف']},{t:'بسبب معنوي',f:'m',cats:['معنوي']},{t:'المراتب والطرق',f:'n',cats:['مراتب','الطرق']},{t:'مراجعة شاملة',f:'n',cats:[]}];
+const RANK=['اللازم','المتصل','العارض للسكون','المنفصل','البدل','اللين','المعنوي'];
+/* آيات تمرين «لوّن المد»: الكلمات + المطلوب + أماكن الإجابة */
+const SP=[
+{u:1,f:'a',t:'المد الطبيعي',a:'وَقُولُوا لِلنَّاسِ حُسْنًا',k:[0,1],n:'«وقولوا» الواو بعد ضم، و«للناس» الألف بعد فتح، ومفيش بعدهم همز ولا سكون (البقرة ٨٣)'},
+{u:1,f:'a',t:'مد الصلة الصغرى',a:'إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًا بَصِيرًا',k:[0,2],n:'الهاء في «إنّهُۥ» و«بعبادهِۦ» بين متحركين (الإسراء ٣٠)'},
+{u:1,f:'a',t:'مد العوض (لو وقفت آخر الآية)',a:'إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًا بَصِيرًا',k:[4],n:'الوقف على «بصيرا» بألف حركتين عوض عن تنوين الفتح، و«خبيرًا» مش موقوف عليها'},
+{u:2,f:'h',t:'المد المنفصل',a:'وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ',k:[2,5],n:'الألف آخر «بما» و«وما» والهمز أول «أُنزل» (البقرة ٤)'},
+{u:2,f:'h',t:'المد المتصل',a:'وَأَنزَلَ مِنَ السَّمَآءِ مَآءً فَأَخْرَجَ بِهِۦ مِنَ الثَّمَرَٰتِ رِزْقًا لَّكُمْ',k:[2,3],n:'«السماء» و«ماءً»: حرف المد والهمز في نفس الكلمة (البقرة ٢٢)'},
+{u:2,f:'h',t:'مد البدل',a:'إِنَّ الَّذِينَ ءَامَنُوا وَعَمِلُوا الصَّالِحَاتِ وَأَقَامُوا الصَّلَاةَ وَءَاتَوُا الزَّكَاةَ',k:[2,7],n:'«ءامنوا» و«وءاتوا»: الهمز قبل الألف في نفس الكلمة (البقرة ٢٧٧)'},
+{u:3,f:'s',t:'اللازم الكلمي المثقل',a:'صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ',k:[8],n:'«الضالّين»: الألف بعدها لام مشددة ← ٦ حركات (الفاتحة ٧)'},
+{u:3,f:'s',t:'المد العارض للسكون (وقف آخر الآيات)',a:'الْحَمْدُ لِلَّهِ رَبِّ الْعَٰلَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ',k:[3,5],n:'لما تقف على «العالمين» و«الرحيم» الحرف الأخير بيسكن ← ٢ أو ٤ أو ٦'},
+{u:3,f:'s',t:'مد اللين',a:'فَلْيَعْبُدُوا رَبَّ هَٰذَا الْبَيْتِ ۝ الَّذِيٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍ',k:[3,10],n:'«البيت» و«خوف»: ياء وواو ساكنتين قبلهم فتح (قريش ٣–٤)'},
+{u:4,f:'m',t:'مد التعظيم (طيبة)',a:'فَاعْلَمْ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا اللَّهُ',k:[2],n:'الألف في «لا» من «لا إله» ٤ حركات لأصحاب قصر المنفصل (محمد ١٩)'}
+];
+SP.forEach(x=>x.w=x.a.split(' ').filter(t=>t!=='۝'));
+const rnd=a=>a[Math.floor(Math.random()*a.length)];
+/* حالة اللعبة */
+const today=()=>new Date().toLocaleDateString('en-CA'),yday=()=>{const d=new Date();d.setDate(d.getDate()-1);return d.toLocaleDateString('en-CA')};
+let G={xp:0,days:{},streak:0,last:'',units:{},snd:true,all:false};
+try{Object.assign(G,JSON.parse(localStorage.getItem('maddGame')||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem('maddGame',JSON.stringify(G))}catch(e){}};
+const GOAL=50,curStreak=()=>(G.last===today()||G.last===yday())?G.streak:0,todayXP=()=>G.days[today()]||0;
+function addXP(n){const t=today(),before=todayXP();G.xp+=n;G.days[t]=before+n;if(G.last!==t){G.streak=G.last===yday()?G.streak+1:1;G.last=t}save();if(before<GOAL&&before+n>=GOAL){setTimeout(()=>{boom();toast('🎯 حققت هدف النهارده! ('+GOAL+' نقطة)')},300)}}
+/* أصوات */
+let AC=null;
+function tone(seq){if(!G.snd)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();let t=AC.currentTime;seq.forEach(([f,d,type])=>{const o=AC.createOscillator(),g=AC.createGain();o.type=type||'sine';o.frequency.value=f;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.18,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g).connect(AC.destination);o.start(t);o.stop(t+d+.02);t+=d*.8})}catch(e){}}
+const sOk=()=>tone([[660,.12],[990,.2]]),sBad=()=>tone([[220,.18,'square'],[160,.25,'square']]),sWin=()=>tone([[523,.14],[659,.14],[784,.14],[1047,.35]]);
+/* احتفال */
+function boom(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const c=document.createElement('canvas');c.className='confetti';document.body.appendChild(c);const x=c.getContext&&c.getContext('2d');if(!x){c.remove();return}c.width=innerWidth;c.height=innerHeight;
+ const cols=['#f2b84b','#7446c9','#0a7ea8','#c2337a','#1f9d55'],P=Array.from({length:120},()=>({x:Math.random()*c.width,y:-20-Math.random()*c.height*.4,vx:(Math.random()-.5)*3,vy:2+Math.random()*4,r:Math.random()*6,c:rnd(cols),a:Math.random()*6}));
+ let n=0;(function f(){x.clearRect(0,0,c.width,c.height);P.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.a+=.1;x.save();x.translate(p.x,p.y);x.rotate(p.a);x.fillStyle=p.c;x.fillRect(-4,-2,8,5);x.restore()});if(++n<110)requestAnimationFrame(f);else c.remove()})()}
+function toast(t){const d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2600)}
+/* مولّدات التمارين */
+let Lq=[],Li=0,Lok=0,Ltot=0,Lstreak=0,Lunit=0,Lmiss=[],Lhearts=5,Lxp=0;
+const ex1=c=>rnd(c.ex);
+function others(c,pool,k,fn){return shuf(pool.filter(x=>x!==c&&fn(x)!==fn(c))).filter((x,i,a)=>a.findIndex(y=>fn(y)===fn(x))===i).slice(0,k)}
+function gClassify(c){const e=ex1(c),o=others(c,C,3,x=>x.n);return{ty:'mcq',f:c.f,k:'صنّف',q:'أنهي مد في الكلمة دي؟',big:e[0],opts:shuf([c.n,...o.map(x=>x.n)]),a:c.n,w:`${c.n}: ${c.r}`,x:e}}
+function gAmount(c){const o=others(c,C,3,x=>x.m);return{ty:'mcq',f:c.f,k:'المقدار',q:`${c.n} بيتمد قد إيه؟`,opts:shuf([c.m,...o.map(x=>x.m)]),a:c.m,w:`${c.n}: ${c.m}.`,x:ex1(c)}}
+function gHokm(c){return{ty:'mcq',f:c.f,k:'الحكم',q:`حكم ${c.n} إيه؟`,opts:['واجب','جائز','لازم'],a:c.h,w:`${c.n} حكمه ${c.h}. (الواجب ممنوع يتقصر، والجائز يجوز قصره ومده، واللازم ٦ عند كل القراء)`,x:ex1(c)}}
+function gTF(c){const t=Math.random()<.5,o=others(c,C,1,x=>x.m)[0],v=t?c.m:o.m;return{ty:'tf',f:c.f,k:'صح ولا غلط',q:`${c.n} مقداره: ${v}`,a:t,w:`الصح: ${c.n} مقداره ${c.m}.`,x:ex1(c)}}
+function gTF2(c){const e=ex1(c),t=Math.random()<.5,o=others(c,C,1,x=>x.n)[0];return{ty:'tf',f:c.f,k:'صح ولا غلط',q:`المد في الكلمة دي: ${t?c.n:o.n}`,big:e[0],a:t,w:`الصح: ${c.n}. ${c.r}`,x:e}}
+function gFill(c){const o=others(c,C,3,x=>x.d[1]);return{ty:'fill',f:c.f,k:'كمّل التعريف',q:`كمّل تعريف ${c.n}:`,pre:c.d[0],post:c.d[2],opts:shuf([c.d[1],...o.map(x=>x.d[1])]),a:c.d[1],w:`${c.n}: ${c.r}`,x:ex1(c)}}
+function gMatch(cs){const p=shuf(cs).slice(0,4).map(c=>[c.n,ex1(c)[0],c.f]);return{ty:'match',f:'n',k:'وصّل',q:'وصّل كل مد بمثاله',pairs:p}}
+function gOrder(){return{ty:'order',f:'n',k:'رتّب',q:'رتّب المدود من الأقوى للأضعف',items:RANK,w:'«أقوى المدود لازمٌ فما اتصل، فعارضٌ فذو انفصالٍ فبدل»، وبعدهم اللين ثم المعنوي.',x:['وَلَآ ءَآمِّينَ الْبَيْتَ الْحَرَامَ','بدل ولازم اجتمعوا، فاللازم الأقوى بيغلب ويتمد ٦']}}
+function gSpot(s){return{ty:'spot',f:s.f,k:'لوّن المد',q:`دوس على كل كلمة فيها: ${s.t}`,s,w:s.n}}
+function fromD(d){const o=shuf(d[1].map((t,k)=>({t,k})));return{ty:'mcq',f:QF[d[4]]||'n',k:d[4],q:d[0],opts:o.map(x=>x.t),a:d[1][d[2]],w:d[3],x:d[5]}}
+function build(u){
+ const q=[],un=U[u];
+ if(u<4){const cs=C.filter(c=>c.u===u+1);
+  cs.forEach(c=>{q.push({ty:'teach',c});q.push(gClassify(c));q.push(rnd([gAmount,gTF,gFill,gTF2])(c));if(c.h&&Math.random()<.5)q.push(gHokm(c))});
+  q.push(gMatch(cs));SP.filter(s=>s.u===u+1).forEach(s=>q.push(gSpot(s)));cs.forEach(c=>q.push(rnd([gFill,gTF2,gAmount])(c)));
+  shuf(D.filter(d=>un.cats.includes(d[4]))).slice(0,5).forEach(d=>q.push(fromD(d)));
+ }else if(u===4){q.push({ty:'teachR'});q.push(gOrder());shuf(D.filter(d=>un.cats.includes(d[4]))).forEach(d=>q.push(fromD(d)));q.push(gOrder())}
+ else{const cs=shuf(C);cs.forEach(c=>q.push(rnd([gClassify,gAmount,gTF,gTF2,gFill])(c)));q.splice(6,0,gMatch(C));q.splice(12,0,gOrder());shuf(SP).slice(0,4).forEach((s,i)=>q.splice(4+i*5,0,gSpot(s)));q.push(gMatch(C));shuf(D).slice(0,8).forEach(d=>q.push(fromD(d)))}
+ return q;
+}
+/* خريطة الطريق */
+const unlocked=i=>G.all||i===0||!!G.units[i-1];
+function ring(v){const p=Math.min(1,v/GOAL),r=16,L=2*Math.PI*r;return `<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="${r}" fill="none" stroke="var(--line)" stroke-width="5"/><circle cx="20" cy="20" r="${r}" fill="none" stroke="var(--fa)" stroke-width="5" stroke-linecap="round" stroke-dasharray="${L*p} ${L}" transform="rotate(-90 20 20)"/></svg>`}
+function lhome(){
+ const st=curStreak(),tx=todayXP(),next=U.findIndex((x,i)=>unlocked(i)&&!G.units[i]);
+ $('#learn').className='qbox';
+ $('#learn').innerHTML=`<div class="stats"><div title="أيام ورا بعض"><span class="big1">🔥 ${st}</span><small>${st===1?'يوم':'أيام'} ورا بعض</small></div><div><span class="big1">⭐ ${G.xp}</span><small>نقطة</small></div><div class="goal">${ring(tx)}<span><b>${Math.min(tx,GOAL)}/${GOAL}</b><small>هدف النهارده</small></span></div><button class="snd" data-snd="1" aria-label="الصوت">${G.snd?'🔊':'🔇'}</button></div>
+ <div class="path">${U.map((x,i)=>{const s=G.units[i],lk=!unlocked(i),cur=i===next;return `<div class="stop" style="--off:${[0,-38,-58,-38,0,38][i]}px"><button class="node f${x.f}${lk?' lock':''}${cur?' cur':''}${s?' done':''}" data-u="${i}" ${lk?'data-lock="1"':''} aria-label="${x.t}"><span>${lk?'🔒':x.f!=='n'?FN[x.f][0]:i===4?'↕':'★'}</span></button><b>${i+1}. ${x.t}</b><small>${s?'★'.repeat(s.stars)+'☆'.repeat(3-s.stars)+' · '+s.best+'%':lk?'خلّص اللي قبلها':cur?'ابدأ من هنا':''}</small></div>`}).join('')}</div>
+ ${G.all?'':'<button class="tlink" data-all="1">افتح كل الوحدات (للمعلم)</button>'}`;
+}
+function lstart(u){Lunit=u;Lq=build(u);Li=0;Lok=0;Ltot=0;Lstreak=0;Lmiss=[];Lhearts=5;Lxp=0;lshow()}
+function head(it){const p=Math.round(Li/Lq.length*100);return `<div class="meta"><button class="xbtn" data-lx="1" aria-label="خروج">✕</button><div class="bar" style="flex:1;margin:0 10px"><i style="width:${p}%"></i></div><span class="hearts">❤️ ${Lhearts}</span></div>${Lstreak>=3?`<span class="combo">🔥 ${Lstreak} ورا بعض</span>`:''}${it.k?`<span class="qtag">${it.f!=='n'?`<span class="ic">${FN[it.f][0]}</span>`:''}${it.k}</span>`:''}`}
+function lshow(){
+ const it=Lq[Li],L=$('#learn');if(!it)return lend();
+ L.className='qbox f'+(it.c?it.c.f:it.f);
+ if(it.ty==='teach'){const c=it.c;L.innerHTML=head({})+`<span class="qtag"><span class="ic">${FN[c.f][0]}</span>بطاقة جديدة</span><h3 class="tn">${c.n}</h3><p>${c.r}</p>
+  <div class="facts"><div><small>المقدار</small>${c.m}</div>${c.h?`<div><small>الحكم</small>${c.h}</div>`:''}</div>${c.ex.map(e=>`<div class="ex"><span class="q">﴿${e[0]}﴾</span><br><small>${e[1]}</small></div>`).join('')}
+  <div class="act"><button class="btn" data-ln="1">فهمت، يلا نتمرّن</button></div>`;return}
+ if(it.ty==='teachR'){L.className='qbox fn';L.innerHTML=head({})+`<span class="qtag">بطاقة جديدة</span><h3 class="tn">مراتب المدود</h3><div class="ex">«أقوى المدود لازمٌ فما اتصل * فعارضٌ فذو انفصالٍ فبدل»</div><ol>${RANK.map(r=>`<li>${r}</li>`).join('')}</ol><p>لو اجتمع سببين على حرف مد واحد، القوي يلغي الضعيف.</p>
+  <div class="facts"><div><small>الشاطبية</small>المنفصل والمتصل ٤ أو ٥</div><div><small>الطيبة</small>المنفصل ٢ لـ٥، المتصل ٤ لـ٦، والتعظيم ٤</div></div><div class="act"><button class="btn" data-ln="1">فهمت، يلا نتمرّن</button></div>`;return}
+ let body='';
+ if(it.ty==='mcq')body=`<div class="opts">${it.opts.map((o,k)=>`<button data-lo="${k}">${o}</button>`).join('')}</div>`;
+ if(it.ty==='tf')body=`<div class="tfb"><button data-lt="1">✔ صح</button><button data-lt="0">✘ غلط</button></div>`;
+ if(it.ty==='fill')body=`<p class="fillq">${it.pre}<span class="blank">؟</span>${it.post}</p><div class="chips">${it.opts.map((o,k)=>`<button data-lf="${k}">${o}</button>`).join('')}</div>`;
+ if(it.ty==='match'){it.left=null;it.done=0;it.err=0;const R2=shuf(it.pairs.map((p,k)=>k));body=`<div class="mt"><div>${it.pairs.map((p,k)=>`<button class="f${p[2]}" data-ml="${k}">${p[0]}</button>`).join('')}</div><div>${R2.map(k=>`<button class="ar" data-mr="${k}">${it.pairs[k][1]}</button>`).join('')}</div></div>`}
+ if(it.ty==='order'){it.pos=0;it.err=0;body=`<ol class="ord" id="ordl"></ol><div class="chips">${shuf(it.items.map((t,k)=>k)).map(k=>`<button data-or="${k}">${it.items[k]}</button>`).join('')}</div>`}
+ if(it.ty==='spot'){it.found=0;it.err=0;body=`<div class="ayah">﴿ ${it.s.w.map((w,k)=>`<button data-sp="${k}">${w}</button>`).join(' ')} ﴾</div><p class="sub" style="font-size:13.5px">فيها ${it.s.k.length===1?'كلمة واحدة':it.s.k.length+' كلمات'}.</p>`}
+ L.innerHTML=head(it)+`<p class="qt">${it.q}</p>${it.big?`<div class="big"><span class="q">﴿${it.big}﴾</span></div>`:''}${body}<div id="lfb"></div>`;
+}
+function hurt(){Lhearts--;sBad();const h=$('#learn .hearts');if(h){h.textContent='❤️ '+Lhearts;h.classList.remove('shk');void h.offsetWidth;h.classList.add('shk')}}
+function lfb(ok,it){
+ Ltot++;if(ok){Lok++;Lstreak++;Lxp+=10;addXP(10);sOk()}else{Lstreak=0;hurt();if((it.tries=(it.tries||0)+1)<3){Lq.push(Object.assign({},it,{opts:it.opts&&shuf(it.opts)}));Lmiss.push(it)}}
+ const x=it.x;$('#learn').querySelectorAll('.opts button,.tfb button,.chips button,.ayah button').forEach(b=>b.disabled=true);
+ $('#lfb').innerHTML=`<div class="why ${ok?'gk':'bk'}"><b>${ok?rnd(['✔ برافو!','✔ صح كده!','✔ ممتاز!'])+' +١٠':'✘ مش مظبوطة'}${!ok&&typeof it.a==='string'?` — الصح: ${it.a}`:''}</b>${it.w||''}${x?`<div class="qex"><small>مثال من القرآن</small><span class="q">﴿${x[0]}﴾</span><p>${x[1]}</p></div>`:''}${!ok&&it.tries<3?'<small>هيرجعلك السؤال ده تاني في الآخر.</small>':''}</div><div class="act"><button class="btn" data-ln="1">كمّل</button></div>`;
+ $('#lfb [data-ln]').focus();
+}
+function lfail(){
+ $('#learn').className='qbox';
+ $('#learn').innerHTML=`<p class="score" style="font-size:56px">💔</p><p class="qt">خلصت القلوب!</p><p>ولا يهمك، ده جزء من التعلم. ارجع شوف درس «${U[Lunit].t}» في تبويب الدروس، أو جرّب الوحدة تاني.</p><p class="sub">جمعت ${Lxp} نقطة في المحاولة دي.</p>
+ <div class="act"><button class="btn" data-u="${Lunit}">جرّب تاني</button><button class="btn alt" data-goles="1">روح للدروس</button><button class="btn alt" data-lx="1">خريطة الطريق</button></div>`;
+}
+function lend(){
+ const p=Ltot?Math.round(Lok/Ltot*100):100,stars=p>=90?3:p>=70?2:1,bonus=20+(Lmiss.length?0:10);
+ addXP(bonus);Lxp+=bonus;
+ const old=G.units[Lunit];if(!old||p>old.best)G.units[Lunit]={best:p,stars:Math.max(stars,old?old.stars:0)};save();
+ sWin();boom();
+ $('#learn').className='qbox';
+ $('#learn').innerHTML=`<p class="sub">خلّصت وحدة «${U[Lunit].t}»</p><div class="stars">${'★'.repeat(stars)}<span>${'☆'.repeat(3-stars)}</span></div><div class="score">${p}%</div>
+ <div class="facts"><div><small>نقاط الجلسة</small>⭐ ${Lxp}</div><div><small>القلوب الباقية</small>❤️ ${Lhearts}</div><div><small>السلسلة</small>🔥 ${curStreak()}</div></div>
+ ${Lmiss.length?`<p class="sub">ركّز على: ${[...new Set(Lmiss.map(m=>m.k+': '+(m.big?m.big+' ← ':'')+(typeof m.a==='string'?m.a:m.s?m.s.t:'')))].slice(0,6).join(' · ')}</p>`:'<p class="qt" style="color:var(--ok)">من غير ولا غلطة! +١٠ بونص</p>'}
+ <div class="act">${Lunit<5?`<button class="btn" data-u="${Lunit+1}">الوحدة اللي بعدها: ${U[Lunit+1].t}</button>`:''}<button class="btn alt" data-lx="1">خريطة الطريق</button></div>`;
+}
+$('#learn').addEventListener('click',e=>{
+ const b=e.target.closest('button');if(!b||b.disabled)return;const it=Lq[Li];
+ if(b.dataset.snd){G.snd=!G.snd;save();b.textContent=G.snd?'🔊':'🔇';if(G.snd)sOk();return}
+ if(b.dataset.all){G.all=true;save();return lhome()}
+ if(b.dataset.lock){toast('🔒 خلّص الوحدة اللي قبلها الأول');return}
+ if(b.dataset.goles){tab(false);return}
+ if(b.dataset.u!=null)return lstart(+b.dataset.u);
+ if(b.dataset.lx)return lhome();
+ if(b.dataset.ln){if(Lhearts<=0)return lfail();Li++;return lshow()}
+ if(b.dataset.lo!=null){const ok=it.opts[+b.dataset.lo]===it.a;b.classList.add(ok?'right':'wrong');[...$('#learn').querySelectorAll('.opts button')].forEach((x,k)=>{if(it.opts[k]===it.a)x.classList.add('right')});return lfb(ok,it)}
+ if(b.dataset.lt!=null){const ok=(b.dataset.lt==='1')===it.a;b.classList.add(ok?'right':'wrong');return lfb(ok,it)}
+ if(b.dataset.lf!=null){const v=it.opts[+b.dataset.lf],ok=v===it.a,bl=$('#learn .blank');bl.textContent=it.a;bl.classList.add(ok?'gk':'bk');b.classList.add(ok?'right':'wrong');return lfb(ok,it)}
+ if(b.dataset.ml!=null){$('#learn').querySelectorAll('[data-ml]').forEach(x=>x.classList.remove('on'));b.classList.add('on');it.left=+b.dataset.ml;return}
+ const miss=el=>{it.err++;hurt();el.classList.remove('shk');void el.offsetWidth;el.classList.add('shk');if(Lhearts<=0)setTimeout(lfail,500)};
+ const fin=()=>{it.w=(it.err?`غلطت ${it.err} مرة. `:'كله صح من أول مرة! ')+(it.w||'');it.tries=9;if(it.err){Ltot++;Lstreak=0;$('#learn').querySelectorAll('.chips button,.ayah button').forEach(b=>b.disabled=true);$('#lfb').innerHTML=`<div class="why bk"><b>خلصت بس فيه ${it.err} غلطة</b>${it.w}${it.x?`<div class="qex"><small>مثال من القرآن</small><span class="q">﴿${it.x[0]}﴾</span><p>${it.x[1]}</p></div>`:''}</div><div class="act"><button class="btn" data-ln="1">كمّل</button></div>`}else lfb(true,it)};
+ if(b.dataset.mr!=null){if(it.left==null)return;const l=$(`#learn [data-ml="${it.left}"]`);
+  if(+b.dataset.mr===it.left){sOk();l.classList.add('gone');b.classList.add('gone');l.disabled=b.disabled=true;it.left=null;if(++it.done===it.pairs.length){it.w='';fin()}}else miss(b);return}
+ if(b.dataset.or!=null){const k=+b.dataset.or;if(k===it.pos){b.disabled=true;b.classList.add('gone');$('#ordl').insertAdjacentHTML('beforeend',`<li>${it.items[k]}</li>`);if(++it.pos===it.items.length)fin()}else miss(b);return}
+ if(b.dataset.sp!=null){const k=+b.dataset.sp;if(it.s.k.includes(k)){b.disabled=true;b.classList.add('hit');sOk();if(++it.found===it.s.k.length){it.s.w.forEach((w,j)=>{});fin()}}else miss(b);return}
+});
+
+readMap();requestAnimationFrame(()=>document.querySelectorAll('.mapwrap').forEach(fit));
+document.addEventListener('click',e=>{if(e.target.id==='toMap'){tab(true);mode('M')}});
+$('#tL').onclick=()=>tab(false);
+$('#tQ').onclick=()=>{tab(true);mode(curMode)};
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+# Raw source material — local only (large, and full recordings are never re-hosted)
+Audio files/
+PDF Files/
+reference/telegram/files/
+*.zip
+*.mp3
+*.m4a
+*.ogg
+*.wav
+
+# Book PDFs stay out of the public repo until the founder confirms (see discovery/DISCOVERY.md)
+reference/source/
+
+# Node / build
+node_modules/
+dist/
+dev-dist/
+coverage/
+playwright-report/
+test-results/
+.vite/
+
+# Env / OS / editor
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
