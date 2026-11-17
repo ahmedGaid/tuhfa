@@ -1,0 +1,20 @@
+.mascot__ink {
+  fill: var(--ink);
+}
+.mascot__eye {
+  fill: var(--bg);
+}
+.mascot__mouth {
+  fill: none;
+  stroke: var(--bg);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+.mascot--idle {
+  animation: mascot-breathe 3.2s var(--ease) infinite;
+}
+@keyframes mascot-breathe {
+  50% {
+    transform: scale(1.03);
+  }
+}

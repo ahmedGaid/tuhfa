@@ -1,0 +1,19 @@
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--s-3);
+  padding-block: var(--s-7);
+  padding-inline: var(--s-5);
+}
+.placeholder h1 {
+  margin: 0;
+  font-size: var(--fs-xl);
+  font-weight: 800;
+}
+.placeholder p {
+  margin: 0;
+  max-width: 32ch;
+  color: var(--mute);
+}

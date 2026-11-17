@@ -16,15 +16,15 @@ description: "Task list for Tuhfa v1 — Madd module"
 
 ## Phase 1: Setup — M1 (day 1) 🎯 empty app live
 
-- [ ] T001 Create GitHub repo `ahmedGaid/tuhfa` (public), push `main`, enable Pages → "GitHub Actions"
-- [ ] T002 Scaffold Vite + Preact + TS strict at repo root: `package.json`, `vite.config.ts` (`base` from `VITE_BASE`, default `/tuhfa/`), `tsconfig.json`, `index.html` (`lang="ar" dir="rtl"`)
-- [ ] T003 [P] ESLint (flat config, `no-restricted-imports` engine→content/modules) + Prettier + `.editorconfig` + `.gitattributes` (LF)
-- [ ] T004 [P] Vitest config (`vitest.config.ts`, jsdom) + one smoke test in `tests/unit/smoke.test.ts`
-- [ ] T005 [P] Playwright config (`playwright.config.ts`, 390×844 + 360×740, webServer = `vite preview`) + `tests/e2e/smoke.spec.ts`
-- [ ] T006 [P] Fonts: `@fontsource/cairo` (400/600/800) + `@fontsource/scheherazade-new` (400/700) imported in `src/ui/fonts.ts`
-- [ ] T007 Theme tokens in `src/ui/theme.css`: neutral ink/greys, light+dark via `prefers-color-scheme` + `[data-theme]`, `--ok`/`--bad` feedback only, Madd category vars, tactile button styles, focus ring, reduced-motion block (values from `tuhfa-brand` skill)
-- [ ] T008 Hash router `src/ui/router.ts` + app shell `src/main.tsx` + bottom tab bar (المسار · راجع · المكتبة · حسابي) with placeholder screens
-- [ ] T009 `.github/workflows/deploy.yml`: ci job (lint, typecheck, unit, build, e2e) on PR+push; deploy job on `main` (upload-pages-artifact + deploy-pages)
+- [x] T001 Create GitHub repo `ahmedGaid/tuhfa` (public), push `main`, enable Pages → "GitHub Actions"
+- [x] T002 Scaffold Vite + Preact + TS strict at repo root: `package.json`, `vite.config.ts` (`base` from `VITE_BASE`, default `/tuhfa/`), `tsconfig.json`, `index.html` (`lang="ar" dir="rtl"`)
+- [x] T003 [P] ESLint (flat config, `no-restricted-imports` engine→content/modules) + Prettier + `.editorconfig` + `.gitattributes` (LF)
+- [x] T004 [P] Vitest config (`vitest.config.ts`, jsdom) + one smoke test in `tests/unit/smoke.test.ts`
+- [x] T005 [P] Playwright config (`playwright.config.ts`, 390×844 + 360×740, webServer = `vite preview`) + `tests/e2e/smoke.spec.ts`
+- [x] T006 [P] Fonts: `@fontsource/cairo` (400/600/800) + `@fontsource/scheherazade-new` (400/700) imported in `src/ui/fonts.ts`
+- [x] T007 Theme tokens in `src/ui/theme.css`: neutral ink/greys, light+dark via `prefers-color-scheme` + `[data-theme]`, `--ok`/`--bad` feedback only, Madd category vars, tactile button styles, focus ring, reduced-motion block (values from `tuhfa-brand` skill)
+- [x] T008 Hash router `src/ui/router.ts` + app shell `src/main.tsx` + bottom tab bar (المسار · راجع · المكتبة · حسابي) with placeholder screens
+- [x] T009 `.github/workflows/deploy.yml`: ci job (lint, typecheck, unit, build, e2e) on PR+push; deploy job on `main` (upload-pages-artifact + deploy-pages)
 - [ ] T010 Verify live URL loads at 390×844, no overflow at 360; screenshot to `docs/screens/m1.png`
 
 **Checkpoint M1**: `ahmedgaid.github.io/tuhfa` shows the RTL shell with 4 tabs; CI green.
