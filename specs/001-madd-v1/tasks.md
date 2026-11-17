@@ -25,7 +25,7 @@ description: "Task list for Tuhfa v1 — Madd module"
 - [x] T007 Theme tokens in `src/ui/theme.css`: neutral ink/greys, light+dark via `prefers-color-scheme` + `[data-theme]`, `--ok`/`--bad` feedback only, Madd category vars, tactile button styles, focus ring, reduced-motion block (values from `tuhfa-brand` skill)
 - [x] T008 Hash router `src/ui/router.ts` + app shell `src/main.tsx` + bottom tab bar (المسار · راجع · المكتبة · حسابي) with placeholder screens
 - [x] T009 `.github/workflows/deploy.yml`: ci job (lint, typecheck, unit, build, e2e) on PR+push; deploy job on `main` (upload-pages-artifact + deploy-pages)
-- [ ] T010 Verify live URL loads at 390×844, no overflow at 360; screenshot to `docs/screens/m1.png`
+- [x] T010 Verify live URL loads at 390×844, no overflow at 360; screenshot to `docs/screens/m1.png`
 
 **Checkpoint M1**: `ahmedgaid.github.io/tuhfa` shows the RTL shell with 4 tabs; CI green.
 
@@ -33,20 +33,20 @@ description: "Task list for Tuhfa v1 — Madd module"
 
 ## Phase 2: Foundational content — M2 (day 1–2) ⚠️ blocks every story
 
-- [ ] T011 `src/content/schema.ts`: zod schemas + types for Course, ModuleRef, Module, Category, Concept, Example, Unit, LessonSpec, Lesson, Question, SpotItem, TreeNode, Extras (data-model.md)
-- [ ] T012 `src/content/course.ts`: module registry in provisional Sheikh order (research R15); Madd `ready`, all others `soon` with title + icon only
-- [ ] T013 Download Tanzil Uthmani text to `data/quran-uthmani.txt` + `data/TANZIL-LICENSE.md` (attribution)
-- [ ] T014 `scripts/extract-prototype.ts`: evaluate prototype arrays (L, C, U, D, SP, M, R, T, PG, RANK) in a sandbox and emit `src/content/modules/madd/*.ts` verbatim (split Example into `quran`/`label`/`note`; R5)
-- [ ] T015 Run extraction; hand-fix only what the script cannot split; commit generated Madd data
-- [ ] T016 `scripts/locate-ayah.ts` (R4): assign refs + `verified` for unique hits; write candidates for the rest
-- [ ] T017 [P] `scripts/verify-quran.ts` (R3) + `tests/unit/verify-quran.test.ts` (normaliser cases)
-- [ ] T018 [P] `tests/unit/ambiguity.test.ts` (R6) — 500 seeded sessions, correct answer only option in tags
-- [ ] T019 [P] `tests/unit/spot-indexes.test.ts` (R7) — every SpotItem answer matches `expectWords`
-- [ ] T020 `scripts/content-notes.ts` → `CONTENT_NOTES.md`: unverified examples with candidates, prototype↔book disagreements, thin concepts
+- [x] T011 `src/content/schema.ts`: zod schemas + types for Course, ModuleRef, Module, Category, Concept, Example, Unit, LessonSpec, Lesson, Question, SpotItem, TreeNode, Extras (data-model.md)
+- [x] T012 `src/content/course.ts`: module registry in provisional Sheikh order (research R15); Madd `ready`, all others `soon` with title + icon only
+- [x] T013 Download Tanzil Uthmani text to `data/quran-uthmani.txt` + `data/TANZIL-LICENSE.md` (attribution)
+- [x] T014 `scripts/extract-prototype.ts`: evaluate prototype arrays (L, C, U, D, SP, M, R, T, PG, RANK) in a sandbox and emit `src/content/modules/madd/*.ts` verbatim (split Example into `quran`/`label`/`note`; R5)
+- [x] T015 Run extraction; hand-fix only what the script cannot split; commit generated Madd data
+- [x] T016 `scripts/locate-ayah.ts` (R4): assign refs + `verified` for unique hits; write candidates for the rest
+- [x] T017 [P] `scripts/verify-quran.ts` (R3) + `tests/unit/verify-quran.test.ts` (normaliser cases)
+- [x] T018 [P] `tests/unit/ambiguity.test.ts` (R6) — 500 seeded sessions, correct answer only option in tags
+- [x] T019 [P] `tests/unit/spot-indexes.test.ts` (R7) — every SpotItem answer matches `expectWords`
+- [x] T020 `scripts/content-notes.ts` → `CONTENT_NOTES.md`: unverified examples with candidates, prototype↔book disagreements, thin concepts
 - [ ] T021 Read book pages `reference/img/*` + `reference/source/part1.pdf`/`part2.pdf` against extracted Madd data; log every disagreement in `CONTENT_NOTES.md` (book wins)
-- [ ] T022 `scripts/validate.ts` + `npm run validate` (schema → verify → ambiguity → spot → colour ΔE); add to CI
-- [ ] T023 [P] `tests/unit/content-counts.test.ts`: 21 lessons, 17 concepts, 57 questions, 10 spot, tree root, ruler, turuq present (SC-003)
-- [ ] T024 [P] `src/content/modules/_template/` with commented sample data that passes validate
+- [x] T022 `scripts/validate.ts` + `npm run validate` (schema → verify → ambiguity → spot → colour ΔE); add to CI
+- [x] T023 [P] `tests/unit/content-counts.test.ts`: 21 lessons, 17 concepts, 57 questions, 10 spot, tree root, ruler, turuq present (SC-003)
+- [x] T024 [P] `src/content/modules/_template/` with commented sample data that passes validate
 
 **Checkpoint M2**: `npm run validate` green; `CONTENT_NOTES.md` ready for founder review.
 
