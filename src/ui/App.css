@@ -1,0 +1,43 @@
+.app {
+  min-height: 100dvh;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-block-end: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+}
+.app__header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-2);
+  padding-block: var(--s-3);
+  padding-inline: var(--s-4);
+  border-block-end: 1px solid var(--line);
+}
+.app__brand {
+  font-size: var(--fs-lg);
+  font-weight: 800;
+}
+.app__tagline {
+  font-size: var(--fs-sm);
+  color: var(--mute);
+}
+.app__main {
+  flex: 1;
+}
+.app__missing {
+  display: grid;
+  justify-items: center;
+  gap: var(--s-4);
+  padding: var(--s-7) var(--s-5);
+  text-decoration: none;
+}
+.app__missing .btn {
+  text-decoration: none;
+}
+.app__credit {
+  padding: var(--s-4);
+  font-size: var(--fs-sm);
+  color: var(--mute);
+  text-align: center;
+}

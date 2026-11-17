@@ -1,0 +1,12 @@
+dist
+dev-dist
+node_modules
+reference
+.specify
+.claude
+specs
+discovery
+package-lock.json
+PROMPT.md
+playwright-report
+test-results
