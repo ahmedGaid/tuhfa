@@ -1,0 +1,64 @@
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-6) var(--s-4);
+  text-align: center;
+}
+.done__sub {
+  margin: 0;
+  color: var(--mute);
+}
+.done__warm {
+  margin: 0;
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  line-height: 1.4;
+}
+.done__stars {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: var(--s-1);
+  color: var(--ink);
+}
+.done__off {
+  color: var(--line);
+}
+.done__facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-2);
+  inline-size: 100%;
+  margin: 0;
+}
+.done__facts > div {
+  padding: var(--s-3);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+}
+.done__facts dt {
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
+.done__facts dd {
+  margin: 0;
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.done__perfect {
+  margin: 0;
+  font-weight: 600;
+}
+.done__actions {
+  display: grid;
+  gap: var(--s-2);
+  inline-size: 100%;
+}
+.done__actions a.btn {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}

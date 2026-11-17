@@ -55,24 +55,24 @@ description: "Task list for Tuhfa v1 — Madd module"
 ## Phase 3: US1 + US2 — play a lesson with all exercise types — M3 (day 2–4) 🎯 MVP
 
 ### Tests first
-- [ ] T025 [P] [US2] `tests/unit/generators.test.ts`: each of 10 generators builds valid items for Madd and `_template`, never uses `verified:false`, grade is pure
-- [ ] T026 [P] [US1] `tests/unit/session.test.ts`: teach card first for new concept, size 10–15, wrong items re-queued ≤2 times, map ≤1 per lesson
-- [ ] T027 [P] [US1] `tests/unit/scoring.test.ts`: XP (+10/+20/+10 perfect), combo at 3, stars thresholds 90/70
+- [x] T025 [P] [US2] `tests/unit/generators.test.ts`: each of 10 generators builds valid items for Madd and `_template`, never uses `verified:false`, grade is pure
+- [x] T026 [P] [US1] `tests/unit/session.test.ts`: teach card first for new concept, size 10–15, wrong items re-queued ≤2 times, map ≤1 per lesson
+- [x] T027 [P] [US1] `tests/unit/scoring.test.ts`: XP (+10/+20/+10 perfect), combo at 3, stars thresholds 90/70
 
 ### Engine
-- [ ] T028 [P] [US2] `src/engine/rng.ts` (seeded) + `src/engine/types.ts` (Item, Grade, Generator)
-- [ ] T029 [P] [US2] Generators `classify.ts`, `amount.ts`, `ruling.ts`, `truefalse.ts` in `src/engine/generators/`
-- [ ] T030 [P] [US2] Generators `complete.ts`, `match.ts`, `order.ts` in `src/engine/generators/`
-- [ ] T031 [P] [US2] Generators `spot.ts`, `map.ts` (4 levels), `bank.ts` in `src/engine/generators/`
-- [ ] T032 [US1] `src/engine/session.ts` (queue builder + re-queue) and `src/engine/scoring.ts`
+- [x] T028 [P] [US2] `src/engine/rng.ts` (seeded) + `src/engine/types.ts` (Item, Grade, Generator)
+- [x] T029 [P] [US2] Generators `classify.ts`, `amount.ts`, `ruling.ts`, `truefalse.ts` in `src/engine/generators/`
+- [x] T030 [P] [US2] Generators `complete.ts`, `match.ts`, `order.ts` in `src/engine/generators/`
+- [x] T031 [P] [US2] Generators `spot.ts`, `map.ts` (4 levels), `bank.ts` in `src/engine/generators/`
+- [x] T032 [US1] `src/engine/session.ts` (queue builder + re-queue) and `src/engine/scoring.ts`
 
 ### UI
-- [ ] T033 [P] [US1] Components: `Button`, `Sheet`, `ProgressBar`, `QuranText`, `Badge`, `Mascot` (نقطة, 4 poses) in `src/ui/components/`
-- [ ] T034 [US1] `TeachCard` + `FeedbackSheet` (aria-live, example always shown) in `src/ui/components/`
-- [ ] T035 [P] [US2] Exercise views `src/ui/exercises/{Classify,Amount,Ruling,TrueFalse,Complete}.tsx`
-- [ ] T036 [P] [US2] Exercise views `src/ui/exercises/{Match,Order,Spot,Map,Bank}.tsx` (all keyboard-playable)
-- [ ] T037 [US1] `src/ui/screens/Lesson.tsx` (top progress, exit confirm, combo badge) + `Complete.tsx` (stars, XP, accuracy, نقطة, warm message)
-- [ ] T038 [US1] `tests/e2e/lesson.spec.ts`: play Madd lesson 1 end to end at 390×844, keyboard-only pass for one exercise of each type
+- [x] T033 [P] [US1] Components: `Button`, `Sheet`, `ProgressBar`, `QuranText`, `Badge`, `Mascot` (نقطة, 4 poses) in `src/ui/components/` — the first five in `ui.tsx`
+- [x] T034 [US1] `TeachCard` + `FeedbackSheet` (aria-live, example always shown) in `src/ui/components/`
+- [x] T035 [P] [US2] Exercise views `src/ui/exercises/{Classify,Amount,Ruling,TrueFalse,Complete}.tsx` — built as one `Choice.tsx` (classify · amount · ruling · fill · question) + `TrueFalse.tsx`
+- [x] T036 [P] [US2] Exercise views `src/ui/exercises/{Match,Order,Spot,Map,Bank}.tsx` (all keyboard-playable) — Map = `MapFill.tsx`, Bank = `Choice.tsx`
+- [x] T037 [US1] `src/ui/screens/Lesson.tsx` (top progress, exit confirm, combo badge) + `Complete.tsx` (stars, XP, accuracy, نقطة, warm message)
+- [x] T038 [US1] `tests/e2e/lesson.spec.ts`: play Madd lesson 1 end to end at 390×844, keyboard-only pass for one exercise of each type
 
 **Checkpoint M3**: any Madd lesson reachable via `#/lesson/madd/<id>` plays to completion.
 

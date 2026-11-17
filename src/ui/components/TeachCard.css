@@ -1,0 +1,90 @@
+.teach {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-5) var(--s-4);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-block-start: 4px solid var(--cat, var(--ink));
+  border-radius: var(--r-lg);
+}
+.teach__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.teach__name {
+  margin: 0;
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  color: var(--cat, var(--ink));
+}
+.teach__rule {
+  margin: 0;
+}
+.teach__sub {
+  margin: 0;
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
+.teach__facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--s-2);
+  margin: 0;
+}
+.teach__facts > div {
+  padding: var(--s-2) var(--s-3);
+  background: var(--soft);
+  border-radius: var(--r-md);
+}
+.teach__facts dt {
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
+.teach__facts dd {
+  margin: 0;
+  font-weight: 600;
+}
+.teach__examples {
+  display: grid;
+  gap: var(--s-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.teach__examples li {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding: var(--s-2) var(--s-3);
+  border: 1px dashed var(--line);
+  border-radius: var(--r-md);
+}
+.teach__examples small {
+  color: var(--mute);
+}
+.teach__pending {
+  margin: 0;
+  padding: var(--s-3);
+  border: 1px dashed var(--line);
+  border-radius: var(--r-md);
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
+.teach__verse {
+  margin: 0;
+  padding: var(--s-3);
+  background: var(--soft);
+  border-radius: var(--r-md);
+  font-weight: 600;
+  text-align: center;
+}
+.teach__rank {
+  margin: 0;
+  padding-inline-start: var(--s-5);
+  font-weight: 600;
+}
+.teach__go {
+  margin-block-start: var(--s-2);
+}

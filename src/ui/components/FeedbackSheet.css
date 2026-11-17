@@ -1,0 +1,47 @@
+/* --ok / --bad are allowed here: this is answer feedback (constitution III) */
+.fb__head {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin: 0 0 var(--s-2);
+  font-size: var(--fs-lg);
+  font-weight: 800;
+}
+.fb__head--ok {
+  color: var(--ok);
+}
+.fb__head--bad {
+  color: var(--bad);
+}
+.fb__xp {
+  margin-inline-start: auto;
+  font-size: var(--fs-md);
+  font-variant-numeric: tabular-nums;
+}
+.fb__answer,
+.fb__explain,
+.fb__returns {
+  margin: 0 0 var(--s-2);
+}
+.fb__returns {
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
+.fb__example {
+  margin: 0 0 var(--s-3);
+  padding: var(--s-2) var(--s-3);
+  background: var(--soft);
+  border-radius: var(--r-md);
+  text-align: center;
+}
+.fb__example figcaption {
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
+.fb__example p {
+  margin: 0;
+  font-size: var(--fs-sm);
+}
+.fb__next {
+  inline-size: 100%;
+}

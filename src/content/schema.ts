@@ -78,6 +78,7 @@ export const ExerciseTypeSchema = z.enum([
   'match', // وصّل
   'order', // رتّب
   'spot', // لوّن الحكم
+  'map', // احفظ الخريطة
   'question', // fixed multiple-choice question from `questions`
 ]);
 
@@ -235,6 +236,8 @@ export const PromptsSchema = z.object({
   match: z.string().min(1),
   order: z.string().min(1),
   spot: z.string().min(1),
+  /** «احفظ الخريطة» instruction (optional: the UI has a generic one) */
+  map: z.string().min(1).optional(),
 });
 
 export const ModuleSchema = z
