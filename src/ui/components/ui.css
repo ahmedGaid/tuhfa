@@ -1,0 +1,119 @@
+/* Button variants on top of the base .btn in theme.css */
+.btn--alt {
+  background: var(--card);
+  color: var(--ink);
+  border: 2px solid var(--line);
+  border-block-end-width: 4px;
+}
+.btn--quiet {
+  background: transparent;
+  color: var(--mute);
+  border: 0;
+  font-weight: 600;
+}
+.btn--quiet:active {
+  transform: none;
+}
+.btn:disabled {
+  cursor: default;
+}
+
+/* progress */
+.progress {
+  block-size: 12px;
+  border-radius: var(--r-pill);
+  background: var(--soft);
+  overflow: hidden;
+}
+.progress > i {
+  display: block;
+  block-size: 100%;
+  background: var(--ink);
+  border-radius: inherit;
+  transition: inline-size var(--dur) var(--ease);
+}
+
+/* Quran text */
+.quran--md {
+  font-size: var(--fs-lg);
+  line-height: 2;
+}
+.quran--lg {
+  font-size: var(--fs-quran);
+  line-height: 2.1;
+}
+
+/* category badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  padding-block: 2px;
+  padding-inline: var(--s-2);
+  border-radius: var(--r-pill);
+  border: 1.5px solid var(--cat, var(--line));
+  color: var(--cat, var(--mute));
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+.badge__icon {
+  display: inline-grid;
+  place-items: center;
+  min-inline-size: 20px;
+  block-size: 20px;
+  border-radius: var(--r-pill);
+  background: var(--cat, var(--mute));
+  color: var(--card);
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* floating sheet */
+.sheet-wrap {
+  position: fixed;
+  inset-inline: 0;
+  inset-block-end: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+.sheet {
+  pointer-events: auto;
+  inline-size: 100%;
+  max-inline-size: var(--content-max);
+  max-block-size: 80dvh;
+  overflow-y: auto;
+  padding: var(--s-5) var(--s-4) calc(var(--s-4) + env(safe-area-inset-bottom));
+  background: var(--card);
+  border-start-start-radius: var(--r-lg);
+  border-start-end-radius: var(--r-lg);
+  border-block-start: 4px solid var(--line);
+  box-shadow: var(--shadow-float);
+  animation: sheet-in var(--dur) var(--ease);
+}
+.sheet--ok {
+  border-block-start-color: var(--ok);
+}
+.sheet--bad {
+  border-block-start-color: var(--bad);
+}
+@keyframes sheet-in {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+}
+
+/* small shake for a wrong tap (reduced-motion: off via theme.css) */
+.shake {
+  animation: shake 220ms var(--ease);
+}
+@keyframes shake {
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}

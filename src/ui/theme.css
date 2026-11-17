@@ -15,6 +15,9 @@
   --soft: light-dark(#efefec, #262626);
   --on-ink: light-dark(#ffffff, #151515);
   --ink-depth: light-dark(#0f1013, #bdbdbd);
+  /* the one elevation level: floating sheets / dialogs */
+  --shadow-float: 0 -8px 24px light-dark(rgb(0 0 0 / 0.12), rgb(0 0 0 / 0.5));
+  --scrim: light-dark(rgb(0 0 0 / 0.32), rgb(0 0 0 / 0.6));
 
   /* feedback only */
   --ok: light-dark(#1f9d55, #4fd18b);
