@@ -1,0 +1,6292 @@
+[
+  {
+    "id": "concepts/tab/examples/0",
+    "kind": "example",
+    "context": "المد الطبيعي",
+    "quran": "قَالَ",
+    "note": "الألف بعد فتح ومفيش بعدها همز ولا سكون",
+    "status": "ambiguous",
+    "hits": 367,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 30
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 33
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 54
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 61
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 67
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 68
+        },
+        "tanzil": "قَالَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/tab/examples/1",
+    "kind": "example",
+    "context": "المد الطبيعي",
+    "quran": "يَقُولُ",
+    "note": "الواو بعد ضم",
+    "status": "ambiguous",
+    "hits": 35,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 8
+        },
+        "tanzil": "يَقُولُ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 68
+        },
+        "tanzil": "يَقُولُ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 69
+        },
+        "tanzil": "يَقُولُ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 71
+        },
+        "tanzil": "يَقُولُ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 117
+        },
+        "tanzil": "يَقُولُ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 200
+        },
+        "tanzil": "يَقُولُ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/tab/examples/2",
+    "kind": "example",
+    "context": "المد الطبيعي",
+    "quran": "قِيلَ",
+    "note": "الياء بعد كسر",
+    "status": "ambiguous",
+    "hits": 33,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 11
+        },
+        "tanzil": "قِيلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 13
+        },
+        "tanzil": "قِيلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 59
+        },
+        "tanzil": "قِيلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 91
+        },
+        "tanzil": "قِيلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 170
+        },
+        "tanzil": "قِيلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 206
+        },
+        "tanzil": "قِيلَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/harf/examples/0",
+    "kind": "example",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "طه",
+    "note": "«طا ها» كل حرف حركتين",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 20,
+          "aya": 1
+        },
+        "tanzil": "طه"
+      }
+    ]
+  },
+  {
+    "id": "concepts/harf/examples/1",
+    "kind": "example",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "حمٓ",
+    "note": "الحاء «حا» حركتين (والميم لازم)",
+    "status": "ambiguous",
+    "hits": 7,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 40,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      },
+      {
+        "ref": {
+          "sura": 41,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      },
+      {
+        "ref": {
+          "sura": 42,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      },
+      {
+        "ref": {
+          "sura": 43,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      },
+      {
+        "ref": {
+          "sura": 44,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      },
+      {
+        "ref": {
+          "sura": 45,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/harf/examples/2",
+    "kind": "example",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "الٓر",
+    "note": "الراء «را» حركتين",
+    "status": "ambiguous",
+    "hits": 5,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 12,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 14,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 15,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      }
+    ]
+  },
+  {
+    "id": "concepts/tamk/examples/0",
+    "kind": "example",
+    "context": "مد التمكين",
+    "quran": "النَّبِيِّينَ",
+    "note": "ياء مشددة مكسورة بعدها ياء ساكنة",
+    "status": "suggest",
+    "hits": 9,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 61
+        },
+        "tanzil": "ٱلنَّبِيِّـۧنَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 213
+        },
+        "tanzil": "ٱلنَّبِيِّـۧنَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 21
+        },
+        "tanzil": "ٱلنَّبِيِّـۧنَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 81
+        },
+        "tanzil": "ٱلنَّبِيِّـۧنَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 69
+        },
+        "tanzil": "ٱلنَّبِيِّـۧنَ"
+      },
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 55
+        },
+        "tanzil": "ٱلنَّبِيِّـۧنَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/tamk/examples/1",
+    "kind": "example",
+    "context": "مد التمكين",
+    "quran": "عِلِّيِّينَ",
+    "note": "ياء مشددة مكسورة بعدها ياء ساكنة",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 83,
+          "aya": 18
+        },
+        "tanzil": "عِلِّيِّينَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/tamk/examples/2",
+    "kind": "example",
+    "context": "مد التمكين",
+    "quran": "يَلْوُونَ",
+    "note": "واو مضمومة بعدها واو ساكنة",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 78
+        },
+        "tanzil": "يَلْوُۥنَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/iwad/examples/0",
+    "kind": "example",
+    "context": "مد العوض",
+    "quran": "عَلِيمًا",
+    "note": "تقف: عليما",
+    "status": "ambiguous",
+    "hits": 22,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 11
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 17
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 24
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 32
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 35
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 39
+        },
+        "tanzil": "عَلِيمًا"
+      }
+    ]
+  },
+  {
+    "id": "concepts/iwad/examples/1",
+    "kind": "example",
+    "context": "مد العوض",
+    "quran": "سَبِيلًا",
+    "note": "تقف: سبيلا",
+    "status": "ambiguous",
+    "hits": 27,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 97
+        },
+        "tanzil": "سَبِيلًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 15
+        },
+        "tanzil": "سَبِيلًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 22
+        },
+        "tanzil": "سَبِيلًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 34
+        },
+        "tanzil": "سَبِيلًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 51
+        },
+        "tanzil": "سَبِيلًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 88
+        },
+        "tanzil": "سَبِيلًا"
+      }
+    ]
+  },
+  {
+    "id": "concepts/sila1/examples/0",
+    "kind": "example",
+    "context": "مد الصلة الصغرى",
+    "quran": "إِنَّهُۥ كَانَ",
+    "note": "الهاء بين النون والكاف المتحركين",
+    "status": "ambiguous",
+    "hits": 29,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 2
+        },
+        "tanzil": "إِنَّهُۥ كَانَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 22
+        },
+        "tanzil": "إِنَّهُۥ كَانَ"
+      },
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 3
+        },
+        "tanzil": "إِنَّهُۥ كَانَ"
+      },
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 30
+        },
+        "tanzil": "إِنَّهُۥ كَانَ"
+      },
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 32
+        },
+        "tanzil": "إِنَّهُۥ كَانَ"
+      },
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 33
+        },
+        "tanzil": "إِنَّهُۥ كَانَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/sila1/examples/1",
+    "kind": "example",
+    "context": "مد الصلة الصغرى",
+    "quran": "لَهُۥ قَانِتُونَ",
+    "note": "الهاء بين اللام والقاف",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 116
+        },
+        "tanzil": "لَّهُۥ قَـٰنِتُونَ"
+      },
+      {
+        "ref": {
+          "sura": 30,
+          "aya": 26
+        },
+        "tanzil": "لَّهُۥ قَـٰنِتُونَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/munf/examples/0",
+    "kind": "example",
+    "context": "المد المنفصل",
+    "quran": "بِمَآ أُنزِلَ",
+    "note": "الألف آخر «بما» والهمز أول «أُنزل»",
+    "status": "ambiguous",
+    "hits": 6,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 4
+        },
+        "tanzil": "بِمَآ أُنزِلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 91
+        },
+        "tanzil": "بِمَآ أُنزِلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 285
+        },
+        "tanzil": "بِمَآ أُنزِلَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 60
+        },
+        "tanzil": "بِمَآ أُنزِلَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 162
+        },
+        "tanzil": "بِمَآ أُنزِلَ"
+      },
+      {
+        "ref": {
+          "sura": 13,
+          "aya": 36
+        },
+        "tanzil": "بِمَآ أُنزِلَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/munf/examples/1",
+    "kind": "example",
+    "context": "المد المنفصل",
+    "quran": "قُوٓا أَنفُسَكُمْ",
+    "note": "الواو آخر «قوا» والهمز أول «أنفسكم»",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 66,
+          "aya": 6
+        },
+        "tanzil": "قُوٓا۟ أَنفُسَكُمْ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/munf/examples/2",
+    "kind": "example",
+    "context": "المد المنفصل",
+    "quran": "يَٰٓأَيُّهَا",
+    "note": "منفصل حكمي: الألف اتحذفت رسمًا",
+    "status": "ambiguous",
+    "hits": 142,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 21
+        },
+        "tanzil": "يَٰٓأَيُّهَا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 104
+        },
+        "tanzil": "يَٰٓأَيُّهَا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 153
+        },
+        "tanzil": "يَٰٓأَيُّهَا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 168
+        },
+        "tanzil": "يَٰٓأَيُّهَا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 172
+        },
+        "tanzil": "يَٰٓأَيُّهَا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 178
+        },
+        "tanzil": "يَٰٓأَيُّهَا"
+      }
+    ]
+  },
+  {
+    "id": "concepts/sila2/examples/0",
+    "kind": "example",
+    "context": "مد الصلة الكبرى",
+    "quran": "مَالَهُۥٓ أَخْلَدَهُۥ",
+    "note": "الهاء بين متحركين وبعدها همز «أخلده»",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 104,
+          "aya": 3
+        },
+        "tanzil": "مَالَهُۥٓ أَخْلَدَهُۥ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/sila2/examples/1",
+    "kind": "example",
+    "context": "مد الصلة الكبرى",
+    "quran": "عِندَهُۥٓ إِلَّا",
+    "note": "بعد الهاء همز «إلا»",
+    "status": "ambiguous",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 255
+        },
+        "tanzil": "عِندَهُۥٓ إِلَّا"
+      },
+      {
+        "ref": {
+          "sura": 34,
+          "aya": 23
+        },
+        "tanzil": "عِندَهُۥٓ إِلَّا"
+      }
+    ]
+  },
+  {
+    "id": "concepts/badal/examples/0",
+    "kind": "example",
+    "context": "مد البدل",
+    "quran": "ءَامَنُوا",
+    "note": "أصلها أأْمنوا",
+    "status": "suggest",
+    "hits": 258,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 9
+        },
+        "tanzil": "ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 13
+        },
+        "tanzil": "ءَامِنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 14
+        },
+        "tanzil": "ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 25
+        },
+        "tanzil": "ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 26
+        },
+        "tanzil": "ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 62
+        },
+        "tanzil": "ءَامَنُوا۟"
+      }
+    ]
+  },
+  {
+    "id": "concepts/badal/examples/1",
+    "kind": "example",
+    "context": "مد البدل",
+    "quran": "أُوتُوا",
+    "note": "أصلها أُؤْتوا",
+    "status": "suggest",
+    "hits": 30,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 101
+        },
+        "tanzil": "أُوتُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 144
+        },
+        "tanzil": "أُوتُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 145
+        },
+        "tanzil": "أُوتُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 19
+        },
+        "tanzil": "أُوتُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 20
+        },
+        "tanzil": "أُوتُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 23
+        },
+        "tanzil": "أُوتُوا۟"
+      }
+    ]
+  },
+  {
+    "id": "concepts/badal/examples/2",
+    "kind": "example",
+    "context": "مد البدل",
+    "quran": "إِيمَانًا",
+    "note": "أصلها إِئْمانا",
+    "status": "suggest",
+    "hits": 6,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 173
+        },
+        "tanzil": "إِيمَـٰنًا"
+      },
+      {
+        "ref": {
+          "sura": 8,
+          "aya": 2
+        },
+        "tanzil": "إِيمَـٰنًا"
+      },
+      {
+        "ref": {
+          "sura": 9,
+          "aya": 124
+        },
+        "tanzil": "إِيمَـٰنًا"
+      },
+      {
+        "ref": {
+          "sura": 33,
+          "aya": 22
+        },
+        "tanzil": "إِيمَـٰنًا"
+      },
+      {
+        "ref": {
+          "sura": 48,
+          "aya": 4
+        },
+        "tanzil": "إِيمَـٰنًا"
+      },
+      {
+        "ref": {
+          "sura": 74,
+          "aya": 31
+        },
+        "tanzil": "إِيمَـٰنًا"
+      }
+    ]
+  },
+  {
+    "id": "concepts/mutt/examples/0",
+    "kind": "example",
+    "context": "المد المتصل",
+    "quran": "جَآءَ",
+    "note": "الألف بعدها همز في نفس الكلمة",
+    "status": "ambiguous",
+    "hits": 55,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 43
+        },
+        "tanzil": "جَآءَ"
+      },
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 6
+        },
+        "tanzil": "جَآءَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 61
+        },
+        "tanzil": "جَآءَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 91
+        },
+        "tanzil": "جَآءَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 160
+        },
+        "tanzil": "جَآءَ"
+      },
+      {
+        "ref": {
+          "sura": 7,
+          "aya": 34
+        },
+        "tanzil": "جَآءَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/mutt/examples/1",
+    "kind": "example",
+    "context": "المد المتصل",
+    "quran": "السَّمَآءِ",
+    "note": "الألف بعدها همز",
+    "status": "suggest",
+    "hits": 107,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 19
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 22
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 29
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 59
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 144
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 164
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/mutt/examples/2",
+    "kind": "example",
+    "context": "المد المتصل",
+    "quran": "سُوٓءَ",
+    "note": "الواو بعدها همز",
+    "status": "ambiguous",
+    "hits": 7,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 49
+        },
+        "tanzil": "سُوٓءَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 157
+        },
+        "tanzil": "سُوٓءَ"
+      },
+      {
+        "ref": {
+          "sura": 7,
+          "aya": 141
+        },
+        "tanzil": "سُوٓءَ"
+      },
+      {
+        "ref": {
+          "sura": 7,
+          "aya": 167
+        },
+        "tanzil": "سُوٓءَ"
+      },
+      {
+        "ref": {
+          "sura": 13,
+          "aya": 21
+        },
+        "tanzil": "سُوٓءَ"
+      },
+      {
+        "ref": {
+          "sura": 14,
+          "aya": 6
+        },
+        "tanzil": "سُوٓءَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/lkm/examples/0",
+    "kind": "example",
+    "context": "اللازم الكلمي المثقل",
+    "quran": "الضَّآلِّينَ",
+    "note": "الألف بعدها لام مشددة",
+    "status": "suggest",
+    "hits": 6,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 1,
+          "aya": 7
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 198
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 77
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      },
+      {
+        "ref": {
+          "sura": 26,
+          "aya": 20
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      },
+      {
+        "ref": {
+          "sura": 26,
+          "aya": 86
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      },
+      {
+        "ref": {
+          "sura": 56,
+          "aya": 92
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/lkm/examples/1",
+    "kind": "example",
+    "context": "اللازم الكلمي المثقل",
+    "quran": "الْحَآقَّةُ",
+    "note": "الألف بعدها قاف مشددة",
+    "status": "suggest",
+    "hits": 3,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 69,
+          "aya": 1
+        },
+        "tanzil": "ٱلْحَآقَّةُ"
+      },
+      {
+        "ref": {
+          "sura": 69,
+          "aya": 2
+        },
+        "tanzil": "ٱلْحَآقَّةُ"
+      },
+      {
+        "ref": {
+          "sura": 69,
+          "aya": 3
+        },
+        "tanzil": "ٱلْحَآقَّةُ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/lkm/examples/2",
+    "kind": "example",
+    "context": "اللازم الكلمي المثقل",
+    "quran": "دَآبَّةٍ",
+    "note": "الألف بعدها باء مشددة",
+    "status": "ambiguous",
+    "hits": 12,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 164
+        },
+        "tanzil": "دَآبَّةٍ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 38
+        },
+        "tanzil": "دَآبَّةٍ"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 6
+        },
+        "tanzil": "دَآبَّةٍ"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 56
+        },
+        "tanzil": "دَآبَّةٍ"
+      },
+      {
+        "ref": {
+          "sura": 16,
+          "aya": 49
+        },
+        "tanzil": "دَآبَّةٍ"
+      },
+      {
+        "ref": {
+          "sura": 16,
+          "aya": 61
+        },
+        "tanzil": "دَآبَّةٍ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/lkk/examples/0",
+    "kind": "example",
+    "context": "اللازم الكلمي المخفف",
+    "quran": "ءَآلْـَٰٔنَ",
+    "note": "الألف بعدها لام ساكنة (يونس ٥١، ٩١)",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 51
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 91
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/lhm/examples/0",
+    "kind": "example",
+    "context": "اللازم الحرفي المثقل",
+    "quran": "الٓمٓ",
+    "note": "«لام‿ميم» الميم مدغمة",
+    "status": "ambiguous",
+    "hits": 6,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 29,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 30,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 31,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 32,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/lhm/examples/1",
+    "kind": "example",
+    "context": "اللازم الحرفي المثقل",
+    "quran": "طسٓمٓ",
+    "note": "«سين‿ميم» النون مدغمة",
+    "status": "ambiguous",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 26,
+          "aya": 1
+        },
+        "tanzil": "طسٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 28,
+          "aya": 1
+        },
+        "tanzil": "طسٓمٓ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/lhk/examples/0",
+    "kind": "example",
+    "context": "اللازم الحرفي المخفف",
+    "quran": "الٓمٓ",
+    "note": "«ميم» آخرها مظهر",
+    "status": "ambiguous",
+    "hits": 6,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 29,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 30,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 31,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 32,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/lhk/examples/1",
+    "kind": "example",
+    "context": "اللازم الحرفي المخفف",
+    "quran": "قٓ",
+    "note": "«قاف» ٦ حركات",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 50,
+          "aya": 1
+        },
+        "tanzil": "قٓ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/lhk/examples/2",
+    "kind": "example",
+    "context": "اللازم الحرفي المخفف",
+    "quran": "صٓ",
+    "note": "«صاد» ٦ حركات",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 38,
+          "aya": 1
+        },
+        "tanzil": "صٓ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/arid/examples/0",
+    "kind": "example",
+    "context": "المد العارض للسكون",
+    "quran": "الْعَٰلَمِينَ",
+    "note": "تقف: العالمينْ",
+    "status": "suggest",
+    "hits": 61,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 1,
+          "aya": 2
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 47
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 122
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 131
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 251
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 33
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/arid/examples/1",
+    "kind": "example",
+    "context": "المد العارض للسكون",
+    "quran": "نَسْتَعِينُ",
+    "note": "تقف: نستعينْ",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 1,
+          "aya": 5
+        },
+        "tanzil": "نَسْتَعِينُ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/leen/examples/0",
+    "kind": "example",
+    "context": "مد اللين",
+    "quran": "خَوْفٍ",
+    "note": "الواو ساكنة قبلها فتح",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 83
+        },
+        "tanzil": "خَوْفٍ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/leen/examples/1",
+    "kind": "example",
+    "context": "مد اللين",
+    "quran": "الْبَيْتِ",
+    "note": "الياء ساكنة قبلها فتح",
+    "status": "suggest",
+    "hits": 13,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 125
+        },
+        "tanzil": "ٱلْبَيْتَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 127
+        },
+        "tanzil": "ٱلْبَيْتِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 158
+        },
+        "tanzil": "ٱلْبَيْتَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 97
+        },
+        "tanzil": "ٱلْبَيْتِ"
+      },
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 2
+        },
+        "tanzil": "ٱلْبَيْتَ"
+      },
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 97
+        },
+        "tanzil": "ٱلْبَيْتَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/leen/examples/2",
+    "kind": "example",
+    "context": "مد اللين",
+    "quran": "الصَّيْفِ",
+    "note": "الياء ساكنة قبلها فتح",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 106,
+          "aya": 2
+        },
+        "tanzil": "وَٱلصَّيْفِ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/tazim/examples/0",
+    "kind": "example",
+    "context": "مد التعظيم",
+    "quran": "لَآ إِلَٰهَ إِلَّا اللَّهُ",
+    "note": "الألف في «لا»",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 37,
+          "aya": 35
+        },
+        "tanzil": "لَآ إِلَـٰهَ إِلَّا ٱللَّهُ"
+      },
+      {
+        "ref": {
+          "sura": 47,
+          "aya": 19
+        },
+        "tanzil": "لَآ إِلَـٰهَ إِلَّا ٱللَّهُ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/tazim/examples/1",
+    "kind": "example",
+    "context": "مد التعظيم",
+    "quran": "لَآ إِلَٰهَ إِلَّا هُوَ",
+    "note": "٣٠ موضع بالصورة دي",
+    "status": "ambiguous",
+    "hits": 25,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 255
+        },
+        "tanzil": "لَآ إِلَٰهَ إِلَّا هُوَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 2
+        },
+        "tanzil": "لَآ إِلَٰهَ إِلَّا هُوَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 6
+        },
+        "tanzil": "لَآ إِلَٰهَ إِلَّا هُوَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 18
+        },
+        "tanzil": "لَآ إِلَٰهَ إِلَّا هُوَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 87
+        },
+        "tanzil": "لَآ إِلَٰهَ إِلَّا هُوَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 102
+        },
+        "tanzil": "لَآ إِلَٰهَ إِلَّا هُوَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/tabr/examples/0",
+    "kind": "example",
+    "context": "مد التبرئة",
+    "quran": "لَا رَيْبَ",
+    "note": "أول موضع (البقرة)",
+    "status": "ambiguous",
+    "hits": 9,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 2
+        },
+        "tanzil": "لَا رَيْبَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 87
+        },
+        "tanzil": "لَا رَيْبَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 12
+        },
+        "tanzil": "لَا رَيْبَ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 37
+        },
+        "tanzil": "لَا رَيْبَ"
+      },
+      {
+        "ref": {
+          "sura": 18,
+          "aya": 21
+        },
+        "tanzil": "لَا رَيْبَ"
+      },
+      {
+        "ref": {
+          "sura": 32,
+          "aya": 2
+        },
+        "tanzil": "لَا رَيْبَ"
+      }
+    ]
+  },
+  {
+    "id": "concepts/tabr/examples/1",
+    "kind": "example",
+    "context": "مد التبرئة",
+    "quran": "لَا جُنَاحَ",
+    "note": "الألف في «لا»",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 236
+        },
+        "tanzil": "لَّا جُنَاحَ"
+      },
+      {
+        "ref": {
+          "sura": 33,
+          "aya": 55
+        },
+        "tanzil": "لَّا جُنَاحَ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q01/example",
+    "kind": "question",
+    "context": "المد كله بينقسم لإيه؟",
+    "quran": "ذَٰلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ",
+    "note": "«الكتاب» مد أصلي حركتين، و«لا ريب» لو اتمدت ٤ تبقى فرعي بسبب معنوي (تبرئة لحمزة)",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 2
+        },
+        "tanzil": "ذَٰلِكَ ٱلْكِتَـٰبُ لَا رَيْبَ ۛ فِيهِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q02/example",
+    "kind": "question",
+    "context": "كام صورة للمد الأصلي؟",
+    "quran": "إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًا بَصِيرًا",
+    "note": "فيها ٤ صور: الطبيعي «كان»، والصلة الصغرى «إنّهُۥ» و«بعبادهِۦ»، والعوض عند الوقف على «بصيرا»",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 30
+        },
+        "tanzil": "إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًۢا بَصِيرًا"
+      },
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 96
+        },
+        "tanzil": "إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًۢا بَصِيرًا"
+      }
+    ]
+  },
+  {
+    "id": "questions/q03/example",
+    "kind": "question",
+    "context": "أي صورة من المد الأصلي بتتمد وصلًا بس؟",
+    "quran": "إِنَّهُۥ كَانَ تَوَّابًا",
+    "note": "الهاء في «إنّهُۥ» بين متحركين ← تتمد حركتين وصلًا، ولو وقفت عليها تسكن: إنّهْ",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 110,
+          "aya": 3
+        },
+        "tanzil": "إِنَّهُۥ كَانَ تَوَّابًۢا"
+      }
+    ]
+  },
+  {
+    "id": "questions/q04/example",
+    "kind": "question",
+    "context": "أي صورة من المد الأصلي بتتمد وقفًا بس؟",
+    "quran": "وَكَانَ اللَّهُ عَلِيمًا حَكِيمًا",
+    "note": "لما تقف على «حكيما» تمد الألف حركتين عوضًا عن تنوين الفتح، ووصلًا مفيش مد",
+    "status": "suggest",
+    "hits": 6,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 17
+        },
+        "tanzil": "وَكَانَ ٱللَّهُ عَلِيمًا حَكِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 92
+        },
+        "tanzil": "وَكَانَ ٱللَّهُ عَلِيمًا حَكِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 104
+        },
+        "tanzil": "وَكَانَ ٱللَّهُ عَلِيمًا حَكِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 111
+        },
+        "tanzil": "وَكَانَ ٱللَّهُ عَلِيمًا حَكِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 170
+        },
+        "tanzil": "وَكَانَ ٱللَّهُ عَلِيمًا حَكِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 48,
+          "aya": 4
+        },
+        "tanzil": "وَكَانَ ٱللَّهُ عَلِيمًا حَكِيمًا"
+      }
+    ]
+  },
+  {
+    "id": "questions/q05/example",
+    "kind": "question",
+    "context": "شرط الواو عشان تبقى حرف مد؟",
+    "quran": "قَالُوا ءَامَنَّا",
+    "note": "الواو في «قالُوا» ساكنة وقبلها ضم ← حرف مد طبيعي",
+    "status": "suggest",
+    "hits": 11,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 14
+        },
+        "tanzil": "قَالُوٓا۟ ءَامَنَّا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 76
+        },
+        "tanzil": "قَالُوٓا۟ ءَامَنَّا"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 119
+        },
+        "tanzil": "قَالُوٓا۟ ءَامَنَّا"
+      },
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 41
+        },
+        "tanzil": "قَالُوٓا۟ ءَامَنَّا"
+      },
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 61
+        },
+        "tanzil": "قَالُوٓا۟ ءَامَنَّا"
+      },
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 111
+        },
+        "tanzil": "قَالُوٓا۟ ءَامَنَّا"
+      }
+    ]
+  },
+  {
+    "id": "questions/q06/example",
+    "kind": "question",
+    "context": "في «وَقَالُوا اتَّخَذَ» الواو بتتنطق وصلًا؟",
+    "quran": "وَقَالُوا اتَّخَذَ الرَّحْمَٰنُ وَلَدًا",
+    "note": "وصلًا: «وقالُتَّخَذ» من غير واو، ولو وقفت على «وقالوا» الواو ترجع وتتمد حركتين",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 19,
+          "aya": 88
+        },
+        "tanzil": "وَقَالُوا۟ ٱتَّخَذَ ٱلرَّحْمَـٰنُ وَلَدًا"
+      },
+      {
+        "ref": {
+          "sura": 21,
+          "aya": 26
+        },
+        "tanzil": "وَقَالُوا۟ ٱتَّخَذَ ٱلرَّحْمَـٰنُ وَلَدًا"
+      }
+    ]
+  },
+  {
+    "id": "questions/q07/example",
+    "kind": "question",
+    "context": "الكلمة اللي اجتمعت فيها حروف المد التلاتة بشروطها؟",
+    "quran": "قَالَ رَبِّ إِنِّي أَعُوذُ بِكَ أَنْ أَسْأَلَكَ ... إِنَّا نُوحِيهَآ إِلَيْكَ",
+    "note": "«نُوحِيهَا»: واو بعد ضم، وياء بعد كسر، وألف بعد فتح (هود ٤٩)",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "questions/q08/example",
+    "kind": "question",
+    "context": "«يَوْمَيْنِ» اجتمع فيها إيه؟",
+    "quran": "فَقَضَىٰهُنَّ سَبْعَ سَمَٰوَاتٍ فِي يَوْمَيْنِ",
+    "note": "«يَوْمَيْنِ»: الواو والياء ساكنتين قبلهم فتح ← حرفين لين",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 41,
+          "aya": 12
+        },
+        "tanzil": "فَقَضَىٰهُنَّ سَبْعَ سَمَـٰوَاتٍ فِى يَوْمَيْنِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q09/example",
+    "kind": "question",
+    "context": "حروف المد الطبيعي الحرفي مجموعة في؟",
+    "quran": "طه ۝ مَآ أَنزَلْنَا عَلَيْكَ الْقُرْءَانَ لِتَشْقَىٰٓ",
+    "note": "«طه» تتقرا: طا ها، كل حرف حركتين",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 20,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "طه مَآ أَنزَلْنَا عَلَيْكَ ٱلْقُرْءَانَ لِتَشْقَىٰٓ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q10/example",
+    "kind": "question",
+    "context": "إزاي تقرأ الحاء في «حمٓ»؟",
+    "quran": "حمٓ ۝ تَنزِيلُ الْكِتَابِ مِنَ اللَّهِ",
+    "note": "الحاء: «حا» حركتين، والميم: «ميم» ٦ حركات لازم",
+    "status": "suggest",
+    "hits": 3,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 40,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "حمٓ تَنزِيلُ ٱلْكِتَـٰبِ مِنَ ٱللَّهِ"
+      },
+      {
+        "ref": {
+          "sura": 45,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "حمٓ تَنزِيلُ ٱلْكِتَـٰبِ مِنَ ٱللَّهِ"
+      },
+      {
+        "ref": {
+          "sura": 46,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "حمٓ تَنزِيلُ ٱلْكِتَـٰبِ مِنَ ٱللَّهِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q11/example",
+    "kind": "question",
+    "context": "الكاف في «كَتَبَ» إزاي بتتقرا؟",
+    "quran": "كَتَبَ رَبُّكُمْ عَلَىٰ نَفْسِهِ الرَّحْمَةَ",
+    "note": "الكاف هنا حرف واحد مفتوح «كَ»، لكن في «كٓهيعٓصٓ» بتتقرا باسمها «كاف»",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 54
+        },
+        "tanzil": "كَتَبَ رَبُّكُمْ عَلَىٰ نَفْسِهِ ٱلرَّحْمَةَ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q12/example",
+    "kind": "question",
+    "context": "عدد الحروف المقطعة؟",
+    "quran": "الٓر ۚ كِتَابٌ أُحْكِمَتْ ءَايَاتُهُۥ",
+    "note": "«الر» من الحروف المقطعة الـ١٤، وبتتقرا: ألِف لام را",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 1
+        },
+        "tanzil": "الٓر ۚ كِتَـٰبٌ أُحْكِمَتْ ءَايَـٰتُهُۥ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q13/example",
+    "kind": "question",
+    "context": "ما مقدار مد التمكين في «فِي يَوْمَيْنِ»؟",
+    "quran": "وَعَمِلُوا الصَّالِحَاتِ ... فِي يَوْمَيْنِ",
+    "note": "الياء الساكنة في «في» بعدها ياء متحركة ← مد تمكين حركتين عشان ما تندمجش",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "questions/q14/example",
+    "kind": "question",
+    "context": "مد العوض بيكون إمتى؟",
+    "quran": "وَلَا تَجْعَلْ يَدَكَ مَغْلُولَةً إِلَىٰ عُنُقِكَ ... فَتَقْعُدَ مَلُومًا مَّحْسُورًا",
+    "note": "وقفًا: «محسورا» بألف حركتين، ووصلًا: «محسورًا» بالتنوين",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 29
+        },
+        "tanzil": "وَلَا تَجْعَلْ يَدَكَ مَغْلُولَةً إِلَىٰ عُنُقِكَ ... فَتَقْعُدَ مَلُومًا مَّحْسُورًا"
+      }
+    ]
+  },
+  {
+    "id": "questions/q15/example",
+    "kind": "question",
+    "context": "إزاي تقف على «رَحْمَةً»؟",
+    "quran": "وَرَحْمَتِي وَسِعَتْ كُلَّ شَيْءٍ ... يَرْجُونَ رَحْمَتَهُۥ",
+    "note": "الوقف على «رحمةً» في أي مكان يكون بالهاء الساكنة: «رحمهْ»",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "questions/q16/example",
+    "kind": "question",
+    "context": "أي لغة تقف على «حكيمٌ» بالواو: حكيمو؟",
+    "quran": "وَكَانَ اللَّهُ عَزِيزًا حَكِيمًا",
+    "note": "لغة القرآن: الوقف على «حكيما» بالألف، أما «حكيمٌ» فتقف بالسكون: حكيمْ",
+    "status": "suggest",
+    "hits": 4,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 158
+        },
+        "tanzil": "وَكَانَ ٱللَّهُ عَزِيزًا حَكِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 165
+        },
+        "tanzil": "وَكَانَ ٱللَّهُ عَزِيزًا حَكِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 48,
+          "aya": 7
+        },
+        "tanzil": "وَكَانَ ٱللَّهُ عَزِيزًا حَكِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 48,
+          "aya": 19
+        },
+        "tanzil": "وَكَانَ ٱللَّهُ عَزِيزًا حَكِيمًا"
+      }
+    ]
+  },
+  {
+    "id": "questions/q17/example",
+    "kind": "question",
+    "context": "في «لَهُۥ قَانِتُونَ» الهاء حالها إيه؟",
+    "quran": "كُلٌّ لَّهُۥ قَانِتُونَ",
+    "note": "اللام قبل الهاء متحركة والقاف بعدها متحركة ← صلة صغرى حركتين",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 116
+        },
+        "tanzil": "كُلٌّ لَّهُۥ قَـٰنِتُونَ"
+      },
+      {
+        "ref": {
+          "sura": 30,
+          "aya": 26
+        },
+        "tanzil": "كُلٌّ لَّهُۥ قَـٰنِتُونَ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q18/example",
+    "kind": "question",
+    "context": "«فِيهِۦ مُهَانًا» ليه فيها صلة رغم إن قبل الهاء ياء ساكنة؟",
+    "quran": "يُضَاعَفْ لَهُ الْعَذَابُ يَوْمَ الْقِيَامَةِ وَيَخْلُدْ فِيهِۦ مُهَانًا",
+    "note": "الفرقان ٦٩: الهاء قبلها ياء ساكنة ومع ذلك موصولة لحفص",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 25,
+          "aya": 69
+        },
+        "tanzil": "يُضَـٰعَفْ لَهُ ٱلْعَذَابُ يَوْمَ ٱلْقِيَـٰمَةِ وَيَخْلُدْ فِيهِۦ مُهَانًا"
+      }
+    ]
+  },
+  {
+    "id": "questions/q19/example",
+    "kind": "question",
+    "context": "«يَرْضَهُ لَكُمْ» إزاي يقرأها حفص؟",
+    "quran": "وَإِن تَشْكُرُوا يَرْضَهُ لَكُمْ",
+    "note": "الزمر ٧: ضم الهاء من غير صلة لحفص",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 39,
+          "aya": 7
+        },
+        "tanzil": "وَإِن تَشْكُرُوا۟ يَرْضَهُ لَكُمْ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q20/example",
+    "kind": "question",
+    "context": "هل المد في «هَٰذِهِۦ» صلة صغرى؟",
+    "quran": "قَالَ هَٰذِهِۦ نَاقَةٌ",
+    "note": "«هذهِۦ» اسم إشارة للمؤنث، المد فيه ملحق بباب الصلة ومش هاء كناية",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 26,
+          "aya": 155
+        },
+        "tanzil": "قَالَ هَٰذِهِۦ نَاقَةٌ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q21/example",
+    "kind": "question",
+    "context": "أسباب المد الفرعي إيه؟",
+    "quran": "السَّمَآءِ ... الضَّآلِّينَ ... لَآ إِلَٰهَ إِلَّا اللَّهُ",
+    "note": "همز بعد المد في «السماء»، وسكون بعد المد في «الضالّين»، وسبب معنوي في «لا إله»",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "questions/q22/example",
+    "kind": "question",
+    "context": "«يَٰأَيُّهَا» نوع المد فيها؟",
+    "quran": "يَٰٓأَيُّهَا الَّذِينَ ءَامَنُوا",
+    "note": "حرف المد في «يا» اتحذف رسمًا واتعوّض بألف صغيرة ← منفصل حكمي",
+    "status": "suggest",
+    "hits": 89,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 104
+        },
+        "tanzil": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 153
+        },
+        "tanzil": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 172
+        },
+        "tanzil": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 178
+        },
+        "tanzil": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 183
+        },
+        "tanzil": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 208
+        },
+        "tanzil": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟"
+      }
+    ]
+  },
+  {
+    "id": "questions/q23/example",
+    "kind": "question",
+    "context": "مقادير المنفصل اللي عليها العمل حاليًا؟",
+    "quran": "إِنَّآ أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ",
+    "note": "«إنّا أنزلناه»: منفصل، تمده ٢ أو ٤ على حسب الطريق اللي بتقرأ بيه",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 97,
+          "aya": 1
+        },
+        "tanzil": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q24/example",
+    "kind": "question",
+    "context": "لو قرأت المنفصل حركتين، تقرأ «مَالَهُۥٓ أَخْلَدَهُ» كام؟",
+    "quran": "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ",
+    "note": "صلة كبرى، تمدها نفس مقدار مدك للمنفصل في قراءتك",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 104,
+          "aya": 3
+        },
+        "tanzil": "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q25/example",
+    "kind": "question",
+    "context": "«ءَامَنُوا» نوع المد في الألف؟",
+    "quran": "إِنَّ الَّذِينَ ءَامَنُوا وَعَمِلُوا الصَّالِحَاتِ",
+    "note": "«ءامنوا» أصلها «أأْمنوا»، الهمزة الساكنة اتقلبت ألف ← بدل حركتين",
+    "status": "suggest",
+    "hits": 10,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 277
+        },
+        "tanzil": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 9
+        },
+        "tanzil": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 23
+        },
+        "tanzil": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ"
+      },
+      {
+        "ref": {
+          "sura": 18,
+          "aya": 30
+        },
+        "tanzil": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ"
+      },
+      {
+        "ref": {
+          "sura": 18,
+          "aya": 107
+        },
+        "tanzil": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ"
+      },
+      {
+        "ref": {
+          "sura": 19,
+          "aya": 96
+        },
+        "tanzil": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q26/example",
+    "kind": "question",
+    "context": "«أُوفِ» نوعها إيه؟",
+    "quran": "وَأَوْفُوا بِعَهْدِيٓ أُوفِ بِعَهْدِكُمْ",
+    "note": "«أُوفِ» من «وفى»، أوله مش همزة، فحرف المد أصلي ← شبيه بالبدل",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 40
+        },
+        "tanzil": "وَأَوْفُوا۟ بِعَهْدِىٓ أُوفِ بِعَهْدِكُمْ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q27/example",
+    "kind": "question",
+    "context": "لو وقفت على «يَشَآءُونْ» يجوز كام في الواو؟",
+    "quran": "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ اللَّهُ",
+    "note": "لو وقفت على «تشاءون» يبقى بدل عارض للسكون: ٢ أو ٤ أو ٦",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 76,
+          "aya": 30
+        },
+        "tanzil": "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ"
+      },
+      {
+        "ref": {
+          "sura": 81,
+          "aya": 29
+        },
+        "tanzil": "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q28/example",
+    "kind": "question",
+    "context": "حكم المد المتصل؟",
+    "quran": "إِذَا جَآءَ نَصْرُ اللَّهِ وَالْفَتْحُ",
+    "note": "«جاء» حرف مد وبعده همز في نفس الكلمة ← متصل واجب، ما ينفعش تقصره",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 110,
+          "aya": 1
+        },
+        "tanzil": "إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q29/example",
+    "kind": "question",
+    "context": "«هَآؤُمُ» في الحاقة نوع مدها؟",
+    "quran": "فَيَقُولُ هَآؤُمُ اقْرَءُوا كِتَابِيَهْ",
+    "note": "الحاقة ١٩: الهاء أصلية في الكلمة ← المد متصل",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 69,
+          "aya": 19
+        },
+        "tanzil": "فَيَقُولُ هَآؤُمُ ٱقْرَءُوا۟ كِتَـٰبِيَهْ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q30/example",
+    "kind": "question",
+    "context": "«هَٰٓؤُلَآءِ» فيها إيه؟",
+    "quran": "هَٰٓأَنتُمْ هَٰٓؤُلَآءِ جَادَلْتُمْ عَنْهُمْ",
+    "note": "«هؤلاء»: المد الأول منفصل حكمي، والتاني متصل",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 109
+        },
+        "tanzil": "هَـٰٓأَنتُمْ هَـٰٓؤُلَآءِ جَـٰدَلْتُمْ عَنْهُمْ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q31/example",
+    "kind": "question",
+    "context": "«الضَّآلِّينَ» نوع المد؟",
+    "quran": "غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ",
+    "note": "الألف بعدها لام مشددة في نفس الكلمة ← لازم كلمي مثقل ٦ حركات",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 1,
+          "aya": 7
+        },
+        "tanzil": "غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q32/example",
+    "kind": "question",
+    "context": "المد اللازم الكلمي المخفف موجود في كلمة إيه؟",
+    "quran": "ءَآلْـَٰٔنَ وَقَدْ عَصَيْتَ قَبْلُ",
+    "note": "يونس ٩١: بعد الألف لام ساكنة مش مشددة ← لازم كلمي مخفف ٦",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 91
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ وَقَدْ عَصَيْتَ قَبْلُ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q33/example",
+    "kind": "question",
+    "context": "في «ءَآللَّهُ» الوجه المقدّم؟",
+    "quran": "قُلْ ءَآللَّهُ أَذِنَ لَكُمْ",
+    "note": "يونس ٥٩: إبدال همزة الوصل ألف ومدها ٦ (المقدّم)، أو تسهيلها من غير مد",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 59
+        },
+        "tanzil": "قُلْ ءَآللَّهُ أَذِنَ لَكُمْ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q34/example",
+    "kind": "question",
+    "context": "حروف «حي طهر» في الفواتح بتتمد كام؟",
+    "quran": "يسٓ ۝ وَالْقُرْءَانِ الْحَكِيمِ",
+    "note": "الياء «يا» حركتين طبيعي حرفي، والسين «سين» ٦ لازم",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 36,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "يسٓ وَٱلْقُرْءَانِ ٱلْحَكِيمِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q35/example",
+    "kind": "question",
+    "context": "الألف في «الٓمٓ» حكمها؟",
+    "quran": "الٓمٓ ۝ ذَٰلِكَ الْكِتَابُ",
+    "note": "«ألِف» مفيش فيها مد، «لام» ٦، «ميم» ٦",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "الٓمٓ ذَٰلِكَ ٱلْكِتَـٰبُ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q36/example",
+    "kind": "question",
+    "context": "اللام في «الٓمٓ» نوع مدها؟",
+    "quran": "الٓمٓ ۝ ذَٰلِكَ الْكِتَابُ",
+    "note": "«لام» آخرها ميم مدغمة في «ميم» اللي بعدها ← مثقل",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "الٓمٓ ذَٰلِكَ ٱلْكِتَـٰبُ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q37/example",
+    "kind": "question",
+    "context": "الميم الأخيرة في «الٓمٓ» نوعها؟",
+    "quran": "الٓمٓ ۝ ذَٰلِكَ الْكِتَابُ",
+    "note": "«ميم» آخرها ميم ساكنة مظهرة ← مخفف",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "الٓمٓ ذَٰلِكَ ٱلْكِتَـٰبُ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q38/example",
+    "kind": "question",
+    "context": "التسهيل الواجب لحفص في كلمة إيه؟",
+    "quran": "ءَا۬عْجَمِيٌّ وَعَرَبِيٌّ",
+    "note": "فصلت ٤٤: الهمزة التانية بتتنطق بين الهمزة والألف وجوبًا",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 41,
+          "aya": 44
+        },
+        "tanzil": "ءَا۬عْجَمِىٌّ وَعَرَبِىٌّ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q39/example",
+    "kind": "question",
+    "context": "لو وصلت «الٓمٓ ۝ اللَّهُ» الميم الأخيرة تتمد كام؟",
+    "quran": "الٓمٓ ۝ اللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+    "note": "آل عمران: الميم تتفتح وصلًا «ميمَ الله» وتتمد ٢ أو ٦",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "الٓمٓ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q40/example",
+    "kind": "question",
+    "context": "الوقف على «نَسْتَعِينُ» بالروم، تمد كام؟",
+    "quran": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+    "note": "بالسكون: ٢ أو ٤ أو ٦، بالروم: «نستعينُ» بصوت خفي من غير زيادة مد",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 1,
+          "aya": 5
+        },
+        "tanzil": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q41/example",
+    "kind": "question",
+    "context": "«خَوْفٌ» وصلًا اللين فيها؟",
+    "quran": "وَءَامَنَهُم مِّنْ خَوْفٍ",
+    "note": "«خوفٍ» وصلًا: الواو بتتنطق على حالتها من غير مد، ووقفًا «خوفْ» ٢ أو ٤ أو ٦",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 106,
+          "aya": 4
+        },
+        "tanzil": "وَءَامَنَهُم مِّنْ خَوْفٍۭ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q42/example",
+    "kind": "question",
+    "context": "مد التعظيم بيكون في إيه؟",
+    "quran": "فَاعْلَمْ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا اللَّهُ",
+    "note": "محمد ١٩: مد «لا» ٤ حركات تعظيمًا لمن يقصر المنفصل من الطيبة",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 47,
+          "aya": 19
+        },
+        "tanzil": "فَٱعْلَمْ أَنَّهُۥ لَآ إِلَـٰهَ إِلَّا ٱللَّهُ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q43/example",
+    "kind": "question",
+    "context": "مد التبرئة ورد عن مين؟",
+    "quran": "ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ",
+    "note": "حمزة بيمد «لا» ٤ حركات تبرئة، وحفص بيقرأها حركتين",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 2
+        },
+        "tanzil": "ذَٰلِكَ ٱلْكِتَـٰبُ لَا رَيْبَ ۛ فِيهِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q44/example",
+    "kind": "question",
+    "context": "رتّب: أي واحد أقوى؟",
+    "quran": "وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ ... الْحَمْدُ لِلَّهِ رَبِّ الْعَٰلَمِينَ",
+    "note": "العارض في «العالمين» (وقفًا) المرتبة التالتة، والمنفصل في «بما أُنزل» الرابعة، فالعارض أقوى",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "questions/q45/example",
+    "kind": "question",
+    "context": "«ءَآمِّينَ» اجتمع فيها بدل ولازم، نعمل بإيه؟",
+    "quran": "وَلَآ ءَآمِّينَ الْبَيْتَ الْحَرَامَ",
+    "note": "المائدة ٢: همز قبل الألف (بدل) وشدة بعدها (لازم) ← تتمد ٦",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 2
+        },
+        "tanzil": "وَلَآ ءَآمِّينَ ٱلْبَيْتَ ٱلْحَرَامَ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q46/example",
+    "kind": "question",
+    "context": "«وَجَآءُوٓ أَبَاهُمْ» الواو فيها بدل ومنفصل، الحكم؟",
+    "quran": "وَجَآءُوٓ أَبَاهُمْ عِشَآءً يَبْكُونَ",
+    "note": "يوسف ١٦: الواو بعد همز (بدل) وقبل همز في كلمة تانية (منفصل) ← تتمد زي المنفصل",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 12,
+          "aya": 16
+        },
+        "tanzil": "وَجَآءُوٓ أَبَاهُمْ عِشَآءً يَبْكُونَ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q47/example",
+    "kind": "question",
+    "context": "قراءة المنفصل ٥ والمتصل ٤ — صح ولا غلط؟",
+    "quran": "هَٰٓؤُلَآءِ",
+    "note": "لو مديت المنفصل «ها» ٥ يبقى المتصل «لاء» لازم ٥ على الأقل",
+    "status": "ambiguous",
+    "hits": 40,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 31
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 85
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 66
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 41
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 51
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 78
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q48/example",
+    "kind": "question",
+    "context": "مقدار المنفصل من طريق الشاطبية؟",
+    "quran": "قُوٓا أَنفُسَكُمْ وَأَهْلِيكُمْ نَارًا",
+    "note": "«قوا أنفسكم»: من الشاطبية ٤ أو ٥",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 66,
+          "aya": 6
+        },
+        "tanzil": "قُوٓا۟ أَنفُسَكُمْ وَأَهْلِيكُمْ نَارًا"
+      }
+    ]
+  },
+  {
+    "id": "questions/q49/example",
+    "kind": "question",
+    "context": "مقدار المنفصل من طريق الطيبة؟",
+    "quran": "بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ",
+    "note": "من الطيبة يجوز تقصر «بما أنزل» حركتين، أو تمدها ٣ أو ٤ أو ٥",
+    "status": "ambiguous",
+    "hits": 3,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 4
+        },
+        "tanzil": "بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 60
+        },
+        "tanzil": "بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 162
+        },
+        "tanzil": "بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q50/example",
+    "kind": "question",
+    "context": "مقدار المتصل من طريق الشاطبية؟",
+    "quran": "وَالسَّمَآءِ ذَاتِ الْبُرُوجِ",
+    "note": "«السماء» من الشاطبية ٤ أو ٥",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 85,
+          "aya": 1
+        },
+        "tanzil": "وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q51/example",
+    "kind": "question",
+    "context": "مقدار المتصل من طريق الطيبة؟",
+    "quran": "وَالسَّمَآءِ ذَاتِ الْبُرُوجِ",
+    "note": "«السماء» من الطيبة ٤ أو ٥ أو ٦",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 85,
+          "aya": 1
+        },
+        "tanzil": "وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q52/example",
+    "kind": "question",
+    "context": "قصر المنفصل حركتين لحفص جاي من أي طريق؟",
+    "quran": "إِنَّآ أَعْطَيْنَاكَ الْكَوْثَرَ",
+    "note": "قصر «إنّا أعطيناك» حركتين من الطيبة بس",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 108,
+          "aya": 1
+        },
+        "tanzil": "إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q53/example",
+    "kind": "question",
+    "context": "الإمام الشاطبي أقرأ بكام في المنفصل والمتصل لحفص؟",
+    "quran": "إِنَّآ أَعْطَيْنَاكَ ... السَّمَآءِ",
+    "note": "الشاطبي أقرأ «إنّا أعطيناك» و«السماء» بـ٤ حركات",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "questions/q54/example",
+    "kind": "question",
+    "context": "قارئ بيقرأ من الشاطبية، يمد «لا إله» مد تعظيم؟",
+    "quran": "لَآ إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ",
+    "note": "البقرة ١٦٣ (أول موضع): من الشاطبية تمدها زي المنفصل بتاعك من غير مد تعظيم",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 163
+        },
+        "tanzil": "لَّآ إِلَـٰهَ إِلَّا هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q55/example",
+    "kind": "question",
+    "context": "العين في «كٓهيعٓصٓ» من الشاطبية؟",
+    "quran": "كٓهيعٓصٓ ۝ ذِكْرُ رَحْمَتِ رَبِّكَ",
+    "note": "العين «عَيْن» وسطها ياء لين: من الشاطبية ٤ أو ٦ والـ٦ مقدم",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 19,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "كٓهيعٓصٓ ۝ ذِكْرُ رَحْمَتِ رَبِّكَ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q56/example",
+    "kind": "question",
+    "context": "«يسٓ ۝ وَالْقُرْءَانِ» السين من الشاطبية نوع مدها؟",
+    "quran": "يسٓ ۝ وَالْقُرْءَانِ الْحَكِيمِ",
+    "note": "الشاطبية: «ياسينْ والقرآن» بإظهار النون ← مخفف ٦",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 36,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "يسٓ وَٱلْقُرْءَانِ ٱلْحَكِيمِ"
+      }
+    ]
+  },
+  {
+    "id": "questions/q57/example",
+    "kind": "question",
+    "context": "مين فيهم ما يختلفش بين الشاطبية والطيبة؟",
+    "quran": "وَلَا الضَّآلِّينَ",
+    "note": "«الضالّين» ٦ حركات في كل الطرق وعند كل القراء",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 1,
+          "aya": 7
+        },
+        "tanzil": "وَلَا ٱلضَّآلِّينَ"
+      }
+    ]
+  },
+  {
+    "id": "extras/rankCard/example",
+    "kind": "rank",
+    "context": "مراتب المدود",
+    "quran": "وَلَآ ءَآمِّينَ الْبَيْتَ الْحَرَامَ",
+    "note": "بدل ولازم اجتمعوا، فاللازم الأقوى بيغلب ويتمد ٦",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 2
+        },
+        "tanzil": "وَلَآ ءَآمِّينَ ٱلْبَيْتَ ٱلْحَرَامَ"
+      }
+    ]
+  },
+  {
+    "id": "spot/s01",
+    "kind": "spot",
+    "context": "المد الطبيعي",
+    "quran": "وَقُولُوا لِلنَّاسِ حُسْنًا",
+    "note": "«وقولوا» الواو بعد ضم، و«للناس» الألف بعد فتح، ومفيش بعدهم همز ولا سكون (البقرة ٨٣)",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 83
+        },
+        "tanzil": "وَقُولُوا۟ لِلنَّاسِ حُسْنًا"
+      }
+    ]
+  },
+  {
+    "id": "spot/s02",
+    "kind": "spot",
+    "context": "مد الصلة الصغرى",
+    "quran": "إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًا بَصِيرًا",
+    "note": "الهاء في «إنّهُۥ» و«بعبادهِۦ» بين متحركين (الإسراء ٣٠)",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 30
+        },
+        "tanzil": "إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًۢا بَصِيرًا"
+      },
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 96
+        },
+        "tanzil": "إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًۢا بَصِيرًا"
+      }
+    ]
+  },
+  {
+    "id": "spot/s03",
+    "kind": "spot",
+    "context": "مد العوض (لو وقفت آخر الآية)",
+    "quran": "إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًا بَصِيرًا",
+    "note": "الوقف على «بصيرا» بألف حركتين عوض عن تنوين الفتح، و«خبيرًا» مش موقوف عليها",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 30
+        },
+        "tanzil": "إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًۢا بَصِيرًا"
+      },
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 96
+        },
+        "tanzil": "إِنَّهُۥ كَانَ بِعِبَادِهِۦ خَبِيرًۢا بَصِيرًا"
+      }
+    ]
+  },
+  {
+    "id": "spot/s04",
+    "kind": "spot",
+    "context": "المد المنفصل",
+    "quran": "وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ",
+    "note": "الألف آخر «بما» و«وما» والهمز أول «أُنزل» (البقرة ٤)",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 4
+        },
+        "tanzil": "وَٱلَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ"
+      }
+    ]
+  },
+  {
+    "id": "spot/s05",
+    "kind": "spot",
+    "context": "المد المتصل",
+    "quran": "وَأَنزَلَ مِنَ السَّمَآءِ مَآءً فَأَخْرَجَ بِهِۦ مِنَ الثَّمَرَٰتِ رِزْقًا لَّكُمْ",
+    "note": "«السماء» و«ماءً»: حرف المد والهمز في نفس الكلمة (البقرة ٢٢)",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 22
+        },
+        "tanzil": "وَأَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً فَأَخْرَجَ بِهِۦ مِنَ ٱلثَّمَرَٰتِ رِزْقًا لَّكُمْ"
+      },
+      {
+        "ref": {
+          "sura": 14,
+          "aya": 32
+        },
+        "tanzil": "وَأَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً فَأَخْرَجَ بِهِۦ مِنَ ٱلثَّمَرَٰتِ رِزْقًا لَّكُمْ"
+      }
+    ]
+  },
+  {
+    "id": "spot/s06",
+    "kind": "spot",
+    "context": "مد البدل",
+    "quran": "إِنَّ الَّذِينَ ءَامَنُوا وَعَمِلُوا الصَّالِحَاتِ وَأَقَامُوا الصَّلَاةَ وَءَاتَوُا الزَّكَاةَ",
+    "note": "«ءامنوا» و«وءاتوا»: الهمز قبل الألف في نفس الكلمة (البقرة ٢٧٧)",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 277
+        },
+        "tanzil": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَءَاتَوُا۟ ٱلزَّكَوٰةَ"
+      }
+    ]
+  },
+  {
+    "id": "spot/s07",
+    "kind": "spot",
+    "context": "اللازم الكلمي المثقل",
+    "quran": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ",
+    "note": "«الضالّين»: الألف بعدها لام مشددة ← ٦ حركات (الفاتحة ٧)",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 1,
+          "aya": 7
+        },
+        "tanzil": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ"
+      }
+    ]
+  },
+  {
+    "id": "spot/s08",
+    "kind": "spot",
+    "context": "المد العارض للسكون (وقف آخر الآيات)",
+    "quran": "الْحَمْدُ لِلَّهِ رَبِّ الْعَٰلَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ",
+    "note": "لما تقف على «العالمين» و«الرحيم» الحرف الأخير بيسكن ← ٢ أو ٤ أو ٦",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 1,
+          "aya": 2,
+          "ayaTo": 3
+        },
+        "tanzil": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+      }
+    ]
+  },
+  {
+    "id": "spot/s09",
+    "kind": "spot",
+    "context": "مد اللين",
+    "quran": "فَلْيَعْبُدُوا رَبَّ هَٰذَا الْبَيْتِ ۝ الَّذِيٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍ",
+    "note": "«البيت» و«خوف»: ياء وواو ساكنتين قبلهم فتح (قريش ٣–٤)",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 106,
+          "aya": 3,
+          "ayaTo": 4
+        },
+        "tanzil": "فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ"
+      }
+    ]
+  },
+  {
+    "id": "spot/s10",
+    "kind": "spot",
+    "context": "مد التعظيم (طيبة)",
+    "quran": "فَاعْلَمْ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا اللَّهُ",
+    "note": "الألف في «لا» من «لا إله» ٤ حركات لأصحاب قصر المنفصل (محمد ١٩)",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 47,
+          "aya": 19
+        },
+        "tanzil": "فَٱعْلَمْ أَنَّهُۥ لَآ إِلَـٰهَ إِلَّا ٱللَّهُ"
+      }
+    ]
+  },
+  {
+    "id": "tree/0.0.0",
+    "kind": "tree",
+    "context": "المد الطبيعي",
+    "quran": "مَا كُنتُمْ",
+    "note": "حركتين وصلًا ووقفًا",
+    "status": "ambiguous",
+    "hits": 17,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 144
+        },
+        "tanzil": "مَا كُنتُمْ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 150
+        },
+        "tanzil": "مَا كُنتُمْ"
+      },
+      {
+        "ref": {
+          "sura": 7,
+          "aya": 37
+        },
+        "tanzil": "مَا كُنتُمْ"
+      },
+      {
+        "ref": {
+          "sura": 9,
+          "aya": 35
+        },
+        "tanzil": "مَا كُنتُمْ"
+      },
+      {
+        "ref": {
+          "sura": 16,
+          "aya": 92
+        },
+        "tanzil": "مَا كُنتُمْ"
+      },
+      {
+        "ref": {
+          "sura": 26,
+          "aya": 92
+        },
+        "tanzil": "مَا كُنتُمْ"
+      }
+    ]
+  },
+  {
+    "id": "tree/0.0.1",
+    "kind": "tree",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "طه",
+    "note": "حركتين وصلًا ووقفًا",
+    "status": "verified",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 20,
+          "aya": 1
+        },
+        "tanzil": "طه"
+      }
+    ]
+  },
+  {
+    "id": "tree/0.0.2",
+    "kind": "tree",
+    "context": "مد التمكين",
+    "quran": "ءَامَنُوا وَعَمِلُوا",
+    "note": "حركتين وصلًا ووقفًا",
+    "status": "suggest",
+    "hits": 50,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 25
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 82
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 277
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 57
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 57
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 122
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      }
+    ]
+  },
+  {
+    "id": "tree/0.0.3",
+    "kind": "tree",
+    "context": "مد العوض",
+    "quran": "عَلِيمًا",
+    "note": "حركتين وقفًا فقط",
+    "status": "ambiguous",
+    "hits": 22,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 11
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 17
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 24
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 32
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 35
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 39
+        },
+        "tanzil": "عَلِيمًا"
+      }
+    ]
+  },
+  {
+    "id": "tree/0.0.4",
+    "kind": "tree",
+    "context": "مد الصلة الصغرى",
+    "quran": "إِنَّهُۥ",
+    "note": "حركتين وصلًا فقط",
+    "status": "ambiguous",
+    "hits": 139,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 37
+        },
+        "tanzil": "إِنَّهُۥ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 54
+        },
+        "tanzil": "إِنَّهُۥ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 68
+        },
+        "tanzil": "إِنَّهُۥ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 69
+        },
+        "tanzil": "إِنَّهُۥ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 71
+        },
+        "tanzil": "إِنَّهُۥ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 168
+        },
+        "tanzil": "إِنَّهُۥ"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.0.0.0.0.0",
+    "kind": "tree",
+    "context": "حقيقي",
+    "quran": "بِمَا أُنزِلَ",
+    "status": "suggest",
+    "hits": 15,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 4
+        },
+        "tanzil": "بِمَآ أُنزِلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 90
+        },
+        "tanzil": "بِمَآ أَنزَلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 91
+        },
+        "tanzil": "بِمَآ أَنزَلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 91
+        },
+        "tanzil": "بِمَآ أُنزِلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 285
+        },
+        "tanzil": "بِمَآ أُنزِلَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 60
+        },
+        "tanzil": "بِمَآ أُنزِلَ"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.0.0.0.0.1",
+    "kind": "tree",
+    "context": "حكمي",
+    "quran": "هَٰٓأَنتُمْ",
+    "status": "ambiguous",
+    "hits": 4,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 66
+        },
+        "tanzil": "هَٰٓأَنتُمْ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 119
+        },
+        "tanzil": "هَٰٓأَنتُمْ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 109
+        },
+        "tanzil": "هَٰٓأَنتُمْ"
+      },
+      {
+        "ref": {
+          "sura": 47,
+          "aya": 38
+        },
+        "tanzil": "هَٰٓأَنتُمْ"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.0.0.0.1",
+    "kind": "tree",
+    "context": "الصلة الكبرى",
+    "quran": "مِنْ عِلْمِهِۦٓ إِلَّا",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 255
+        },
+        "tanzil": "مِّنْ عِلْمِهِۦٓ إِلَّا"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.0.0.0.2.0",
+    "kind": "tree",
+    "context": "بدل",
+    "quran": "ءَامَنُوا",
+    "status": "suggest",
+    "hits": 258,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 9
+        },
+        "tanzil": "ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 13
+        },
+        "tanzil": "ءَامِنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 14
+        },
+        "tanzil": "ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 25
+        },
+        "tanzil": "ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 26
+        },
+        "tanzil": "ءَامَنُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 62
+        },
+        "tanzil": "ءَامَنُوا۟"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.0.0.0.2.1",
+    "kind": "tree",
+    "context": "شبيه بالبدل",
+    "quran": "رَءُوفٌ",
+    "status": "ambiguous",
+    "hits": 4,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 9,
+          "aya": 117
+        },
+        "tanzil": "رَءُوفٌ"
+      },
+      {
+        "ref": {
+          "sura": 9,
+          "aya": 128
+        },
+        "tanzil": "رَءُوفٌ"
+      },
+      {
+        "ref": {
+          "sura": 24,
+          "aya": 20
+        },
+        "tanzil": "رَءُوفٌ"
+      },
+      {
+        "ref": {
+          "sura": 59,
+          "aya": 10
+        },
+        "tanzil": "رَءُوفٌ"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.0.0.1.0",
+    "kind": "tree",
+    "context": "المتصل",
+    "quran": "السَّمَآءِ",
+    "status": "suggest",
+    "hits": 107,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 19
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 22
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 29
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 59
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 144
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 164
+        },
+        "tanzil": "ٱلسَّمَآءِ"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.0.1.0.0.0",
+    "kind": "tree",
+    "context": "مخفف",
+    "quran": "ءَآلْـَٰٔنَ",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 51
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 91
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.0.1.0.0.1",
+    "kind": "tree",
+    "context": "مثقل",
+    "quran": "الْحَآقَّةُ",
+    "status": "suggest",
+    "hits": 3,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 69,
+          "aya": 1
+        },
+        "tanzil": "ٱلْحَآقَّةُ"
+      },
+      {
+        "ref": {
+          "sura": 69,
+          "aya": 2
+        },
+        "tanzil": "ٱلْحَآقَّةُ"
+      },
+      {
+        "ref": {
+          "sura": 69,
+          "aya": 3
+        },
+        "tanzil": "ٱلْحَآقَّةُ"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.0.1.0.1.0",
+    "kind": "tree",
+    "context": "مخفف",
+    "quran": "الميم من الٓمٓصٓ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "tree/1.0.1.0.1.1",
+    "kind": "tree",
+    "context": "مثقل",
+    "quran": "اللام من الٓمٓ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "tree/1.0.1.1.0",
+    "kind": "tree",
+    "context": "العارض للسكون",
+    "quran": "الْعَٰلَمِينَ",
+    "status": "suggest",
+    "hits": 61,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 1,
+          "aya": 2
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 47
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 122
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 131
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 251
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 33
+        },
+        "tanzil": "ٱلْعَـٰلَمِينَ"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.0.1.1.1",
+    "kind": "tree",
+    "context": "اللين",
+    "quran": "الصَّيْفِ",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 106,
+          "aya": 2
+        },
+        "tanzil": "وَٱلصَّيْفِ"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.1.0",
+    "kind": "tree",
+    "context": "التعظيم",
+    "quran": "لَآ إِلَٰهَ إِلَّا اللَّهُ",
+    "note": "٤ حركات لأصحاب قصر المنفصل (طيبة)",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 37,
+          "aya": 35
+        },
+        "tanzil": "لَآ إِلَـٰهَ إِلَّا ٱللَّهُ"
+      },
+      {
+        "ref": {
+          "sura": 47,
+          "aya": 19
+        },
+        "tanzil": "لَآ إِلَـٰهَ إِلَّا ٱللَّهُ"
+      }
+    ]
+  },
+  {
+    "id": "tree/1.1.1",
+    "kind": "tree",
+    "context": "التبرئة",
+    "quran": "لَا رَيْبَ",
+    "note": "٤ حركات لحمزة (طيبة) وليس لحفص",
+    "status": "ambiguous",
+    "hits": 9,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 2
+        },
+        "tanzil": "لَا رَيْبَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 87
+        },
+        "tanzil": "لَا رَيْبَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 12
+        },
+        "tanzil": "لَا رَيْبَ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 37
+        },
+        "tanzil": "لَا رَيْبَ"
+      },
+      {
+        "ref": {
+          "sura": 18,
+          "aya": 21
+        },
+        "tanzil": "لَا رَيْبَ"
+      },
+      {
+        "ref": {
+          "sura": 32,
+          "aya": 2
+        },
+        "tanzil": "لَا رَيْبَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/1/q/0",
+    "kind": "library",
+    "context": "المد الأصلي وصوره الخمس",
+    "quran": "قَالَ",
+    "status": "ambiguous",
+    "hits": 367,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 30
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 33
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 54
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 61
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 67
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 68
+        },
+        "tanzil": "قَالَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/1/q/1",
+    "kind": "library",
+    "context": "المد الأصلي وصوره الخمس",
+    "quran": "الٓر",
+    "status": "ambiguous",
+    "hits": 5,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 12,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 14,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 15,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      }
+    ]
+  },
+  {
+    "id": "lessons/1/q/2",
+    "kind": "library",
+    "context": "المد الأصلي وصوره الخمس",
+    "quran": "ءَامَنُوا وَعَمِلُوا",
+    "status": "suggest",
+    "hits": 50,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 25
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 82
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 277
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 57
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 57
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 122
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      }
+    ]
+  },
+  {
+    "id": "lessons/1/q/3",
+    "kind": "library",
+    "context": "المد الأصلي وصوره الخمس",
+    "quran": "إِنَّهُۥ — بِعِبَادِهِۦ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/1/q/4",
+    "kind": "library",
+    "context": "المد الأصلي وصوره الخمس",
+    "quran": "عَلِيمًا",
+    "status": "ambiguous",
+    "hits": 22,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 11
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 17
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 24
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 32
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 35
+        },
+        "tanzil": "عَلِيمًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 39
+        },
+        "tanzil": "عَلِيمًا"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/0",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "قَالَ",
+    "status": "ambiguous",
+    "hits": 367,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 30
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 33
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 54
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 61
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 67
+        },
+        "tanzil": "قَالَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 68
+        },
+        "tanzil": "قَالَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/1",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "يَقُولُ",
+    "status": "ambiguous",
+    "hits": 35,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 8
+        },
+        "tanzil": "يَقُولُ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 68
+        },
+        "tanzil": "يَقُولُ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 69
+        },
+        "tanzil": "يَقُولُ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 71
+        },
+        "tanzil": "يَقُولُ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 117
+        },
+        "tanzil": "يَقُولُ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 200
+        },
+        "tanzil": "يَقُولُ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/2",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "قِيلَ",
+    "status": "ambiguous",
+    "hits": 33,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 11
+        },
+        "tanzil": "قِيلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 13
+        },
+        "tanzil": "قِيلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 59
+        },
+        "tanzil": "قِيلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 91
+        },
+        "tanzil": "قِيلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 170
+        },
+        "tanzil": "قِيلَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 206
+        },
+        "tanzil": "قِيلَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/3",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "إِنَّهَا لَإِحْدَى",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 74,
+          "aya": 35
+        },
+        "tanzil": "إِنَّهَا لَإِحْدَى"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/4",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "ءَامَنُوا وَعَمِلُوا",
+    "status": "suggest",
+    "hits": 50,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 25
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 82
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 277
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 57
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 57
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 122
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/5",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "فِيهَا",
+    "status": "ambiguous",
+    "hits": 187,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 25
+        },
+        "tanzil": "فِيهَا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 30
+        },
+        "tanzil": "فِيهَا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 39
+        },
+        "tanzil": "فِيهَا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 71
+        },
+        "tanzil": "فِيهَا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 72
+        },
+        "tanzil": "فِيهَا"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 81
+        },
+        "tanzil": "فِيهَا"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/6",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "نُوحِيهَآ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 49
+        },
+        "tanzil": "نُوحِيهَآ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/7",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "وَأُوتِينَا",
+    "status": "ambiguous",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 27,
+          "aya": 16
+        },
+        "tanzil": "وَأُوتِينَا"
+      },
+      {
+        "ref": {
+          "sura": 27,
+          "aya": 42
+        },
+        "tanzil": "وَأُوتِينَا"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/8",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "وَقَالَا الْحَمْدُ لِلَّهِ",
+    "status": "suggest",
+    "hits": 3,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 111
+        },
+        "tanzil": "وَقُلِ ٱلْحَمْدُ لِلَّهِ"
+      },
+      {
+        "ref": {
+          "sura": 27,
+          "aya": 15
+        },
+        "tanzil": "وَقَالَا ٱلْحَمْدُ لِلَّهِ"
+      },
+      {
+        "ref": {
+          "sura": 27,
+          "aya": 93
+        },
+        "tanzil": "وَقُلِ ٱلْحَمْدُ لِلَّهِ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/9",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "وَقَالُوا اتَّخَذَ",
+    "status": "suggest",
+    "hits": 3,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 116
+        },
+        "tanzil": "وَقَالُوا۟ ٱتَّخَذَ"
+      },
+      {
+        "ref": {
+          "sura": 19,
+          "aya": 88
+        },
+        "tanzil": "وَقَالُوا۟ ٱتَّخَذَ"
+      },
+      {
+        "ref": {
+          "sura": 21,
+          "aya": 26
+        },
+        "tanzil": "وَقَالُوا۟ ٱتَّخَذَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/10",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "فِي الْأَرْضِ",
+    "status": "suggest",
+    "hits": 170,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 11
+        },
+        "tanzil": "فِى ٱلْأَرْضِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 27
+        },
+        "tanzil": "فِى ٱلْأَرْضِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 29
+        },
+        "tanzil": "فِى ٱلْأَرْضِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 30
+        },
+        "tanzil": "فِى ٱلْأَرْضِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 36
+        },
+        "tanzil": "فِى ٱلْأَرْضِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 60
+        },
+        "tanzil": "فِى ٱلْأَرْضِ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/2/q/11",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "خَوْف — بَيْت",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/2/q/12",
+    "kind": "library",
+    "context": "المد الطبيعي",
+    "quran": "يَوْمَيْنِ",
+    "status": "ambiguous",
+    "hits": 3,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 203
+        },
+        "tanzil": "يَوْمَيْنِ"
+      },
+      {
+        "ref": {
+          "sura": 41,
+          "aya": 9
+        },
+        "tanzil": "يَوْمَيْنِ"
+      },
+      {
+        "ref": {
+          "sura": 41,
+          "aya": 12
+        },
+        "tanzil": "يَوْمَيْنِ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/3/q/0",
+    "kind": "library",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "حَيٌّ طَهُرَ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/3/q/1",
+    "kind": "library",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "حمٓ",
+    "status": "ambiguous",
+    "hits": 7,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 40,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      },
+      {
+        "ref": {
+          "sura": 41,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      },
+      {
+        "ref": {
+          "sura": 42,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      },
+      {
+        "ref": {
+          "sura": 43,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      },
+      {
+        "ref": {
+          "sura": 44,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      },
+      {
+        "ref": {
+          "sura": 45,
+          "aya": 1
+        },
+        "tanzil": "حمٓ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/3/q/2",
+    "kind": "library",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "يسٓ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 36,
+          "aya": 1
+        },
+        "tanzil": "يسٓ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/3/q/3",
+    "kind": "library",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "طه",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 20,
+          "aya": 1
+        },
+        "tanzil": "طه"
+      }
+    ]
+  },
+  {
+    "id": "lessons/3/q/4",
+    "kind": "library",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "الٓر",
+    "status": "ambiguous",
+    "hits": 5,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 12,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 14,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 15,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      }
+    ]
+  },
+  {
+    "id": "lessons/3/q/5",
+    "kind": "library",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "كَتَبَ",
+    "status": "ambiguous",
+    "hits": 8,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 187
+        },
+        "tanzil": "كَتَبَ"
+      },
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 21
+        },
+        "tanzil": "كَتَبَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 12
+        },
+        "tanzil": "كَتَبَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 54
+        },
+        "tanzil": "كَتَبَ"
+      },
+      {
+        "ref": {
+          "sura": 9,
+          "aya": 51
+        },
+        "tanzil": "كَتَبَ"
+      },
+      {
+        "ref": {
+          "sura": 58,
+          "aya": 21
+        },
+        "tanzil": "كَتَبَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/3/q/6",
+    "kind": "library",
+    "context": "المد الطبيعي الحرفي",
+    "quran": "صِلْهُ سُحَيْرًا مَنْ قَطَعَكَ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/4/q/0",
+    "kind": "library",
+    "context": "مد التمكين",
+    "quran": "ءَامَنُوا وَعَمِلُوا",
+    "status": "suggest",
+    "hits": 50,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 25
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 82
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 277
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 57
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 57
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 122
+        },
+        "tanzil": "ءَامَنُوا۟ وَعَمِلُوا۟"
+      }
+    ]
+  },
+  {
+    "id": "lessons/4/q/1",
+    "kind": "library",
+    "context": "مد التمكين",
+    "quran": "فِي يَوْمَيْنِ",
+    "status": "suggest",
+    "hits": 3,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 203
+        },
+        "tanzil": "فِى يَوْمَيْنِ"
+      },
+      {
+        "ref": {
+          "sura": 41,
+          "aya": 9
+        },
+        "tanzil": "فِى يَوْمَيْنِ"
+      },
+      {
+        "ref": {
+          "sura": 41,
+          "aya": 12
+        },
+        "tanzil": "فِى يَوْمَيْنِ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/4/q/2",
+    "kind": "library",
+    "context": "مد التمكين",
+    "quran": "النَّبِيِّينَ — عِلِّيِّينَ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/4/q/3",
+    "kind": "library",
+    "context": "مد التمكين",
+    "quran": "يَلْوُونَ",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 78
+        },
+        "tanzil": "يَلْوُۥنَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/4/q/4",
+    "kind": "library",
+    "context": "مد التمكين",
+    "quran": "يُحْيِي",
+    "status": "suggest",
+    "hits": 12,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 258
+        },
+        "tanzil": "يُحْىِۦ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 259
+        },
+        "tanzil": "يُحْىِۦ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 156
+        },
+        "tanzil": "يُحْىِۦ"
+      },
+      {
+        "ref": {
+          "sura": 7,
+          "aya": 158
+        },
+        "tanzil": "يُحْىِۦ"
+      },
+      {
+        "ref": {
+          "sura": 9,
+          "aya": 116
+        },
+        "tanzil": "يُحْىِۦ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 56
+        },
+        "tanzil": "يُحْىِۦ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/5/q/0",
+    "kind": "library",
+    "context": "مد العوض",
+    "quran": "سَبِيلًا",
+    "status": "ambiguous",
+    "hits": 27,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 97
+        },
+        "tanzil": "سَبِيلًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 15
+        },
+        "tanzil": "سَبِيلًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 22
+        },
+        "tanzil": "سَبِيلًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 34
+        },
+        "tanzil": "سَبِيلًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 51
+        },
+        "tanzil": "سَبِيلًا"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 88
+        },
+        "tanzil": "سَبِيلًا"
+      }
+    ]
+  },
+  {
+    "id": "lessons/5/q/1",
+    "kind": "library",
+    "context": "مد العوض",
+    "quran": "مَاءً / نِسَاءً",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/5/q/2",
+    "kind": "library",
+    "context": "مد العوض",
+    "quran": "رَحْمَةً",
+    "status": "ambiguous",
+    "hits": 20,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 8
+        },
+        "tanzil": "رَحْمَةً"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 21
+        },
+        "tanzil": "رَحْمَةً"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 9
+        },
+        "tanzil": "رَحْمَةً"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 28
+        },
+        "tanzil": "رَحْمَةً"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 63
+        },
+        "tanzil": "رَحْمَةً"
+      },
+      {
+        "ref": {
+          "sura": 17,
+          "aya": 87
+        },
+        "tanzil": "رَحْمَةً"
+      }
+    ]
+  },
+  {
+    "id": "lessons/5/q/3",
+    "kind": "library",
+    "context": "مد العوض",
+    "quran": "هُدًى",
+    "status": "ambiguous",
+    "hits": 27,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 2
+        },
+        "tanzil": "هُدًى"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 5
+        },
+        "tanzil": "هُدًى"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 38
+        },
+        "tanzil": "هُدًى"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 185
+        },
+        "tanzil": "هُدًى"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 4
+        },
+        "tanzil": "هُدًى"
+      },
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 44
+        },
+        "tanzil": "هُدًى"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/0",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "إِنَّهُ — بِهِ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/6/q/1",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "لَهُ الْمُلْكُ",
+    "status": "suggest",
+    "hits": 4,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 247
+        },
+        "tanzil": "لَهُ ٱلْمُلْكُ"
+      },
+      {
+        "ref": {
+          "sura": 35,
+          "aya": 13
+        },
+        "tanzil": "لَهُ ٱلْمُلْكُ"
+      },
+      {
+        "ref": {
+          "sura": 39,
+          "aya": 6
+        },
+        "tanzil": "لَهُ ٱلْمُلْكُ"
+      },
+      {
+        "ref": {
+          "sura": 64,
+          "aya": 1
+        },
+        "tanzil": "لَهُ ٱلْمُلْكُ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/2",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "فِيهِ يَخْتَلِفُونَ",
+    "status": "ambiguous",
+    "hits": 9,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 113
+        },
+        "tanzil": "فِيهِ يَخْتَلِفُونَ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 19
+        },
+        "tanzil": "فِيهِ يَخْتَلِفُونَ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 93
+        },
+        "tanzil": "فِيهِ يَخْتَلِفُونَ"
+      },
+      {
+        "ref": {
+          "sura": 16,
+          "aya": 124
+        },
+        "tanzil": "فِيهِ يَخْتَلِفُونَ"
+      },
+      {
+        "ref": {
+          "sura": 27,
+          "aya": 76
+        },
+        "tanzil": "فِيهِ يَخْتَلِفُونَ"
+      },
+      {
+        "ref": {
+          "sura": 32,
+          "aya": 25
+        },
+        "tanzil": "فِيهِ يَخْتَلِفُونَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/3",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "إِلَيْهِ الْمَصِيرُ",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 40,
+          "aya": 3
+        },
+        "tanzil": "إِلَيْهِ ٱلْمَصِيرُ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/4",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "لَهُۥ قَانِتُونَ",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 116
+        },
+        "tanzil": "لَّهُۥ قَـٰنِتُونَ"
+      },
+      {
+        "ref": {
+          "sura": 30,
+          "aya": 26
+        },
+        "tanzil": "لَّهُۥ قَـٰنِتُونَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/5",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "فِيهِۦ مُهَانًا",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 25,
+          "aya": 69
+        },
+        "tanzil": "فِيهِۦ مُهَانًا"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/6",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "يَرْضَهُ لَكُمْ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 39,
+          "aya": 7
+        },
+        "tanzil": "يَرْضَهُ لَكُمْ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/7",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "أَرْجِهْ",
+    "status": "ambiguous",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 7,
+          "aya": 111
+        },
+        "tanzil": "أَرْجِهْ"
+      },
+      {
+        "ref": {
+          "sura": 26,
+          "aya": 36
+        },
+        "tanzil": "أَرْجِهْ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/8",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "فَأَلْقِهْ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 27,
+          "aya": 28
+        },
+        "tanzil": "فَأَلْقِهْ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/9",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "وَيَتَّقْهِ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 24,
+          "aya": 52
+        },
+        "tanzil": "وَيَتَّقْهِ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/10",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "أَنسَانِيهُ",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 18,
+          "aya": 63
+        },
+        "tanzil": "أَنسَىٰنِيهُ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/11",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "عَلَيْهُ اللَّهَ",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 48,
+          "aya": 10
+        },
+        "tanzil": "عَلَيْهُ ٱللَّهَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/6/q/12",
+    "kind": "library",
+    "context": "مد الصلة الصغرى",
+    "quran": "هَٰذِهِۦ",
+    "status": "ambiguous",
+    "hits": 15,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 78
+        },
+        "tanzil": "هَٰذِهِۦ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 63
+        },
+        "tanzil": "هَٰذِهِۦ"
+      },
+      {
+        "ref": {
+          "sura": 7,
+          "aya": 73
+        },
+        "tanzil": "هَٰذِهِۦ"
+      },
+      {
+        "ref": {
+          "sura": 7,
+          "aya": 131
+        },
+        "tanzil": "هَٰذِهِۦ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 22
+        },
+        "tanzil": "هَٰذِهِۦ"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 64
+        },
+        "tanzil": "هَٰذِهِۦ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/8/q/0",
+    "kind": "library",
+    "context": "المد الجائز المنفصل",
+    "quran": "قُوا أَنفُسَكُمْ — بِمَا أُنزِلَ — فِي أُمِّهَا",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/8/q/1",
+    "kind": "library",
+    "context": "المد الجائز المنفصل",
+    "quran": "يَٰأَيُّهَا — هَٰأَنتُمْ — هَٰؤُلَاءِ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/9/q/0",
+    "kind": "library",
+    "context": "مد الصلة الكبرى",
+    "quran": "مَالَهُۥٓ أَخْلَدَهُ",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 104,
+          "aya": 3
+        },
+        "tanzil": "مَالَهُۥٓ أَخْلَدَهُۥ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/9/q/1",
+    "kind": "library",
+    "context": "مد الصلة الكبرى",
+    "quran": "عِندَهُۥٓ إِلَّا بِإِذْنِهِ",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 255
+        },
+        "tanzil": "عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/10/q/0",
+    "kind": "library",
+    "context": "المد الجائز البدل",
+    "quran": "ءَامَنُوا — أُوتُوا — إِيمَانًا",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/10/q/1",
+    "kind": "library",
+    "context": "المد الجائز البدل",
+    "quran": "أُوفِ — يَشَآءُونَ — رَءُوفٌ — أُورِثْتُمُوهَا",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/10/q/2",
+    "kind": "library",
+    "context": "المد الجائز البدل",
+    "quran": "يَشَآءُونْ",
+    "status": "suggest",
+    "hits": 5,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 16,
+          "aya": 31
+        },
+        "tanzil": "يَشَآءُونَ"
+      },
+      {
+        "ref": {
+          "sura": 25,
+          "aya": 16
+        },
+        "tanzil": "يَشَآءُونَ"
+      },
+      {
+        "ref": {
+          "sura": 39,
+          "aya": 34
+        },
+        "tanzil": "يَشَآءُونَ"
+      },
+      {
+        "ref": {
+          "sura": 42,
+          "aya": 22
+        },
+        "tanzil": "يَشَآءُونَ"
+      },
+      {
+        "ref": {
+          "sura": 50,
+          "aya": 35
+        },
+        "tanzil": "يَشَآءُونَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/11/q/0",
+    "kind": "library",
+    "context": "المد الواجب المتصل",
+    "quran": "جَآءَ — السَّمَآءِ — سُوٓءَ — سِيٓءَتْ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/11/q/1",
+    "kind": "library",
+    "context": "المد الواجب المتصل",
+    "quran": "هَآؤُمُ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 69,
+          "aya": 19
+        },
+        "tanzil": "هَآؤُمُ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/11/q/2",
+    "kind": "library",
+    "context": "المد الواجب المتصل",
+    "quran": "هَٰٓؤُلَآءِ",
+    "status": "ambiguous",
+    "hits": 40,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 31
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 85
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 66
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 41
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 51
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 78
+        },
+        "tanzil": "هَٰٓؤُلَآءِ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/12/q/0",
+    "kind": "library",
+    "context": "المد اللازم الكلمي (مثقل ومخفف)",
+    "quran": "الضَّآلِّينَ",
+    "status": "suggest",
+    "hits": 6,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 1,
+          "aya": 7
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      },
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 198
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 77
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      },
+      {
+        "ref": {
+          "sura": 26,
+          "aya": 20
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      },
+      {
+        "ref": {
+          "sura": 26,
+          "aya": 86
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      },
+      {
+        "ref": {
+          "sura": 56,
+          "aya": 92
+        },
+        "tanzil": "ٱلضَّآلِّينَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/12/q/1",
+    "kind": "library",
+    "context": "المد اللازم الكلمي (مثقل ومخفف)",
+    "quran": "تَأْمُرُوٓنِّي",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 39,
+          "aya": 64
+        },
+        "tanzil": "تَأْمُرُوٓنِّىٓ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/12/q/2",
+    "kind": "library",
+    "context": "المد اللازم الكلمي (مثقل ومخفف)",
+    "quran": "أَتُحَٰٓجُّوٓنِّي",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 80
+        },
+        "tanzil": "أَتُحَـٰٓجُّوٓنِّى"
+      }
+    ]
+  },
+  {
+    "id": "lessons/12/q/3",
+    "kind": "library",
+    "context": "المد اللازم الكلمي (مثقل ومخفف)",
+    "quran": "ءَآلْـَٰٔنَ",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 51
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 91
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/12/q/4",
+    "kind": "library",
+    "context": "المد اللازم الكلمي (مثقل ومخفف)",
+    "quran": "ءَآلذَّكَرَيْنِ",
+    "status": "ambiguous",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 143
+        },
+        "tanzil": "ءَآلذَّكَرَيْنِ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 144
+        },
+        "tanzil": "ءَآلذَّكَرَيْنِ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/12/q/5",
+    "kind": "library",
+    "context": "المد اللازم الكلمي (مثقل ومخفف)",
+    "quran": "ءَآللَّهُ",
+    "status": "ambiguous",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 59
+        },
+        "tanzil": "ءَآللَّهُ"
+      },
+      {
+        "ref": {
+          "sura": 27,
+          "aya": 59
+        },
+        "tanzil": "ءَآللَّهُ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/12/q/6",
+    "kind": "library",
+    "context": "المد اللازم الكلمي (مثقل ومخفف)",
+    "quran": "ءَآلْـَٰٔنَ",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 51
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 91
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/13/q/0",
+    "kind": "library",
+    "context": "الحروف المقطعة: ٤ أحوال",
+    "quran": "حي طهر",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/13/q/1",
+    "kind": "library",
+    "context": "الحروف المقطعة: ٤ أحوال",
+    "quran": "كم عسل نقص",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/14/q/0",
+    "kind": "library",
+    "context": "التسهيل",
+    "quran": "ءَا۬عْجَمِيٌّ",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 41,
+          "aya": 44
+        },
+        "tanzil": "ءَا۬عْجَمِىٌّ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/14/q/1",
+    "kind": "library",
+    "context": "التسهيل",
+    "quran": "ءَآلذَّكَرَيْنِ",
+    "status": "ambiguous",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 143
+        },
+        "tanzil": "ءَآلذَّكَرَيْنِ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 144
+        },
+        "tanzil": "ءَآلذَّكَرَيْنِ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/14/q/2",
+    "kind": "library",
+    "context": "التسهيل",
+    "quran": "ءَآللَّهُ",
+    "status": "ambiguous",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 59
+        },
+        "tanzil": "ءَآللَّهُ"
+      },
+      {
+        "ref": {
+          "sura": 27,
+          "aya": 59
+        },
+        "tanzil": "ءَآللَّهُ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/14/q/3",
+    "kind": "library",
+    "context": "التسهيل",
+    "quran": "ءَآلْـَٰٔنَ",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 51
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ"
+      },
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 91
+        },
+        "tanzil": "ءَآلْـَٔـٰنَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/15/q/0",
+    "kind": "library",
+    "context": "اللازم الحرفي (مثقل ومخفف)",
+    "quran": "طسٓمٓ",
+    "status": "ambiguous",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 26,
+          "aya": 1
+        },
+        "tanzil": "طسٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 28,
+          "aya": 1
+        },
+        "tanzil": "طسٓمٓ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/15/q/1",
+    "kind": "library",
+    "context": "اللازم الحرفي (مثقل ومخفف)",
+    "quran": "الٓمٓ",
+    "status": "ambiguous",
+    "hits": 6,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 29,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 30,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 31,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 32,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/15/q/2",
+    "kind": "library",
+    "context": "اللازم الحرفي (مثقل ومخفف)",
+    "quran": "الٓمٓ",
+    "status": "ambiguous",
+    "hits": 6,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 29,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 30,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 31,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      },
+      {
+        "ref": {
+          "sura": 32,
+          "aya": 1
+        },
+        "tanzil": "الٓمٓ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/15/q/3",
+    "kind": "library",
+    "context": "اللازم الحرفي (مثقل ومخفف)",
+    "quran": "كٓهيعٓصٓ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 19,
+          "aya": 1
+        },
+        "tanzil": "كٓهيعٓصٓ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/15/q/4",
+    "kind": "library",
+    "context": "اللازم الحرفي (مثقل ومخفف)",
+    "quran": "الٓر",
+    "status": "ambiguous",
+    "hits": 5,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 10,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 11,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 12,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 14,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      },
+      {
+        "ref": {
+          "sura": 15,
+          "aya": 1
+        },
+        "tanzil": "الٓر"
+      }
+    ]
+  },
+  {
+    "id": "lessons/15/q/5",
+    "kind": "library",
+    "context": "اللازم الحرفي (مثقل ومخفف)",
+    "quran": "قٓ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 50,
+          "aya": 1
+        },
+        "tanzil": "قٓ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/15/q/6",
+    "kind": "library",
+    "context": "اللازم الحرفي (مثقل ومخفف)",
+    "quran": "يسٓ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 36,
+          "aya": 1
+        },
+        "tanzil": "يسٓ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/15/q/7",
+    "kind": "library",
+    "context": "اللازم الحرفي (مثقل ومخفف)",
+    "quran": "يسٓ والقرآن",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/15/q/8",
+    "kind": "library",
+    "context": "اللازم الحرفي (مثقل ومخفف)",
+    "quran": "نٓ والقلم",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 68,
+          "aya": 1
+        },
+        "tanzil": "نٓ ۚ وَٱلْقَلَمِ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/15/q/9",
+    "kind": "library",
+    "context": "اللازم الحرفي (مثقل ومخفف)",
+    "quran": "الٓمٓ ۝ اللَّهُ",
+    "status": "suggest",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 1,
+          "ayaTo": 2
+        },
+        "tanzil": "الٓمٓ ٱللَّهُ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/16/q/0",
+    "kind": "library",
+    "context": "المد العارض للسكون",
+    "quran": "الْعَٰلَمِينْ — نَسْتَعِينْ — يَعْلَمُونْ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/16/q/1",
+    "kind": "library",
+    "context": "المد العارض للسكون",
+    "quran": "خَوْفْ — الْبَيْتْ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/17/q/0",
+    "kind": "library",
+    "context": "مد اللين",
+    "quran": "سَوْءَ — مَيْتَة — يَوْمَيْن — عَيْن",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/17/q/1",
+    "kind": "library",
+    "context": "مد اللين",
+    "quran": "كٓهيعٓصٓ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 19,
+          "aya": 1
+        },
+        "tanzil": "كٓهيعٓصٓ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/17/q/2",
+    "kind": "library",
+    "context": "مد اللين",
+    "quran": "حمٓ عٓسٓقٓ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/18/q/0",
+    "kind": "library",
+    "context": "مد التعظيم",
+    "quran": "لَآ إِلَٰهَ",
+    "status": "ambiguous",
+    "hits": 31,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 255
+        },
+        "tanzil": "لَآ إِلَٰهَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 2
+        },
+        "tanzil": "لَآ إِلَٰهَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 6
+        },
+        "tanzil": "لَآ إِلَٰهَ"
+      },
+      {
+        "ref": {
+          "sura": 3,
+          "aya": 18
+        },
+        "tanzil": "لَآ إِلَٰهَ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 87
+        },
+        "tanzil": "لَآ إِلَٰهَ"
+      },
+      {
+        "ref": {
+          "sura": 6,
+          "aya": 102
+        },
+        "tanzil": "لَآ إِلَٰهَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/19/q/0",
+    "kind": "library",
+    "context": "مد التبرئة",
+    "quran": "لَا رَيْبَ — لَا جُنَاحَ — لَا خَوْفٌ",
+    "status": "none",
+    "hits": 0,
+    "candidates": []
+  },
+  {
+    "id": "lessons/20/q/0",
+    "kind": "library",
+    "context": "مراتب المدود: مين يغلب مين؟",
+    "quran": "ءَآمِّينَ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 5,
+          "aya": 2
+        },
+        "tanzil": "ءَآمِّينَ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/20/q/1",
+    "kind": "library",
+    "context": "مراتب المدود: مين يغلب مين؟",
+    "quran": "رِئَآءَ النَّاسِ",
+    "status": "suggest",
+    "hits": 2,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 2,
+          "aya": 264
+        },
+        "tanzil": "رِئَآءَ ٱلنَّاسِ"
+      },
+      {
+        "ref": {
+          "sura": 4,
+          "aya": 38
+        },
+        "tanzil": "رِئَآءَ ٱلنَّاسِ"
+      }
+    ]
+  },
+  {
+    "id": "lessons/20/q/2",
+    "kind": "library",
+    "context": "مراتب المدود: مين يغلب مين؟",
+    "quran": "وَجَآءُوٓ أَبَاهُمْ",
+    "status": "auto",
+    "hits": 1,
+    "candidates": [
+      {
+        "ref": {
+          "sura": 12,
+          "aya": 16
+        },
+        "tanzil": "وَجَآءُوٓ أَبَاهُمْ"
+      }
+    ]
+  }
+]
