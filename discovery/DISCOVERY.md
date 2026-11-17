@@ -3,7 +3,21 @@
 Source spec: `PROMPT.md` (repo root). This file records what the founder decided **on top of** that spec.
 Updated after every answer batch. Sections never mixed.
 
-_Last update: 2026-11-17 — round 1 (16 answers)._
+_Last update: 2026-11-17 — round 2 (discovery complete for v1; awaiting PRODUCT_DEFINITION approval)._
+
+## ROUND 2 DECISIONS (CONFIRMED — these override anything below that disagrees)
+- **Deadline: within ~1 week** (the Sheikh's next Madd lesson). v1 = Madd module only.
+- **Intro module not required in v1**, but when it ships it must sit **in its correct place** in the course order.
+- **Unlock rule:** a module that is ready is **open**; «قريبًا» modules never lock the ones after them (students already studied earlier chapters in class). Lessons inside a module still unlock in order.
+- **v1 exercise types: all prototype types** — صنّف · المقدار · الحكم · لوّن الحكم · بنك الأسئلة · صح ولا غلط · وصّل · رتّب · كمّل التعريف · احفظ الخريطة. The two new PROMPT types (اكتشف الغلطة · الطريق) → v1.1.
+- **Book PDFs go in the public repo** (founder decision). Un-ignore `reference/source/` when content extraction starts.
+- **Folder → `D:\Company\10-Products\Tuhfa`; GitHub repo → `ahmedGaid/tuhfa`** (URL `ahmedgaid.github.io/tuhfa`).
+- **Mascot: «نقطة» — an ink dot** from Arabic calligraphy. Stretches with madd length (٢ / ٤ / ٦ حركات), bounces on a correct answer. Not a living creature.
+- **Credit text (About page):** «المحتوى مأخوذ من دروس فضيلة الشيخ جابر في شرح متن تحفة الأطفال، جزاه الله خيرًا».
+- **Telegram channel is PRIVATE** (invite link `https://t.me/+-lqAKcDundJmNjdk`, title «تسجيلات درس مبادئ التجويد»). PROMPT assumed public. Decision:
+  - Library shows a **«انضم للقناة» button** with the invite link (founder + Sheikh OK with it being public).
+  - Per-lesson links use the private-post form `https://t.me/c/<channel_id>/<msg_id>` — they open only for members. Channel id + message ids come from the JSON export (still missing).
+  - **No embedded Telegram widget** (does not work for private channels). Drop PROMPT §0.1.B.5 «شغّل هنا».
 
 ## CONFIRMED (founder explicitly decided)
 
@@ -27,7 +41,7 @@ _Last update: 2026-11-17 — round 1 (16 answers)._
 - PDFs `08-أحكام المد والقصر` and `09-أحكام المد والقصر` are **two different parts** of the Madd chapter.
 
 ### Telegram
-- Channel is **public**.
+- ~~Channel is public~~ → **private** (see round 2).
 - No JSON export yet → **build the library from local audio/PDF files now**; add `t.me` links when the export arrives.
 
 ### Experience (changes vs PROMPT)
@@ -51,14 +65,9 @@ _Last update: 2026-11-17 — round 1 (16 answers)._
 - Leaderboard dropped partly because competition may feel wrong for Quran study (founder chose "later", not "never").
 
 ## OPEN
-1. Telegram channel **username** (for `t.me/<channel>` links).
-2. **Credit wording** for the Sheikh on the About page (founder's exact words).
-3. Mascot: 3 proposals to show (non-living symbol vs character vs none).
-4. Does the intro module have to ship in v1, or right after Madd?
-5. Book PDFs (`reference/source/`, `PDF Files/`) in the **public** repo? Currently git-ignored. Page images are committed.
-6. Rename the folder `Tagweed Doulingo` → `Tuhfa`, and GitHub repo name (`tuhfa`?).
-7. Exact Sheikh lesson order — derive from audio numbering (lessons 1–28 + مقرأة) and PDF numbering; confirm with founder.
-8. Is there a date for the "next Madd lesson"? Sets the v1 cut.
+1. Telegram **JSON export** (gives channel id + message ids for member links). Not blocking v1.
+2. Exact Sheikh lesson order — derive from audio numbering (lessons 1–28 + مقرأة) and PDF numbering; confirm with founder. Not blocking v1 (Madd only), blocking the intro module.
+3. Mascot «نقطة» visual design — sketch 2–3 variants during brand work.
 
 ## CONFLICTS
 - **PDF numbering**: two files numbered `05` (الغنة · الإدغام والقلب والإخفاء); لامات is `07`, Madd is `08` + `09`; audio lessons 22–28 are already Madd. Need the real order.
