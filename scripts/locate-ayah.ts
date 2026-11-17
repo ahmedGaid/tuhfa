@@ -14,7 +14,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import type { Module, Ref } from '../src/content/schema.ts';
-import { emitModule } from './lib/emit.ts';
+import { emitModule, formatFiles } from './lib/emit.ts';
 import { quranItems, type ItemKind } from './lib/items.ts';
 import { findExact, findLoose, loadQuran, refText, verifyText, normalize } from './lib/quran.ts';
 
@@ -144,6 +144,7 @@ export async function locate(moduleId: string, apply: boolean): Promise<LocateRo
 
   if (changed) emitModule(dir, mod);
   writeFileSync(reportPath(moduleId), JSON.stringify(rows, null, 2) + '\n');
+  formatFiles([reportPath(moduleId)]);
   return rows;
 }
 

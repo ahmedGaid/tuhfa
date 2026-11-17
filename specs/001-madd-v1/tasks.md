@@ -43,7 +43,7 @@ description: "Task list for Tuhfa v1 — Madd module"
 - [x] T018 [P] `tests/unit/ambiguity.test.ts` (R6) — 500 seeded sessions, correct answer only option in tags
 - [x] T019 [P] `tests/unit/spot-indexes.test.ts` (R7) — every SpotItem answer matches `expectWords`
 - [x] T020 `scripts/content-notes.ts` → `CONTENT_NOTES.md`: unverified examples with candidates, prototype↔book disagreements, thin concepts
-- [ ] T021 Read book pages `reference/img/*` + `reference/source/part1.pdf`/`part2.pdf` against extracted Madd data; log every disagreement in `CONTENT_NOTES.md` (book wins)
+- [x] T021 Read book pages `reference/img/*` + `reference/source/part1.pdf`/`part2.pdf` against extracted Madd data; log every disagreement in `CONTENT_NOTES.md` (book wins)
 - [x] T022 `scripts/validate.ts` + `npm run validate` (schema → verify → ambiguity → spot → colour ΔE); add to CI
 - [x] T023 [P] `tests/unit/content-counts.test.ts`: 21 lessons, 17 concepts, 57 questions, 10 spot, tree root, ruler, turuq present (SC-003)
 - [x] T024 [P] `src/content/modules/_template/` with commented sample data that passes validate

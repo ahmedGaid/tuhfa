@@ -10,6 +10,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import type { Module } from '../src/content/schema.ts';
+import { formatFiles } from './lib/emit.ts';
 import { BULK_MARK, NOTES, refKey, reportPath, type LocateRow } from './locate-ayah.ts';
 
 const GEN_START = '<!-- generated:start -->';
@@ -151,6 +152,7 @@ export function writeNotes(m: Module, rows: LocateRow[]) {
   const old = existsSync(NOTES) ? readFileSync(NOTES, 'utf8') : '';
   const manual = old.includes(MANUAL) ? old.slice(old.indexOf(MANUAL)) : DEFAULT_MANUAL;
   writeFileSync(NOTES, `${GEN_START}\n\n${renderNotes(m, rows)}\n${GEN_END}\n\n${manual.trimEnd()}\n`);
+  formatFiles([NOTES]);
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]!).href) {

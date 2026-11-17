@@ -788,4 +788,51 @@ piece. Library text is shown as written in the prototype until the founder asks 
 
 ## G. Book ↔ prototype (read by hand — the book wins)
 
-_Filled while reading `reference/img/*` and the book PDFs against the extracted data (task T021)._
+Read on 2026-11-17 (task T021): all 26 book pages — `reference/img/a-1…a-4` + `b-01…b-22`, the same
+26 pages as `reference/source/part1.pdf` (4) + `part2.pdf` (22). Sources are cited by image id (the
+printed page numbers repeat between the two PDFs). Compared: every concept's rule, amount (مقدار),
+ruling (حكم) and examples; the rank order; the turuq table. **Nothing in the data was changed** — each
+item in G1 needs a founder / Sheikh decision; proposed wording is a suggestion only.
+
+### G1. Needs a decision (prototype differs from the book or is incomplete)
+
+1. **مد البدل — amount** (`concepts/badal`). Prototype: «حركتين». Book (b-07): «يُمد بمقدار حركتين وصلًا
+   ووقفًا، أما إذا وقع بعده حرف عند الوقف نحو (يشاءون) فيصبح من قبيل المد البدل العارض للسكون ويزداد في
+   مده إلى ٤ أو ٦ حركات». Proposed amount: «حركتين وصلًا ووقفًا · لو وقفت وبعده حرف (يشاءون) ٢ أو ٤ أو ٦».
+   - [ ] Use the book wording
+2. **المنفصل and المتصل — Shatibiyya amount**. Prototype: «٤ أو ٥ (شاطبية)» (also in the turuq table).
+   The book boxes (b-05, b-08) say ٤، ٥ — but the book's own notes on the same pages say Imam
+   al-Shatibi taught Hafs only ٤ in المنفصل and المتصل. Which should students learn?
+   - [ ] Keep «٤ أو ٥»
+   - [ ] Teach «٤» only, with ٥ as a note
+3. **«ءامنوا وعملوا» holds more than one مد**. The book uses it as an example of المد الطبيعي (a-3) and
+   of مد التمكين (a-1, a-2, b-01), and «ءامنوا» as البدل (b-07). The prototype uses «ءَامَنُوا» alone for
+   البدل — fine — but spot `s06` and question `q13` quote «ءَامَنُوا وَعَمِلُوا». Any example with both
+   words must be tagged `badal`, `tamk` and `tab` (section D), or «صنّف» could mark a right answer wrong.
+   - [ ] Add the tags
+4. **اللازم الكلمي المخفف** (`concepts/lkk`). The book (b-10, b-12) gives a second accepted way for
+   «ءَآلْـَٔـٰنَ»: التسهيل مع القصر, after الإبدال مع المد المشبع (which comes first). The prototype
+   mentions only the ٦. Add a one-line note on the teach card?
+   - [ ] Add the note
+   - [ ] Leave as is
+
+### G2. Matches the book (no action)
+
+- Rulings: الطبيعي واجب (a-3) · الطبيعي الحرفي واجب (a-4) · العوض واجب (b-02) · المنفصل جائز (b-05) ·
+  الصلة الكبرى جائز (b-06) · البدل جائز (b-07) · المتصل واجب (b-08) · اللازم بأنواعه لازم (b-09, b-10,
+  b-13, b-14) · العارض جائز (b-15) · اللين جائز (b-16) · التعظيم جائز (b-17) · التبرئة جائز (b-20).
+  التمكين and الصلة الصغرى have no ruling in the prototype, and the book names none.
+- Amounts: الأصلي حركتان (a-2) · العوض وقفًا فقط (b-02) · الصلة الصغرى وصلًا فقط (b-03) · المنفصل والصلة
+  الكبرى ط ٢–٥ (b-05, b-06) · المتصل ط ٤–٦ (b-08) · اللازم ٦ (b-09…b-14) · العارض ٢/٤/٦ (b-15) · اللين
+  وصلًا أقل من حركتين، وقفًا ٢/٤/٦ (b-16) · التعظيم ٤ لأصحاب قصر المنفصل من الطيبة (b-17) · التبرئة ٤
+  لحمزة من الطيبة (b-20).
+- عين مريم والشورى (turuq table): ش ٤ أو ٦ (٦ مقدم) · ط ٢ أو ٤ أو ٦ (٦ ثم ٤ ثم ٢) (b-14).
+- Rank order لازم → متصل → عارض → منفصل → بدل → لين → معنوي and the verse «أقوى المدود لازمٌ فما اتصل
+  … فعارضٌ فذو انفصالٍ فبدل» (b-21). Book example «وَلَآ ءَآمِّينَ» (بدل + لازم → لازم) (b-22) = rank card.
+- «لا إله إلا هو» in 30 places (b-17) = prototype note «٣٠ موضع» · «ءَآلْـَٔـٰنَ» يونس ٥١، ٩١ (b-10) ·
+  first تبرئة example «لا ريب» البقرة (b-20).
+- The tree (map) = the book map (a-1, b-04), incl. البدل / الشبيه بالبدل and المنفصل حقيقي / حكمي.
+
+### G3. Founder notes
+
+_Write here: wrong examples, places to use, tags to add, anything else. Claude turns each into a data fix._

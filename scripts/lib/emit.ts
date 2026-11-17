@@ -64,6 +64,12 @@ export default module;
     writeFileSync(p, text);
     return p;
   });
+  formatFiles(paths);
+  return paths;
+}
+
+/** Run the repo's Prettier on generated files so `format:check` stays green. */
+export function formatFiles(paths: string[]) {
   execFileSync(
     process.execPath,
     ['node_modules/prettier/bin/prettier.cjs', '--write', '--log-level=warn', ...paths],
@@ -71,5 +77,4 @@ export default module;
       stdio: 'inherit',
     },
   );
-  return paths;
 }
