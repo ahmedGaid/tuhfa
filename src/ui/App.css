@@ -41,3 +41,33 @@
   color: var(--mute);
   text-align: center;
 }
+@media (max-width: 400px) {
+  .app__tagline {
+    display: none;
+  }
+}
+.app__header {
+  align-items: center;
+}
+.notice {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin: var(--s-3) var(--s-4) 0;
+  padding: var(--s-2) var(--s-3);
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  font-size: var(--fs-sm);
+}
+.notice p {
+  margin: 0;
+  flex: 1;
+}
+/* streak + goal stay in view while the path scrolls */
+.app__header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 10;
+  background: var(--bg);
+}

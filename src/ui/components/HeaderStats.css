@@ -1,0 +1,37 @@
+.hstats {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-inline-start: auto;
+}
+.hstats__streak {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.hstats__cold {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+.ring {
+  display: block;
+  fill: none;
+}
+.ring__track {
+  stroke: var(--soft);
+  stroke-width: 4;
+}
+.ring__fill {
+  stroke: var(--ink);
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition: stroke-dasharray var(--dur) var(--ease);
+}
+.ring__check {
+  stroke: var(--ink);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

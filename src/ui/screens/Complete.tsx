@@ -1,5 +1,6 @@
-/** Lesson complete (T037): «نقطة» celebrating, stars, accuracy, XP and a warm line. */
+/** Lesson complete (T037, T044): «نقطة» celebrating, confetti, stars, accuracy, XP and a warm line. */
 import type { LessonResult } from '../../engine/scoring.ts';
+import { Confetti } from '../components/Confetti.tsx';
 import { Mascot } from '../components/Mascot.tsx';
 import { Button } from '../components/ui.tsx';
 import { num, pct } from '../format.ts';
@@ -22,6 +23,7 @@ export function Complete({
 }) {
   return (
     <section class="done" aria-labelledby="done-title">
+      <Confetti />
       <Mascot pose="happy" size={112} />
       <p class="done__sub">
         {t.complete.title} «{title}»

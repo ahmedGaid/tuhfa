@@ -1,0 +1,183 @@
+.path {
+  display: grid;
+  gap: var(--s-5);
+  padding: var(--s-4);
+}
+
+/* باب band: the module colour is content (tuhfa-brand override of rule 2), always with its icon */
+.band {
+  display: grid;
+  gap: var(--s-3);
+}
+.band__head {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-3) var(--s-4);
+  border-radius: var(--r-lg);
+  background: var(--cat, var(--soft));
+  color: var(--card);
+  border-block-end: 4px solid color-mix(in srgb, var(--cat, var(--soft)) 70%, var(--ink));
+}
+.band--soon .band__head {
+  background: var(--card);
+  color: var(--mute);
+  border: 1px dashed var(--line);
+}
+.band__icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  inline-size: 36px;
+  block-size: 36px;
+  border-radius: var(--r-pill);
+  background: color-mix(in srgb, var(--card) 22%, transparent);
+  font-weight: 800;
+  font-size: var(--fs-lg);
+}
+.band--soon .band__icon {
+  background: var(--soft);
+}
+.band__title {
+  margin: 0;
+  font-size: var(--fs-md);
+  font-weight: 800;
+  line-height: 1.4;
+  min-inline-size: 0;
+}
+.band__soon {
+  margin-inline-start: auto;
+  flex: none;
+  padding: 2px var(--s-2);
+  border-radius: var(--r-pill);
+  background: var(--soft);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+.band__loading {
+  margin: 0;
+  color: var(--mute);
+  text-align: center;
+}
+
+/* وحدة */
+.units {
+  display: grid;
+  gap: var(--s-5);
+}
+.unit {
+  display: grid;
+  gap: var(--s-3);
+}
+.unit__title {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs-md);
+}
+
+/* winding nodes */
+.nodes {
+  --wind-step: 34px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s-4);
+  justify-items: center;
+}
+.nodes__item {
+  transform: translateX(calc(var(--wind, 0) * var(--wind-step)));
+}
+@media (max-width: 380px) {
+  .nodes {
+    --wind-step: 24px;
+  }
+}
+
+.node {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: var(--s-1);
+  max-inline-size: 13ch;
+  color: var(--ink);
+  text-align: center;
+  text-decoration: none;
+}
+.node__dot {
+  display: grid;
+  place-items: center;
+  inline-size: 64px;
+  block-size: 60px;
+  border-radius: var(--r-pill);
+  background: var(--cat, var(--ink));
+  color: var(--card);
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  border-block-end: 6px solid color-mix(in srgb, var(--cat, var(--ink)) 65%, var(--ink));
+  transition: transform var(--dur) var(--ease);
+}
+.node--big .node__dot {
+  inline-size: 80px;
+  block-size: 74px;
+}
+a.node:active .node__dot {
+  transform: translateY(3px);
+}
+.node--open .node__dot {
+  background: var(--card);
+  color: var(--cat, var(--ink));
+  border: 3px solid var(--cat, var(--ink));
+  border-block-end-width: 6px;
+}
+.node--locked {
+  color: var(--mute);
+}
+.node--locked .node__dot {
+  background: var(--soft);
+  color: var(--mute);
+  border-block-end-color: var(--line);
+}
+.node__icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.node__title {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  line-height: 1.4;
+}
+.node__stars {
+  font-size: var(--fs-sm);
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.node__off {
+  color: var(--line);
+}
+
+/* «ابدأ» tag + pulse on the current node; reduced motion turns the pulse off (theme.css) */
+.node__start {
+  padding: 2px var(--s-3);
+  border-radius: var(--r-md);
+  background: var(--card);
+  border: 2px solid var(--line);
+  font-size: var(--fs-sm);
+  font-weight: 800;
+}
+.node--current .node__dot {
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--cat, var(--ink)) 45%, transparent);
+  animation: node-pulse 1.8s var(--ease) infinite;
+}
+@keyframes node-pulse {
+  70% {
+    box-shadow: 0 0 0 14px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}

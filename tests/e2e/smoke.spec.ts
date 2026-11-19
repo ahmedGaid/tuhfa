@@ -1,7 +1,11 @@
 import { expect, test } from '@playwright/test';
+import { passWelcome } from './helpers.ts';
 
 test('shell renders RTL Arabic with four tabs and no horizontal overflow', async ({ page }) => {
   await page.goto('./');
+  await expect(page.getByRole('heading', { name: 'أهلًا بيك في تحفة' })).toBeVisible();
+  await expect(page.getByText('فضيلة الشيخ جابر').first()).toBeVisible();
+  await passWelcome(page);
   await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
   await expect(page.locator('html')).toHaveAttribute('lang', 'ar');
 
@@ -20,6 +24,8 @@ test('shell renders RTL Arabic with four tabs and no horizontal overflow', async
 });
 
 test('unknown route shows a way home', async ({ page }) => {
+  await page.goto('./');
+  await passWelcome(page);
   await page.goto('./#/nowhere');
   await expect(page.getByText('الصفحة دي مش موجودة.')).toBeVisible();
   await page.getByRole('link', { name: 'ارجع للمسار' }).click();
