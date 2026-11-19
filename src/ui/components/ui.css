@@ -52,7 +52,9 @@
   padding-inline: var(--s-2);
   border-radius: var(--r-pill);
   border: 1.5px solid var(--cat, var(--line));
-  color: var(--cat, var(--mute));
+  /* text a step toward ink so small labels pass AA (gold on bg is 3.6:1); the border keeps the
+     exact category colour (T065, D-10) */
+  color: color-mix(in oklab, var(--cat, var(--mute)) 70%, var(--ink));
   font-size: var(--fs-sm);
   font-weight: 600;
 }

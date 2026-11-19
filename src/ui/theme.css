@@ -10,7 +10,7 @@
   --bg: light-dark(#f5f5f3, #151515);
   --card: light-dark(#ffffff, #1f1f1f);
   --ink: light-dark(#26282e, #ececec);
-  --mute: light-dark(#6b6e76, #a3a3a8);
+  --mute: light-dark(#63666e, #a3a3a8); /* light was #6b6e76: 4.4:1 on --soft (T065, D-10) */
   --line: light-dark(#e1e1de, #333333);
   --soft: light-dark(#efefec, #262626);
   --on-ink: light-dark(#ffffff, #151515);
