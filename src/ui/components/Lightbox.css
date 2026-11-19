@@ -1,0 +1,59 @@
+.lb {
+  inline-size: 100vw;
+  block-size: 100dvh;
+  max-inline-size: none;
+  max-block-size: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+.lb[open] {
+  display: flex;
+  flex-direction: column;
+}
+.lb::backdrop {
+  background: var(--scrim);
+}
+.lb__bar {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-2);
+  padding: var(--s-2) var(--s-3);
+  border-block-end: 1px solid var(--line);
+}
+.lb__btn {
+  min-block-size: var(--tap);
+  padding-inline: var(--s-4);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--card);
+  font-weight: 800;
+  cursor: pointer;
+}
+.lb__scroll {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--s-2);
+  touch-action: pan-x pan-y pinch-zoom;
+  overscroll-behavior: contain;
+}
+.lb__scroll img {
+  inline-size: 100%;
+  max-inline-size: 1500px;
+  block-size: auto;
+  border-radius: var(--r-sm);
+  cursor: zoom-in;
+}
+.lb--zoom .lb__scroll {
+  justify-content: flex-start;
+}
+.lb--zoom .lb__scroll img {
+  inline-size: 260%;
+  max-inline-size: none;
+  cursor: zoom-out;
+}

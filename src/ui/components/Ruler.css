@@ -1,0 +1,119 @@
+.tool {
+  display: grid;
+  gap: var(--s-3);
+  padding: var(--s-4);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  min-inline-size: 0;
+}
+.tool h2 {
+  margin: 0;
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  line-height: 1.4;
+}
+.tool__legend {
+  margin: 0;
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
+.tool__scroll {
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+/* الشاطبية filled dark · الطيبة outlined · both plain */
+.tariq {
+  display: inline-block;
+  padding: 0 var(--s-2);
+  border-radius: var(--r-pill);
+  border: 1.5px solid var(--ink);
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.tariq--sh {
+  background: var(--ink);
+  color: var(--on-ink);
+}
+.tariq--tb {
+  background: transparent;
+  color: var(--ink);
+}
+.tariq--both {
+  border-color: var(--line);
+  color: var(--mute);
+}
+
+.ruler {
+  display: grid;
+  gap: var(--s-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ruler__row {
+  display: grid;
+  gap: var(--s-1);
+  padding-inline-start: var(--s-3);
+  border-inline-start: 4px solid var(--cat, var(--line));
+}
+.ruler__label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2);
+}
+.ruler__icon {
+  color: var(--cat);
+  font-weight: 800;
+}
+.ruler__dots {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-variant-numeric: tabular-nums;
+}
+.ruler__dots i {
+  inline-size: 18px;
+  block-size: 18px;
+  border-radius: var(--r-pill);
+  background: var(--cat, var(--ink));
+  border: 2px solid var(--cat, var(--ink));
+}
+.ruler__dots i.is-opt {
+  background: transparent;
+  border-style: dashed;
+}
+.ruler__dots span {
+  margin-inline-start: var(--s-2);
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
+
+.turuq {
+  inline-size: 100%;
+  min-inline-size: 480px;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+}
+.turuq th,
+.turuq td {
+  padding: var(--s-2);
+  border-block-end: 1px solid var(--line);
+  text-align: start;
+  vertical-align: top;
+}
+.turuq thead th {
+  white-space: nowrap;
+}
+.turuq tbody th {
+  font-weight: 800;
+}
+.turuq__note {
+  color: var(--mute);
+}

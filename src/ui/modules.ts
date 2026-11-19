@@ -23,3 +23,10 @@ export function catStyle(m: ParsedModule, categoryId: string | undefined): Recor
   const c = categoryId ? m.categories.find((x) => x.id === categoryId) : undefined;
   return c ? { '--cat': `light-dark(${c.color.light}, ${c.color.dark})` } : {};
 }
+
+/** Every ready module, parsed, in course order (null = a module failed to load). */
+export function loadReadyModules(): Promise<ParsedModule[]> {
+  return Promise.all(course.modules.filter((m) => m.status === 'ready').map((m) => loadModule(m.id))).then(
+    (all) => all.filter((m): m is ParsedModule => !!m),
+  );
+}

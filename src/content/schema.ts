@@ -394,6 +394,13 @@ export const ModuleRefSchema = z.discriminatedUnion('status', [
 export type ModuleRef = z.infer<typeof ModuleRefSchema>;
 
 export const CourseSchema = z
-  .object({ modules: z.array(ModuleRefSchema).min(1) })
+  .object({
+    modules: z.array(ModuleRefSchema).min(1),
+    /** the course's Telegram channel invite («انضم للقناة»): a t.me link only, never a bot or file URL */
+    channel: z
+      .string()
+      .regex(/^https:\/\/t\.me\/\+[\w-]+$/, 'channel must be a t.me invite link')
+      .optional(),
+  })
   .refine((c) => new Set(c.modules.map((m) => m.id)).size === c.modules.length, 'module ids must be unique');
 export type Course = z.infer<typeof CourseSchema>;

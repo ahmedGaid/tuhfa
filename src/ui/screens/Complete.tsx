@@ -10,12 +10,18 @@ import './Complete.css';
 
 export function Complete({
   title,
+  kicker = t.complete.title,
   result,
   nextHref,
+  homeHref = href('path'),
+  homeLabel = t.complete.home,
   onAgain,
   seed,
 }: {
   title: string;
+  kicker?: string | undefined;
+  homeHref?: string | undefined;
+  homeLabel?: string | undefined;
   result: LessonResult;
   nextHref?: string | undefined;
   onAgain: () => void;
@@ -26,7 +32,7 @@ export function Complete({
       <Confetti />
       <Mascot pose="happy" size={112} />
       <p class="done__sub">
-        {t.complete.title} «{title}»
+        {kicker} «{title}»
       </p>
       <h1 id="done-title" class="done__warm">
         {t.complete.warm[seed % t.complete.warm.length]}
@@ -55,8 +61,8 @@ export function Complete({
         <Button variant="alt" onClick={onAgain}>
           {t.complete.again}
         </Button>
-        <a class="btn btn--quiet" href={href('path')}>
-          {t.complete.home}
+        <a class="btn btn--quiet" href={homeHref}>
+          {homeLabel}
         </a>
       </div>
     </section>

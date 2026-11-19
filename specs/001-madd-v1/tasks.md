@@ -97,21 +97,21 @@ description: "Task list for Tuhfa v1 — Madd module"
 ## Phase 5: US4 + US5 + US6 — review, library, data — M5 (day 5–6)
 
 ### US4 Review
-- [ ] T048 [P] [US4] `tests/unit/srs.test.ts` (box moves, intervals 1/2/4/7/14, due selection)
-- [ ] T049 [US4] `src/engine/srs.ts` + review session builder (mistakes / due concepts)
-- [ ] T050 [US4] `src/ui/screens/Review.tsx` («راجع غلطاتي», «تمرين اليوم», empty state)
+- [x] T048 [P] [US4] `tests/unit/srs.test.ts` (box moves, intervals 1/2/4/7/14, due selection)
+- [x] T049 [US4] `src/engine/srs.ts` + review session builder (mistakes / due concepts)
+- [x] T050 [US4] `src/ui/screens/Review.tsx` («راجع غلطاتي», «تمرين اليوم», empty state)
 
 ### US5 Library
-- [ ] T051 [P] [US5] Book images: Vite copy step `reference/img` → `public/book/` (WebP if possible), `VITE_INCLUDE_BOOK_PAGES` default true
-- [ ] T052 [P] [US5] `TreeView` (zoom buttons, horizontal scroll inside container) + `Lightbox` (pinch/zoom, Esc, focus trap)
-- [ ] T053 [US5] `src/ui/screens/Library.tsx` (module groups, lesson list) + `LibraryLesson.tsx` (sanitised html, family colour, page button)
-- [ ] T054 [P] [US5] Generic `Ruler` + `TuruqTable` components (ش filled badge, ط outlined badge)
-- [ ] T055 [US5] «انضم للقناة» button (invite link from `course.ts` config, opens externally)
+- [x] T051 [P] [US5] Book images: Vite copy step `reference/img` → `public/book/` (WebP if possible), `VITE_INCLUDE_BOOK_PAGES` default true
+- [x] T052 [P] [US5] `TreeView` (zoom buttons, horizontal scroll inside container) + `Lightbox` (pinch/zoom, Esc, focus trap)
+- [x] T053 [US5] `src/ui/screens/Library.tsx` (module groups, lesson list) + `LibraryLesson.tsx` (sanitised html, family colour, page button)
+- [x] T054 [P] [US5] Generic `Ruler` + `TuruqTable` components (ش filled badge, ط outlined badge)
+- [x] T055 [US5] «انضم للقناة» button (invite link from `course.ts` config, opens externally)
 
 ### US6 Data & About
-- [ ] T056 [P] [US6] `tests/unit/exportCode.test.ts` (round-trip, bad prefix/checksum/schema → no change)
-- [ ] T057 [US6] `src/state/exportCode.ts` + `src/ui/screens/Profile.tsx` (XP, streak, export, import with confirm)
-- [ ] T058 [P] [US6] `src/ui/screens/About.tsx`: Sheikh credit (exact text FR-019), Tanzil attribution, version
+- [x] T056 [P] [US6] `tests/unit/exportCode.test.ts` (round-trip, bad prefix/checksum/schema → no change)
+- [x] T057 [US6] `src/state/exportCode.ts` + `src/ui/screens/Profile.tsx` (XP, streak, export, import with confirm)
+- [x] T058 [P] [US6] `src/ui/screens/About.tsx`: Sheikh credit (exact text FR-019), Tanzil attribution, version
 
 **Checkpoint M5**: US4–US6 acceptance scenarios pass manually per quickstart.md.
 

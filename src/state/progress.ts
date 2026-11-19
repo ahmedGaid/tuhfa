@@ -3,16 +3,14 @@
  * itself (contract progress-storage.md). The engine stays content-free; this file only knows ids.
  */
 import { effect, signal } from '@preact/signals';
-import { addDays, today, type Day } from './date.ts';
+import { applyAnswers } from '../engine/srs.ts';
+import { today, type Day } from './date.ts';
 import { freshProgress, type Progress } from './schema.ts';
 import { browserStore, createSaver, load, type Notice } from './storage.ts';
 import { bumpStreak } from './streak.ts';
 
 export const lessonKey = (moduleId: string, lessonId: string) => `${moduleId}/${lessonId}`;
 export const conceptKey = (moduleId: string, conceptId: string) => `${moduleId}/${conceptId}`;
-
-/** Leitner intervals in days for boxes 1..5. */
-export const INTERVALS = [1, 2, 4, 7, 14] as const;
 
 export interface LessonOutcome {
   moduleId: string;
@@ -38,20 +36,7 @@ export function applyLesson(p: Progress, o: LessonOutcome, day: Day): Progress {
     },
   };
 
-  const srs = { ...p.srs };
-  const missed = new Set(o.wrong);
-  const wrongCount = new Map<string, number>();
-  for (const c of o.wrong) wrongCount.set(c, (wrongCount.get(c) ?? 0) + 1);
-  for (const c of new Set([...o.right, ...o.wrong])) {
-    const k = conceptKey(o.moduleId, c);
-    const cur = srs[k];
-    if (missed.has(c)) {
-      srs[k] = { box: 1, due: addDays(day, 1), wrong: (cur?.wrong ?? 0) + wrongCount.get(c)! };
-    } else {
-      const box = Math.min(5, (cur?.box ?? 0) + 1);
-      srs[k] = { box, due: addDays(day, INTERVALS[box - 1]!), wrong: cur?.wrong ?? 0 };
-    }
-  }
+  const srs = applyAnswers(p.srs, (c) => conceptKey(o.moduleId, c), o.right, o.wrong, day);
 
   // most recent first, unique
   const fresh = [...new Set([...o.wrong].reverse())].map((c) => conceptKey(o.moduleId, c));
@@ -63,6 +48,31 @@ export function applyLesson(p: Progress, o: LessonOutcome, day: Day): Progress {
     xp: { total: p.xp.total + o.xp, byDay: { ...p.xp.byDay, [day]: (p.xp.byDay[day] ?? 0) + o.xp } },
     streak: bumpStreak(p.streak, day),
     srs,
+    mistakes,
+  };
+}
+
+export interface ReviewOutcome {
+  moduleId: string;
+  xp: number;
+  right: readonly string[];
+  wrong: readonly string[];
+}
+
+/**
+ * Review session complete (US4): XP + streak, SRS boxes up/down, and a concept answered only right
+ * leaves «غلطاتي»; one missed again moves to the front. Lesson stars are untouched.
+ */
+export function applyReview(p: Progress, o: ReviewOutcome, day: Day): Progress {
+  const key = (c: string) => conceptKey(o.moduleId, c);
+  const missed = [...new Set([...o.wrong].reverse())].map(key);
+  const cleared = new Set(o.right.map(key));
+  const mistakes = [...missed, ...p.mistakes.filter((m) => !missed.includes(m) && !cleared.has(m))];
+  return {
+    ...p,
+    xp: { total: p.xp.total + o.xp, byDay: { ...p.xp.byDay, [day]: (p.xp.byDay[day] ?? 0) + o.xp } },
+    streak: bumpStreak(p.streak, day),
+    srs: applyAnswers(p.srs, key, o.right, o.wrong, day),
     mistakes,
   };
 }
@@ -144,4 +154,13 @@ export function initProgress(): void {
 
 export function completeLesson(o: LessonOutcome, day: Day = today()): void {
   progress.value = applyLesson(progress.value, o, day);
+}
+
+export function completeReview(o: ReviewOutcome, day: Day = today()): void {
+  progress.value = applyReview(progress.value, o, day);
+}
+
+/** Import (export code): replace the whole state; the saver writes it like any other change. */
+export function replaceProgress(p: Progress): void {
+  progress.value = p;
 }

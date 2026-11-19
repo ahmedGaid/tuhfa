@@ -9,6 +9,8 @@
 import { CourseSchema, type Course } from './schema.ts';
 
 export const course: Course = CourseSchema.parse({
+  // private channel: invite link from the founder (DISCOVERY round 2); opened outside the app
+  channel: 'https://t.me/+-lqAKcDundJmNjdk',
   modules: [
     { id: 'mabadi', title: 'مبادئ علم التجويد وبعض المقدمات', icon: 'ت', status: 'soon' },
     { id: 'noon-sakinah', title: 'أحكام النون الساكنة والتنوين', icon: 'نْ', status: 'soon' },
