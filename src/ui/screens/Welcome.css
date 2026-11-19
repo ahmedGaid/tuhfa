@@ -1,0 +1,30 @@
+.welcome {
+  min-block-size: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-4);
+  padding: var(--s-6) var(--s-5);
+  text-align: center;
+}
+.welcome__title {
+  margin: 0;
+  font-size: var(--fs-xl);
+  font-weight: 800;
+}
+.welcome__body {
+  margin: 0;
+  max-inline-size: 34ch;
+}
+.welcome__credit {
+  margin: 0;
+  max-inline-size: 34ch;
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
+.welcome .btn {
+  inline-size: 100%;
+  max-inline-size: 320px;
+  margin-block-start: var(--s-3);
+}

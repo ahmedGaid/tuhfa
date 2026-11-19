@@ -23,5 +23,3 @@ export function catStyle(m: ParsedModule, categoryId: string | undefined): Recor
   const c = categoryId ? m.categories.find((x) => x.id === categoryId) : undefined;
   return c ? { '--cat': `light-dark(${c.color.light}, ${c.color.dark})` } : {};
 }
-
-export const firstLessonHref = '#/lesson/madd/asli-1';

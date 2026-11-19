@@ -1,9 +1,11 @@
 /**
  * Lesson screen (T037): top bar (exit + progress), combo badge, teach cards, exercises, feedback
  * sheet, then the completion screen. Route: #/lesson/<module>/<lesson>[/<seed>] — the optional seed
- * makes a session repeatable (tests, bug reports). Nothing is saved yet (progress = M4).
+ * makes a session repeatable (tests, bug reports). A finished lesson is saved (T046); an abandoned
+ * one is not. Teach cards of concepts already learned are skipped.
  */
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { sfx } from '../../audio/sfx.ts';
 import type { ParsedModule } from '../../content/schema.ts';
 import { grade as gradeItem } from '../../engine/grade.ts';
 import { mulberry32 } from '../../engine/rng.ts';
@@ -21,6 +23,7 @@ import {
   type SessionState,
 } from '../../engine/session.ts';
 import { showCombo } from '../../engine/scoring.ts';
+import { completeLesson, progress, seenConcepts } from '../../state/progress.ts';
 import type { Answer, Grade } from '../../engine/types.ts';
 import { FeedbackSheet, feedbackHeadline } from '../components/FeedbackSheet.tsx';
 import { Mascot } from '../components/Mascot.tsx';
@@ -86,7 +89,11 @@ function Play({
 }) {
   const [run, setRun] = useState(0);
   const rng = useMemo(() => mulberry32((seed ?? Date.now()) + run * 7919), [seed, run]);
-  const [s, setS] = useState<SessionState>(() => startSession(buildSession(module, lesson, rng)));
+  const build = (r: typeof rng) =>
+    startSession(
+      buildSession(module, lesson, r, { seen: seenConcepts(progress.peek(), module.id, lessonsOf(module)) }),
+    );
+  const [s, setS] = useState<SessionState>(() => build(rng));
   const [fb, setFb] = useState<{ grade: Grade; headline: string; returns: boolean } | null>(null);
   const [live, setLive] = useState('');
   const [confirmExit, setConfirmExit] = useState(false);
@@ -100,12 +107,31 @@ function Play({
   const restart = () => {
     const nextRun = run + 1;
     setRun(nextRun);
-    setS(startSession(buildSession(module, lesson, mulberry32((seed ?? Date.now()) + nextRun * 7919))));
+    setS(build(mulberry32((seed ?? Date.now()) + nextRun * 7919)));
     setFb(null);
   };
 
   const step = currentStep(s);
   const items = s.steps.filter((x) => x.type === 'item').length;
+  const finished = isFinished(s) && items > 0;
+
+  // save once per finished run (replaying the lesson saves again; stars never go down)
+  const savedRun = useRef(-1);
+  useEffect(() => {
+    if (!finished || savedRun.current === run) return;
+    savedRun.current = run;
+    const r = summarize(s.answered, s.correct, s.hadMistake);
+    completeLesson({
+      moduleId: module.id,
+      lessonId: lesson.id,
+      stars: r.stars,
+      accuracy: r.accuracy,
+      xp: r.xp,
+      right: s.right,
+      wrong: s.wrong,
+    });
+    sfx('complete');
+  }, [finished, run]);
 
   if (isFinished(s) || items === 0) {
     if (items === 0)
@@ -134,6 +160,7 @@ function Play({
   const onAnswer = (a: Answer) => {
     if (fb || step?.type !== 'item') return;
     const g = gradeItem(step.item, a);
+    sfx(g.correct ? 'right' : 'wrong');
     const mistakes = typeof a === 'object' ? a.mistakes : 0;
     const headline = feedbackHeadline(g, mistakes, answeredRef.current++);
     setFb({ grade: g, headline, returns: willReturn(s) });

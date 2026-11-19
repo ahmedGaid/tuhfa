@@ -80,15 +80,15 @@ description: "Task list for Tuhfa v1 — Madd module"
 
 ## Phase 4: US3 — path, progress, habit — M4 (day 4–5)
 
-- [ ] T039 [P] [US3] `tests/unit/streak.test.ts` + `tests/unit/storage.test.ts` (migrate, corrupt, memory fallback)
-- [ ] T040 [US3] `src/state/storage.ts`, `progress.ts`, `streak.ts`, `settings.ts` (signals; contract progress-storage.md)
-- [ ] T041 [US3] `src/ui/screens/Path.tsx`: module bands (category colour), winding nodes, checkpoint chests, «قريبًا» modules non-blocking, pulse current (reduced-motion off)
-- [ ] T042 [US3] Unlock rules in `src/state/progress.ts` (in-module order; ready modules open; teacher mode)
-- [ ] T043 [P] [US3] Header: streak flame + daily-goal `Ring` component
-- [ ] T044 [P] [US3] `src/audio/sfx.ts` (WebAudio right/wrong/complete) + confetti (reduced-motion off)
-- [ ] T045 [US3] `src/ui/screens/Settings.tsx` (goal 20/50/100, sound, teacher mode, theme) + `Welcome.tsx` (نقطة + Sheikh credit, once)
-- [ ] T046 [US3] Wire lesson completion → progress (stars max, XP by day, streak, SRS update, mistakes)
-- [ ] T047 [US3] `tests/e2e/path.spec.ts`: complete 2 lessons, reload, stars + unlock persisted; fake clock streak = 2
+- [x] T039 [P] [US3] `tests/unit/streak.test.ts` + `tests/unit/storage.test.ts` (migrate, corrupt, memory fallback)
+- [x] T040 [US3] `src/state/storage.ts`, `progress.ts`, `streak.ts`, `settings.ts` (signals; contract progress-storage.md)
+- [x] T041 [US3] `src/ui/screens/Path.tsx`: module bands (category colour), winding nodes, checkpoint chests, «قريبًا» modules non-blocking, pulse current (reduced-motion off)
+- [x] T042 [US3] Unlock rules in `src/state/progress.ts` (in-module order; ready modules open; teacher mode)
+- [x] T043 [P] [US3] Header: streak flame + daily-goal `Ring` component
+- [x] T044 [P] [US3] `src/audio/sfx.ts` (WebAudio right/wrong/complete) + confetti (reduced-motion off)
+- [x] T045 [US3] `src/ui/screens/Settings.tsx` (goal 20/50/100, sound, teacher mode, theme) + `Welcome.tsx` (نقطة + Sheikh credit, once)
+- [x] T046 [US3] Wire lesson completion → progress (stars max, XP by day, streak, SRS update, mistakes)
+- [x] T047 [US3] `tests/e2e/path.spec.ts`: complete 2 lessons, reload, stars + unlock persisted; fake clock streak = 2
 
 **Checkpoint M4**: whole Madd module playable from the path with persistent progress.
 
