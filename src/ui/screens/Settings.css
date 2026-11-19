@@ -156,3 +156,65 @@
   outline: 3px solid var(--ink);
   outline-offset: 2px;
 }
+
+/* data: export / import (Profile) */
+.me__data {
+  display: grid;
+  gap: var(--s-3);
+}
+.me__data > .btn {
+  justify-self: start;
+}
+.me__hint {
+  margin: 0;
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
+.me__code,
+.me__import {
+  display: grid;
+  gap: var(--s-2);
+}
+.me__code .btn,
+.me__import .btn {
+  justify-self: start;
+}
+.me__label {
+  font-weight: 800;
+}
+.me__data textarea {
+  inline-size: 100%;
+  padding: var(--s-3);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--card);
+  color: var(--ink);
+  font: inherit;
+  font-size: var(--fs-sm);
+  word-break: break-all;
+  resize: vertical;
+}
+.me__data textarea:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}
+/* not answer feedback → no red: ink rule + words */
+.me__error {
+  margin: 0;
+  padding-inline-start: var(--s-3);
+  border-inline-start: 4px solid var(--ink);
+  font-weight: 600;
+}
+.me__confirm-title {
+  margin: 0;
+  font-size: var(--fs-lg);
+}
+.me__confirm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+.me__about {
+  justify-self: start;
+  text-decoration: none;
+}

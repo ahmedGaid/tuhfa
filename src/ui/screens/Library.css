@@ -1,0 +1,225 @@
+.lib {
+  display: grid;
+  gap: var(--s-4);
+  padding: var(--s-4);
+  min-inline-size: 0;
+}
+.lib__title {
+  margin: 0;
+  font-size: var(--fs-xl);
+  font-weight: 800;
+}
+.lib__state {
+  padding: var(--s-4);
+  color: var(--mute);
+}
+.lib--state {
+  justify-items: center;
+  text-align: center;
+  padding-block: var(--s-7);
+}
+.lib .btn {
+  text-decoration: none;
+}
+
+.channel {
+  display: grid;
+  justify-items: start;
+  gap: 0;
+  line-height: 1.4;
+}
+.channel small {
+  color: var(--mute);
+  font-weight: 600;
+}
+
+.lib__mod {
+  display: grid;
+  gap: var(--s-3);
+  min-inline-size: 0;
+}
+.lib__mod-title {
+  margin: 0;
+  font-size: var(--fs-lg);
+  font-weight: 800;
+}
+.lib__h {
+  margin: 0;
+  color: var(--mute);
+  font-size: var(--fs-md);
+  font-weight: 800;
+}
+.lib__list {
+  display: grid;
+  gap: var(--s-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lib__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2) var(--s-3);
+  min-block-size: var(--tap);
+  padding: var(--s-3);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-inline-start: 4px solid var(--cat, var(--line));
+  border-radius: var(--r-md);
+  color: inherit;
+  text-decoration: none;
+}
+.lib__n {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  inline-size: 32px;
+  block-size: 32px;
+  border-radius: var(--r-pill);
+  background: var(--soft);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.lib__name {
+  flex: 1;
+  min-inline-size: 12ch;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.lib__soon {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-3);
+  border: 1px dashed var(--line);
+  border-radius: var(--r-md);
+  color: var(--mute);
+}
+.lib__soon span:nth-child(2) {
+  flex: 1;
+}
+.lib__soon-icon {
+  display: inline-grid;
+  place-items: center;
+  inline-size: 32px;
+  block-size: 32px;
+  border-radius: var(--r-pill);
+  background: var(--soft);
+  font-weight: 800;
+}
+
+/* one lesson */
+.lib__back {
+  justify-self: start;
+  color: var(--mute);
+  font-weight: 600;
+  min-block-size: var(--tap);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.lib-lesson__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2) var(--s-3);
+  padding-block-end: var(--s-3);
+  border-block-end: 4px solid var(--cat, var(--line));
+}
+.lib-lesson__head h1 {
+  margin: 0;
+  flex: 1;
+  min-inline-size: 12ch;
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  line-height: 1.4;
+}
+.lib-pages {
+  display: grid;
+  gap: var(--s-3);
+}
+.lib-pages__btn {
+  justify-self: start;
+  min-block-size: var(--tap);
+  padding-inline: var(--s-4);
+  border: 1.5px dashed var(--mute);
+  border-radius: var(--r-md);
+  background: var(--card);
+  font-weight: 800;
+  cursor: pointer;
+}
+.lib-pages__btn[aria-expanded='true'] {
+  border-style: solid;
+}
+.lib-pages__list {
+  display: grid;
+  gap: var(--s-3);
+}
+.lib-pages__list small {
+  color: var(--mute);
+}
+.lib-pages__thumb {
+  display: block;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--card);
+  cursor: zoom-in;
+}
+.lib-pages__thumb img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  min-block-size: 120px;
+}
+
+.lib-lesson__body {
+  min-inline-size: 0;
+  line-height: 1.9;
+}
+.lib-lesson__body p {
+  margin: var(--s-2) 0;
+}
+.lib-lesson__body ul {
+  margin: var(--s-2) 0;
+  padding-inline-start: var(--s-5);
+}
+.lib__q {
+  font-size: var(--fs-lg);
+  line-height: 2;
+}
+.lib__ex {
+  margin: var(--s-3) 0;
+  padding: var(--s-3);
+  border-inline-start: 4px solid var(--cat, var(--ink));
+  border-radius: var(--r-sm);
+  background: color-mix(in srgb, var(--cat, var(--ink)) 8%, var(--card));
+}
+.lib__facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--s-2);
+  margin: var(--s-3) 0;
+}
+.lib__facts > div {
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-sm);
+  background: var(--soft);
+}
+.lib__facts small {
+  display: block;
+  color: var(--mute);
+}
+.lib__tip {
+  padding: var(--s-1) var(--s-3);
+  border-inline-start: 4px dotted var(--ink);
+}
+.lib-lesson__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s-2);
+  padding-block-start: var(--s-3);
+}

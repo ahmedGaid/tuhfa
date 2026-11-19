@@ -8,8 +8,8 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { sfx } from '../../audio/sfx.ts';
 import type { ParsedModule } from '../../content/schema.ts';
 import { grade as gradeItem } from '../../engine/grade.ts';
-import { mulberry32 } from '../../engine/rng.ts';
-import { summarize } from '../../engine/scoring.ts';
+import { mulberry32, type Rng } from '../../engine/rng.ts';
+import { summarize, type LessonResult } from '../../engine/scoring.ts';
 import {
   advance,
   buildSession,
@@ -19,8 +19,8 @@ import {
   recordAnswer,
   startSession,
   willReturn,
-  type ParsedLessonSpec,
   type SessionState,
+  type Step,
 } from '../../engine/session.ts';
 import { showCombo } from '../../engine/scoring.ts';
 import { completeLesson, progress, seenConcepts } from '../../state/progress.ts';
@@ -75,24 +75,64 @@ export function Lesson({ moduleId, lessonId, seed }: Props) {
         </a>
       </div>
     );
-  return <Play key={`${moduleId}/${lessonId}/${seed ?? ''}`} module={module} lesson={lesson} seed={seed} />;
+  const all = lessonsOf(module);
+  const next = all[all.findIndex((l) => l.id === lesson.id) + 1];
+  return (
+    <Play
+      key={`${moduleId}/${lessonId}/${seed ?? ''}`}
+      module={module}
+      seed={seed}
+      build={(rng) =>
+        buildSession(module, lesson, rng, {
+          seen: seenConcepts(progress.peek(), module.id, lessonsOf(module)),
+        })
+      }
+      onFinish={(r, s) =>
+        completeLesson({
+          moduleId: module.id,
+          lessonId: lesson.id,
+          stars: r.stars,
+          accuracy: r.accuracy,
+          xp: r.xp,
+          right: s.right,
+          wrong: s.wrong,
+        })
+      }
+      done={{
+        title: lesson.title,
+        nextHref: next ? href('lesson', module.id, next.id) : undefined,
+        homeHref: href('path'),
+        homeLabel: t.complete.home,
+      }}
+      exitHref={href('path')}
+      emptyText={t.lesson.empty}
+    />
+  );
 }
 
-function Play({
-  module,
-  lesson,
-  seed,
-}: {
+export interface PlayProps {
   module: ParsedModule;
-  lesson: ParsedLessonSpec;
   seed?: number | undefined;
-}) {
+  /** builds the steps of one run (called again on «عيد») */
+  build: (rng: Rng) => Step[];
+  /** once per finished run */
+  onFinish: (result: LessonResult, s: SessionState) => void;
+  done: {
+    title: string;
+    kicker?: string | undefined;
+    nextHref?: string | undefined;
+    homeHref: string;
+    homeLabel: string;
+  };
+  exitHref: string;
+  emptyText: string;
+}
+
+/** Plays one session: lessons and reviews share it. */
+export function Play({ module, seed, build: buildSteps, onFinish, done, exitHref, emptyText }: PlayProps) {
   const [run, setRun] = useState(0);
   const rng = useMemo(() => mulberry32((seed ?? Date.now()) + run * 7919), [seed, run]);
-  const build = (r: typeof rng) =>
-    startSession(
-      buildSession(module, lesson, r, { seen: seenConcepts(progress.peek(), module.id, lessonsOf(module)) }),
-    );
+  const build = (r: Rng) => startSession(buildSteps(r));
   const [s, setS] = useState<SessionState>(() => build(rng));
   const [fb, setFb] = useState<{ grade: Grade; headline: string; returns: boolean } | null>(null);
   const [live, setLive] = useState('');
@@ -115,21 +155,12 @@ function Play({
   const items = s.steps.filter((x) => x.type === 'item').length;
   const finished = isFinished(s) && items > 0;
 
-  // save once per finished run (replaying the lesson saves again; stars never go down)
+  // save once per finished run (replaying saves again; stars never go down)
   const savedRun = useRef(-1);
   useEffect(() => {
     if (!finished || savedRun.current === run) return;
     savedRun.current = run;
-    const r = summarize(s.answered, s.correct, s.hadMistake);
-    completeLesson({
-      moduleId: module.id,
-      lessonId: lesson.id,
-      stars: r.stars,
-      accuracy: r.accuracy,
-      xp: r.xp,
-      right: s.right,
-      wrong: s.wrong,
-    });
+    onFinish(summarize(s.answered, s.correct, s.hadMistake), s);
     sfx('complete');
   }, [finished, run]);
 
@@ -138,19 +169,20 @@ function Play({
       return (
         <div class="lesson lesson--state">
           <Mascot pose="think" size={64} />
-          <p>{t.lesson.empty}</p>
-          <a class="btn btn--primary" href={href('path')}>
-            {t.goHome}
+          <p>{emptyText}</p>
+          <a class="btn btn--primary" href={done.homeHref}>
+            {done.homeLabel}
           </a>
         </div>
       );
-    const all = lessonsOf(module);
-    const next = all[all.findIndex((l) => l.id === lesson.id) + 1];
     return (
       <Complete
-        title={lesson.title}
+        title={done.title}
+        kicker={done.kicker}
         result={summarize(s.answered, s.correct, s.hadMistake)}
-        nextHref={next ? href('lesson', module.id, next.id) : undefined}
+        nextHref={done.nextHref}
+        homeHref={done.homeHref}
+        homeLabel={done.homeLabel}
         onAgain={restart}
         seed={s.correct}
       />
@@ -223,7 +255,7 @@ function Play({
               <Button onClick={() => setConfirmExit(false)} autoFocus>
                 {t.lesson.exitStay}
               </Button>
-              <a class="btn btn--alt" href={href('path')}>
+              <a class="btn btn--alt" href={exitHref}>
                 {t.lesson.exitLeave}
               </a>
             </div>

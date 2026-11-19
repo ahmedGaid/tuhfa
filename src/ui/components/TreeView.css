@@ -1,0 +1,157 @@
+/* Book tree (org chart). Logical properties only: the branches read right-to-left like the book. */
+.tree {
+  margin: var(--s-4) 0;
+  display: grid;
+  gap: var(--s-2);
+  min-inline-size: 0;
+}
+.tree__bar {
+  display: flex;
+  gap: var(--s-2);
+}
+.tree__z {
+  min-inline-size: var(--tap);
+  min-block-size: var(--tap);
+  padding-inline: var(--s-3);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--card);
+  font-weight: 800;
+  font-size: var(--fs-lg);
+  cursor: pointer;
+}
+.tree__z--fit {
+  font-size: var(--fs-sm);
+}
+.tree__z:disabled {
+  color: var(--mute);
+  cursor: default;
+}
+.tree__scroll {
+  overflow: auto;
+  max-block-size: 75vh;
+  padding: var(--s-3) var(--s-2);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overscroll-behavior-inline: contain;
+}
+
+.org {
+  inline-size: max-content;
+  margin-inline: auto;
+}
+.org ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 18px 0 0;
+  position: relative;
+}
+.org > ul {
+  padding-block-start: 0;
+}
+.org li {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px var(--s-1) 0;
+  text-align: center;
+}
+/* connectors: ::before = inline-start half, ::after = inline-end half (+ the drop line) */
+.org li::before,
+.org li::after {
+  content: '';
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: 50%;
+  inline-size: 50%;
+  block-size: 18px;
+  border-block-start: 2px solid var(--mute);
+}
+.org li::after {
+  inset-inline-end: auto;
+  inset-inline-start: 50%;
+  border-inline-start: 2px solid var(--mute);
+}
+.org li:only-child::before,
+.org li:only-child::after {
+  display: none;
+}
+.org li:only-child {
+  padding-block-start: 0;
+}
+.org li:first-child::before,
+.org li:last-child::after {
+  border: 0;
+}
+.org li:last-child::before {
+  border-inline-end: 2px solid var(--mute);
+}
+.org ul ul::before {
+  content: '';
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 50%;
+  block-size: 18px;
+  border-inline-start: 2px solid var(--mute);
+}
+.org ul.v {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+}
+.org ul.v > li {
+  padding: 0;
+}
+.org ul.v > li::before,
+.org ul.v > li::after {
+  display: none;
+}
+
+.bx {
+  min-inline-size: 70px;
+  max-inline-size: 150px;
+  padding: 6px var(--s-2);
+  border: 1.5px solid var(--mute);
+  border-radius: 6px;
+  background: var(--card);
+  font-size: var(--fs-sm);
+  font-weight: 800;
+  line-height: 1.45;
+}
+.bx--root {
+  max-inline-size: none;
+  padding: 10px 22px;
+  border-color: var(--ink);
+  border-radius: var(--r-md);
+  background: var(--ink);
+  color: var(--on-ink);
+  font-size: var(--fs-lg);
+}
+.bx--major {
+  border-width: 2px;
+  font-size: var(--fs-md);
+}
+.bx--cat {
+  border-color: var(--cat);
+  background: color-mix(in srgb, var(--cat) 9%, var(--card));
+}
+.bx__icon {
+  margin-inline-end: var(--s-1);
+  color: var(--cat);
+}
+.bx__e {
+  display: block;
+  font-size: var(--fs-lg);
+  line-height: 1.9;
+  font-weight: 700;
+}
+.bx small {
+  display: block;
+  font-weight: 400;
+  color: var(--mute);
+  font-size: 0.75rem;
+}

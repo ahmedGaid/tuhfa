@@ -1,0 +1,38 @@
+.about {
+  display: grid;
+  justify-items: start;
+  gap: var(--s-3);
+  padding: var(--s-4);
+}
+.about h1 {
+  margin: 0;
+  font-size: var(--fs-xl);
+  font-weight: 800;
+}
+.about h2 {
+  margin: 0 0 var(--s-1);
+  font-size: var(--fs-md);
+  font-weight: 800;
+  color: var(--mute);
+}
+.about p {
+  margin: 0;
+}
+.about a:not(.btn) {
+  color: inherit;
+  font-weight: 800;
+}
+.about .btn {
+  text-decoration: none;
+}
+.about__credit {
+  padding: var(--s-3);
+  border-inline-start: 4px solid var(--ink);
+  background: var(--card);
+  border-radius: var(--r-sm);
+  font-weight: 600;
+}
+.about__mute {
+  color: var(--mute);
+  font-size: var(--fs-sm);
+}
