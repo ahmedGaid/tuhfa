@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
 import preact from '@preact/preset-vite';
+import { VitePWA } from 'vite-plugin-pwa';
 
 const pkg = JSON.parse(readFileSync('package.json', 'utf8')) as { version: string };
 
@@ -35,7 +36,39 @@ function bookPages(): Plugin {
 
 export default defineConfig({
   base,
-  plugins: [preact(), bookPages()],
+  plugins: [
+    preact(),
+    bookPages(),
+    // Offline after one visit (T059, research R8, D-06): precache every built file incl. fonts and
+    // book pages. Hash routing → every navigation is index.html.
+    VitePWA({
+      registerType: 'autoUpdate',
+      injectRegister: 'script-defer',
+      manifest: {
+        name: 'تحفة — أحكام التجويد',
+        short_name: 'تحفة',
+        description: 'تعلّم أحكام التجويد خطوة بخطوة، من دروس فضيلة الشيخ جابر في شرح متن تحفة الأطفال.',
+        lang: 'ar',
+        dir: 'rtl',
+        display: 'standalone',
+        orientation: 'portrait',
+        background_color: '#f5f5f3',
+        theme_color: '#f5f5f3',
+        icons: [
+          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: 'icons/maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+        ],
+      },
+      workbox: {
+        globPatterns: ['**/*.{html,js,css,svg,png,jpg,woff2,webmanifest}'],
+        // manifest + its icons are added by the plugin itself
+        globIgnores: ['manifest.webmanifest', 'icons/icon-*.png', 'icons/maskable-*.png'],
+        navigateFallback: 'index.html',
+        cleanupOutdatedCaches: true,
+      },
+    }),
+  ],
   define: {
     __APP_VERSION__: JSON.stringify(pkg.version),
     __BOOK_PAGES__: JSON.stringify(includeBook),

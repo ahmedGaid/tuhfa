@@ -15,6 +15,8 @@
 }
 .fb__xp {
   margin-inline-start: auto;
+  /* points are not feedback: ink, and green text at this size fails AA (T065) */
+  color: var(--ink);
   font-size: var(--fs-md);
   font-variant-numeric: tabular-nums;
 }
