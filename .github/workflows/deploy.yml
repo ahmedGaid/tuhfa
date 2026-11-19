@@ -32,6 +32,7 @@ jobs:
       - run: npm run test:unit
       - run: npm run validate
       - run: npm run build
+      - run: npm run size
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - uses: actions/upload-artifact@v4

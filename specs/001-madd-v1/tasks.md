@@ -126,7 +126,7 @@ description: "Task list for Tuhfa v1 — Madd module"
 - [x] T063 [P] CI grep gate: `--ok`/`--bad` tokens used only in feedback/answer-state files (Principle III)
 - [x] T064 `tests/e2e/full-madd.spec.ts`: teacher mode, play every lesson + checkpoint with scripted correct answers (SC-002)
 - [x] T065 A11y pass (axe in Playwright on each screen) + fix findings
-- [ ] T066 Bundle size check (`size-limit` or build report ≤150 KB gz) + Lighthouse mobile run; record scores in `docs/lighthouse-v1.md`
+- [~] T066 Bundle size check (`size-limit` or build report ≤150 KB gz) + Lighthouse mobile run; record scores in `docs/lighthouse-v1.md` — size gate done (90 KB gz); Lighthouse run pending (founder, see docs/lighthouse-v1.md)
 - [ ] T067 README.md (Arabic + English): what, run locally, deploy your own copy (enable Pages → GitHub Actions), edit content, credits
 - [ ] T068 Founder review round on `CONTENT_NOTES.md`; flip approved examples to `verified:true`; re-run validate
 - [ ] T069 Merge to `main`, confirm live, screenshots 390×844 of every screen in `docs/screens/`
