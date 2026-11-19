@@ -120,8 +120,8 @@ description: "Task list for Tuhfa v1 — Madd module"
 ## Phase 6: US6 offline + US7 + polish — M6 (day 6–7) 🚀 launch
 
 - [x] T059 [US6] `vite-plugin-pwa` (autoUpdate, precache incl. fonts + book), manifest (Arabic name «تحفة», RTL, icons from نقطة), `tests/e2e/offline.spec.ts`
-- [ ] T060 [P] [US7] `CONTENT_GUIDE.md` (Arabic + English) walking through `_template` → register → validate
-- [ ] T061 [P] [US7] `tests/unit/template-module.test.ts`: `_template` registered in a test course plays a generated session with no engine change
+- [x] T060 [P] [US7] `CONTENT_GUIDE.md` (Arabic + English) walking through `_template` → register → validate
+- [x] T061 [P] [US7] `tests/unit/template-module.test.ts`: `_template` registered in a test course plays a generated session with no engine change
 - [ ] T062 [P] `tests/e2e/overflow-360.spec.ts`: every screen, `scrollWidth <= clientWidth`
 - [ ] T063 [P] CI grep gate: `--ok`/`--bad` tokens used only in feedback/answer-state files (Principle III)
 - [ ] T064 `tests/e2e/full-madd.spec.ts`: teacher mode, play every lesson + checkpoint with scripted correct answers (SC-002)

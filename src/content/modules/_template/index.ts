@@ -66,7 +66,7 @@ const template: Module = {
       ],
     },
   ],
-  // Library text. Quran spans as <q-t>…</q-t>. `pages` = image ids in public/pages/.
+  // Library text. Quran spans as <q-t>…</q-t>. `pages` = book page ids: reference/img/<id>.jpg.
   lessons: [{ title: 'عنوان الدرس', tag: 'وسم', category: 'family-a', html: '<p>شرح الدرس.</p>', pages: [] }],
   // The chapter map as drawn in the book. hideAt: «احفظ الخريطة» levels that blank this name.
   tree: {
