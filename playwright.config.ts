@@ -6,6 +6,8 @@ const base = process.env.VITE_BASE ?? '/tuhfa/';
 export default defineConfig({
   testDir: 'tests/e2e',
   fullyParallel: true,
+  // whole lessons are played end to end; under a full parallel run they need more than 30 s
+  timeout: 90_000,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? 'github' : 'list',
