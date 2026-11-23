@@ -33,7 +33,14 @@ jobs:
       - run: npm run validate
       - run: npm run build
       - run: npm run size
-      - run: npx playwright install --with-deps chromium
+      # apt mirrors fail now and then (2026-11-19: two runs lost to it) → retry before giving up
+      - name: Install Playwright Chromium + system deps
+        run: |
+          for i in 1 2 3; do
+            npx playwright install --with-deps chromium && exit 0
+            echo "install failed (try $i), retrying in 30 s"; sleep 30
+          done
+          exit 1
       - run: npm run test:e2e
       - uses: actions/upload-artifact@v4
         if: failure()
